@@ -1,0 +1,194 @@
+\documentclass[11pt,]{article}
+
+\usepackage{authblk}
+\usepackage{fullpage}
+\usepackage{amssymb,amsmath}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{siunitx}
+\usepackage[version=3]{mhchem}
+% \usepackage{helvet} % Helvetica font
+\usepackage[default]{lato}
+\usepackage[T1]{fontenc}
+
+\usepackage[official]{eurosym}
+
+\usepackage{setspace}
+\onehalfspacing
+% \renewcommand*\familydefault{\sffamily} % Use the sans serif version of the font
+% references
+\usepackage{apacite}
+
+% spell check (on command line)
+% aspell -t file_name.tex (-t informs its a tex file and macros should be ignored)
+
+\usepackage{booktabs}
+\setcounter{secnumdepth}{5}
+
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+% Redefine \includegraphics so that, unless explicit options are
+% given, the image width will not exceed the width or the height of the page.
+% Images get their normal width if they fit onto the page, but
+% are scaled down if they would overflow the margins.
+\makeatletter
+\def\ScaleWidthIfNeeded{%
+  \ifdim\Gin@nat@width>\linewidth
+  \linewidth
+  \else
+  \Gin@nat@width
+  \fi
+}
+\def\ScaleHeightIfNeeded{%
+  \ifdim\Gin@nat@height>0.9\textheight
+  0.9\textheight
+  \else
+  \Gin@nat@width
+  \fi
+}
+\makeatother
+\setkeys{Gin}{width=\ScaleWidthIfNeeded,height=\ScaleHeightIfNeeded,keepaspectratio}%
+
+\graphicspath{ {./figures/}{./results/figures/} }
+
+% set up font size for title page
+\font\myfont=cmr12 at 40pt
+\title{Computational notebooks as a tool for productivity, transparency, and reproducibility}
+\author[1,2]{Ludmilla Figueiredo}
+\affil[1]{Department of Animal Ecology and Tropical Biology, Faculty of Biology, University of Wuerzburg, 97074 Wuerzburg, Germany}
+\affil[2]{Center for Computational and Theoretical Ecology, Faculty of Biology, University of Wuerzburg, 97074 Wuerzburg, Germany}
+
+\begin{document}
+
+\maketitle
+
+\section*{Abstract}
+Understanding and managing the current biodiversity crisis caused by human action (e.g. habitat destruction, climate change) is one of the greatest challenges to be addressed by ecologists, conservationists, and politicians.
+During my PhD, I have been investigating how fast extinctions happen, what are the factors that increase the number and speed at which they happen, and how such knowledge could inform conservation measures intended at preventing them.
+To do it, I design computer simulation models that simulate how extinctions unfold in scenarios inspired by real-world ecosystems and human-caused changes (habitat loss, pollinator loss, and climate change).
+Such models are based on theoretical assumptions and simplifications based on empirical information.
+These must be made clear when reporting model predictions for careful interpretation by both the scientific and public audiences.
+While theoretical work and established literature can be communicated through scientific articles and open communication reports for the general public, the analytical process is usually inaccessible.
+The production of computational notebooks that document the whole research processes can fill that gap.
+From using notebooks to assure reproducibility and transparency of my projects, I know that instead of being an additional product, which keeps many from using them, such notebooks can actually increase productivity by centralizing writing and analysis, which are then re-organized into traditional publication formats.
+As an Open Science fellow, I aim at developing a starter kit to facilitate the use and integration of such notebooks into the publication workflow.
+
+\section*{Project description}
+\subsection*{Problem definition}
+The current biodiversity crisis, which threatens 1 million species with extinction \cite{ipbes_chapter_2019}, poses the greatest challenge for ecologists who need to understand and predict it, and for conservationists and politicians who need to manage it.
+Besides their intrinsic eco-evolutionary value, non-human species provide essential services for humans \cite{ipbes_chapter_2019}.
+For example, insects contribute to crop pollination \cite{bartomeus_need_2019} and pest control \cite{martin_pest_2015}, while forests store carbon that would otherwise contribute to climate change in the atmosphere \cite{sullivan_longterm_2020}.
+Thus, the understanding and control of biodiversity loss is of upmost importance for human life.
+
+During my PhD thesis I have addressed why some species survive longer than others, and more importantly, how managing biological processes and environmental conditions could improve conservation policies to ultimately avoid extinctions.
+To tackle this, I develop and use computational simulation models that combine theoretical knowledge and empirical data to simulate ecosystems and draw conclusions and forecasts.
+Simulation models can be rather complex, and thus simplifications and theoretical assumptions are necessary to assure that models are computationally feasible and results interpretable.
+Such assumptions must be made clear when reporting the results of models for careful interpretation by the scientific and public audiences.
+
+The debates surrounding the occurrence and consequences of climate change and, even more timely, the COVID-19 pandemic, have shown the need to carefully present complex research ideas, especially to the general public.
+Having produced this type content before, to great response from non-scientists, I intend to keeping doing it for my research for as long as possible.
+Most importantly, throughout my studies, I have come to realize that while final results are well communicated through scientific articles, the raw analytical process, so crucial for trusting the results presented, is often inaccessible.
+Colleagues before me came to the same conclusion, which prompted an increasing call for reproducibility in Ecology \cite{culina_low_2020, mislan_elevating_2016}.
+The increasing complexity and speed of development of project-specific analytical methods requires the establishment of quality standards and review processes \cite{borregaard_towards_2016}.
+The practice of using computational notebooks can fill this gap.
+
+Computational notebooks are documents containing descriptive text with relevant code and results, combined in a narrative order that documents all stages of the research process \cite{rule_ten_2019}.
+They can be produced with open-source software, such as Emacs or RStudio, and are to be published along the article they relate to.
+Despite its advantages, it can seem overwhelming to consider producing such document, since it deceivingly appears to constitute additional work to the already demanding scientific publication process.
+From my experience, this is not the case.
+Notebooks actually increase productivity by centralizing writing and analysis, which are then re-organized into traditional publication formats (e.g. main text, figure files, and supplementary material).
+To popularize this mean of open science, I propose to develop a starter kit that facilitates the use and integration of such notebooks in the publication workflow.
+
+\subsection*{Which aspects of Open Science will be part of your project?}
+\begin{itemize}
+\item Open Access
+\item Open Software
+\item Open Communication
+\item Open Methods
+\item Reproducibility
+\item Replicability
+\end{itemize}
+
+\subsection*{Project primarily uses or is about Open Science?}
+The projects uses/applies principles of Open Science.
+
+\subsection*{To which discipline is your project assigned?}
+Life sciences.
+
+\subsection*{What is your personal motivation to participate in the Open Science Fellows Program?}
+First, throughout my studies and career, I have greatly benefited from open resources, be it programming language tutorials, open biology courses, open repositories, or discussion forums.
+Second, by working with increasingly complex models, charged with statistical and mathematical components, I realized that disclosing my analytical process was the most efficient way to have my work  verified by experts in the field.
+The call for such practice is particularly strong in the field of Ecology \cite{culina_low_2020, borregaard_towards_2016, mislan_elevating_2016}.
+This led me to starting to apply principles of Open science on my own work, because as a young scientist, I understand that I have the time necessary to learn this practice and incorporate it into my personal workflow.
+Third and last, I have had the opportunity of co-producing a short video summary of my first published article.
+It was an enriching experience, being able to share the work with the public audience in a compelling way, and I intend to replicate it for the remaining two chapters of my PhD thesis (which constitute my next two publications).
+By participating in the program, I will further broaden my view on the principles of Open science from mentors that have experience on it.
+Moreover, I hope to understand how to implement it on my workflow in a more efficient way, and how to establish practices that can be shared with co-workers and students.
+
+\subsection*{What concrete goals do you want to achieve within the Fellows Program?}
+% I want to publish the last two chapters of my thesis in open science journals, along with the source code and computational notebooks containing the code and information necessary to replicate results and reproduce analysis.
+In cronological order, I will first produce short video summaries of the last two chapters of my thesis \cite{figueiredo_underreview, figueiredo_inprep}, explaining the main discoveries of each work to the general public.
+These videos are going to be written in a language accessible to the general public, similar to the one I produced in colaboration with the Ecography journal as a prize awarded to my first PhD publication, \citeA{figueiredo_understanding_2019} (available in the journal's Youtube channel: https://youtu.be/NUgmctx6OlM).
+These publications report studies based on open-source models written in Julia (an open-source language) and are accompanied by their respective computational notebooks (written in R, an open-source language).
+Thus, both scientific and non-scientific audiences can access the information at the level convinient for them.
+
+Second, and most importantly, I will establish a "starter kit", i.e. a set of digital tools and tutorials, on how to use and publish computational notebooks along with scientific publications.
+The kit will include i) a basic computational notebook layout in RMarkdown and Jupyter notebook formats (both open source tools), and ii) a step-by-step tutorial on how to integrate it into the workflow of writing a traditional scientific publication.
+It will be available in an open repository and will be accompanied by a blog post and an open access scientific paper detailing the methodology (e.g. a "software note" in the Ecography journal or "practical tools" article in the Methods in Ecology and Evolution journal).
+The kit will be the final product of my participation on the program because I want to include in it the experience I gain from the process of publishing my own notebooks and the skills I gain from my participation on the Fellows program.
+
+\subsection*{How does your project within the Fellow Program contribute to Open Science?}
+Computational notebooks can hold all details of the research process, from the definition of a research question and the experiments to answer it, to the analysis of results and discussion of possible answers.
+Even if not all details can be openly published, e.g. due to restricted ownership or sensitive data, it is still possible to access the rigor of the scientific method behind it.
+From my own experience, I know that working with computational notebooks provides the ability to control how much is made public, without the need of extra work.
+This practice is not known to many scientists, and thus, the use of computational notebooks, is not implemented. Having a "starter-kit" available, which is integrated with the publication process, will facilitate and, hopefully, normalize the use of such notebooks.
+In parallel, the production of short videos summarizing the research facilitates the understanding of complex research by the general public, which were the ultimate sponsors of the research I conducted as PhD candidate employed by the university.
+
+\subsection*{How do you plan to promote Open Science within your institution/community?}
+My co-workers will be the first invitees to test the "starter kit".
+Once it is published, I will organize introductory workshops for students and colleagues working with computational methods, independent of the field or level of complexity of the work.
+
+\subsection*{How could your project contribute to the Wikimedia projects (Wikipedia, Wikidata, Wikimedia Commons, etc.)}
+By producing and disseminating a tool that facilitates the production of Open Science, I understand that my project strengthens the program by increasing the number of researchers willing to apply principles of open science.
+Although not necessarily a part of the network of fellows, these scientists amplify the program’s message and importance.
+
+\subsection*{Where in your project do you see a link to Knowledge Equity? Which questions and perspectives about and on Knowledge Equity do you bring to the table?}
+As previously stated, being a first generation scientist, from an underprivileged family, I have greatly benefited from open learning resources to build my professional skills, specially computational skills.
+In that sense, I can only bring my personal experience and willingness to reciprocate by producing accessible content.
+In the context of this project, my efforts will focus on i) communicating research to the general public and ii) documenting the research process in a transparent and educative manner, whereby the computational notebook can be used as a learning material for other scientists interested in applying replicating a study or method.
+
+\subsection*{In relation to your objectives, please briefly outline the main milestones you intend to achieve during the funding period.}
+The project consists of 3 working packages:
+\begin{enumerate}
+\item Publication of Figueiredo et al. (under review), along with the short video summary and its computational notebook.
+  Expected date of conclusion: November 2020.
+\item Publication of Figueiredo et al. (in prep.), along with the short video summary, the source code of the model written for it, and its computational notebook.
+  Expected date of conclusion: January 2021.
+\item Publication of a standardized starter kit detailing how to produce computational notebooks in open access.
+  Expected date of conclusion: May 2021
+\end{enumerate}
+
+\subsection*{How do you plan to ensure that the Free Knowledge generated by your project will be re-used?}
+By using open-source software, and publishing in open access journal and platforms (i.e. open repositories for source codes, and YouTube, for the summary videos), the products of all working packages will be fully available for free.
+
+\subsection*{What do you plan to use your funds for during the funding period?}
+Part of the funding (\euro{1050}-\euro{3000}) will be used to finance the publication of the starter kit in an open access journal.
+The University of Würzburg covers 42\% of the fees of publications in fully open access journals (e.g. Ecography, our first choice), in which case, such the final cost would be minimal, at \euro{1050}.
+However, if our submission only gets accepted in a subscription journal with an open access option (e.g. Methods in Ecology and Evolution), the fund will not support it, in which case fees can reach \euro{3000}.
+The remaining of the funding, will be used to partially finance the prolongation of my stay in Germany, from the end of my current formal contract, on the 17th October 2020, until the end of the program, in June 2021. 
+
+\subsection*{Please state your reason for your choice of the scholarship type.}
+Currently, I am finishing my PhD project and working on grants to finance my own PostDoc position at the University of Würzburg.
+Decisions regarding my PostDoc applications will be available from the end of November 2020, at the earliest, to the end of February 2021, at the latest.
+In mean time I maintain my attachement to the university as I finish papers from my PhD thesis (as described above) and participate in the Scientia mentoring program (see letters attached).
+Nevertheless, in order to renew my research visa, German immigration law requires me to present, beforehand, proof of finances for the period I plan to remain in the country.
+Thus, along with my personal funds, the funding from the Fellows program would contribute to show evidence of financial security and assure my participation in the program (October 2020 to June 2021). 
+
+\newpage\clearpage
+\bibliographystyle{apacite}
+\bibliography{paper_library.bib}
+\newpage
+
+\end{document}
+
+
