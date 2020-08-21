@@ -1,0 +1,87 @@
+---
+title: "Computational notebook for a manuscript"
+author: Ludmilla Figueiredo
+output:
+ html_document:
+   code_folding: hide
+   number_sections: no
+   theme: flatly
+   toc: yes
+   toc_depth: 3
+   toc_float:
+     collapsed: FALSE
+---
+
+```{r knitr_setup, include = FALSE, warning=FALSE, message=FALSE}
+## this chunk contains internal set of the document
+## It does not affect the data analysis, thus not need to present it in the main text and "include=FALSE"
+knitr::opts_chunk$set(fig.width=9, fig.height=6) ## default figure size
+knitr::opts_chunk$set(echo=TRUE) ## 
+knitr::opts_chunk$set(cache = TRUE) # "to save the state of each chunk as cache files.
+options(knitr.kable.NA = '') ## leave NAs blank in printed dataframes
+```
+
+I usually start by presenting the notebook: the paper it refers to, the main contents, and possible code files that are too big or not relevant enoughto have been included in the chunks.
+
+I prefer concentrating all packages and custom functions that are used later i the code in a single, dedicated chunk:
+```{r processing_tools, message=FALSE, warning=FALSE}
+library(tidyverse) ## data wrangling and plotting
+library(viridis) 
+## functions for plotting
+source(file.path(scriptsdir, "plotting_functions.R"))
+```
+
+If the previous chunk is too long, I usually have a dedicated chunk to load necessary data frames.
+```{r load_dataframes, eval=FALSE, include=FALSE}
+data(iris)
+```
+
+# Experimental design
+For computational experiments, it might be relevant to write down how you create initialization files, or load pics of experiments for example.
+
+## Figure S1
+```{r fig.cap = 'Schematics of our experimental design.'}
+knitr::include_graphics(file.path("awesome_design.png"))
+```
+
+# Results
+To facilitate nevigation, I organize the code used to generate results in a structure that mirrors the structure of the paper.
+
+## 1) Question 1
+Briefly introduced the data frames (loaded in the dedicated chunk) relevant for this section.
+
+### Figure S1
+Include the name of the supplementary material to facilitate navigation for the reader.
+```{r fig.cap = "Supplementary figure, containing distirbution of sepal lengths for all species from the iris dataset (main text contains only Iris setosa."}
+full_iris.plot <- ggplot(data = iris,
+                         aes(x = Sepal.Length, colour = Species,
+                             fill = Species)) +
+    geom_histogram(position = position_dodge(0.1)) +
+    scale_colour_manual(values = viridis(n = 3, option = "D"),
+                        aesthetics = c("colour","fill")) +
+    labs(x = "Sepal length") +
+    theme_minimal()
+
+## If there is a figure in the main plot which is related to the supplementary one, it is possible to show how it was produced, but only show the supplementary one in the 
+full_iris.plot %+%
+    subset(filter(iris, Species == "setosa")) %>%
+    ggsave(filename = "main_fig1.eps", plot = .,
+           width = 15, height = 10, unit = "cm", device = "eps")
+
+full_iris.plot
+```
+
+## Table S1
+One of my personal reasons for switching to RNotebooks was having reader-friendly tables.
+To learn how to "create Awesome HTML Table with knitr::kable and kableExtra" [check this tutorial by Hao Zhu](https://haozhu233.github.io/kableExtra/awesome_table_in_html.html#grouped_columns__rows).
+
+```{r}
+iris %>%
+    rename("Sepal length" = "Sepal.Length",
+           "Sepal width" = "Sepal.Width",
+           "Petal length" = "Petal.Length",
+           "Petal width" = "Petal.Width") %>%
+    knitr::kable(caption = "Awesome html table",
+                 longtable = TRUE, booktabs = TRUE) %>%
+    kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+```
