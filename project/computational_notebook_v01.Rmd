@@ -27,8 +27,7 @@ I prefer concentrating all packages and custom functions that are used later i t
 ```{r processing_tools, message=FALSE, warning=FALSE}
 library(tidyverse) ## data wrangling and plotting
 library(viridis) 
-## functions for plotting
-source(file.path(scriptsdir, "plotting_functions.R"))
+library(kableExtra)
 ```
 
 If the previous chunk is too long, I usually have a dedicated chunk to load necessary data frames.
@@ -41,7 +40,7 @@ For computational experiments, it might be relevant to write down how you create
 
 ## Figure S1
 ```{r fig.cap = 'Schematics of our experimental design.'}
-knitr::include_graphics(file.path("awesome_design.png"))
+knitr::include_graphics(file.path("scheme_experimentaldesign.png"))
 ```
 
 # Results
@@ -83,5 +82,6 @@ iris %>%
            "Petal width" = "Petal.Width") %>%
     knitr::kable(caption = "Awesome html table",
                  longtable = TRUE, booktabs = TRUE) %>%
-    kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+    kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
+  scroll_box(width = "100%", height = "700px")
 ```
