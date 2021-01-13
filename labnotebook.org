@@ -22,6 +22,7 @@ projet
 |-- results
 |   |-- README.md
 |   |-- raw_data
+|   |-- data
 |   |-- scripts
 |   |-- semi_products
 |-- text
@@ -36,17 +37,34 @@ projet
 |   |-- journal2
 |       |-- first
 |       |-- revisions
-*** DONE illustration
+*** DONE illustration folder structure
     :LOGBOOK:
+    - State "DONE"       from "IN-PROGRESS" [2021-01-13 Mi 21:46] \\
+      Fixed missing files and spacing.
+    CLOCK: [2021-01-13 Mi 20:50]--[2021-01-13 Mi 21:45] =>  0:55
+    - State "IN-PROGRESS" from "DONE"       [2021-01-13 Mi 21:07] \\
+      Missing folders and files.
     CLOCK: [2021-01-13 Mi 13:54]--[2021-01-13 Mi 14:36] =>  0:42
     CLOCK: [2021-01-13 Mi 11:25]--[2021-01-13 Mi 12:09] =>  0:44
     CLOCK: [2021-01-13 Mi 10:30]--[2021-01-13 Mi 11:13] =>  0:43
     :END:
-**** TODO relation between folders and files
+*** DONE relation between folders and files
+     :LOGBOOK:
+     - State "DONE"       from "IN-PROGRESS" [2021-01-13 Mi 21:07]
+     CLOCK: [2021-01-13 Mi 20:50]--[2021-01-13 Mi 21:07] =>  0:17
+     CLOCK: [2021-01-13 Mi 19:57]--[2021-01-13 Mi 20:19] =>  0:22
+     - State "IN-PROGRESS" from "TODO"       [2021-01-13 Mi 14:57]
+     CLOCK: [2021-01-13 Mi 19:45]--[2021-01-13 Mi 19:53] =>  0:08
+     CLOCK: [2021-01-13 Mi 14:35]--[2021-01-13 Mi 14:54] =>  0:19
+     :END:
 In particular, show how ~main.Rmd~ produces/calls the others
     DEADLINE: <2021-01-13 Mi>
 ** Manuscript
+*** TODO astract
+    DEADLINE: <2021-01-15 Fr> SCHEDULED: <2021-01-14 Do>
 *** TODO contact Vik, Cédric, and Volker about collab, with abstract
+    DEADLINE: <2021-01-15 Fr> SCHEDULED: <2021-01-15 Fr>
+
 * Resources
 https://ourresearch.org/projects
 https://investinopen.org/community/jrost-2020-conference/
