@@ -1,3 +1,13 @@
+#+TITLE: Computational notebooks - Freies Wissen Fellowship
+#+BEGIN: clocktable :scope file :maxlevel 2
+#+CAPTION: Clock summary at [2021-01-13 Mi 21:49]
+| Headline                                   | Time   |      |
+|--------------------------------------------+--------+------|
+| *Total time*                               | *4:10* |      |
+|--------------------------------------------+--------+------|
+| Project                                    | 4:10   |      |
+| \_  File structure to be implemented by... |        | 4:10 |
+#+END:
 * Meetings
 ** <2020-12-18 Fr>
 *** TODO schedule Jo in CCTB seminar
