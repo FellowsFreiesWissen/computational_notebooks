@@ -1,0 +1,52 @@
+* Meetings
+** <2020-12-18 Fr>
+*** TODO schedule Jo in CCTB seminar
+*** Responsible research and innovation                                 :RRI:
+This is a conversation that must be had more often.
+Open science as a form to push for social justice.
+Open science does not needs to be publically available, it just need to be
+reproducible and traceable.
+* Project
+** Format
+   :LOGBOOK:
+   - Note taken on [2021-01-04 Mo 14:16] \\
+     Having a package to take care of all this would be great, but would also mean 
+     maintenance, which is not my objective here.
+     The objective is actually having a basic workflow of research and documentation, 
+     and using the R/Jupyter notebook to navigate it.
+   :END:
+** File structure to be implemented by the user
+   :LOGBOOK:
+   CLOCK: [2021-01-13 Mi 11:01]
+   :END:
+projet
+|-- README.md
+|-- main.Rmd
+|-- results
+|   |-- README.md
+|   |-- raw_data
+|   |-- scripts
+|   |-- semi_products
+|-- text
+|   |-- README.md
+|   |-- main.doc
+|   |-- figures
+|   |-- tables
+|   |-- supplementary
+|-- submission
+|   |-- journal1
+|       |-- first
+|   |-- journal2
+|       |-- first
+|       |-- revisions
+** Manuscript
+*** TODO contact Vik, Cédric, and Volker about collab, with abstract
+* Resources
+https://ourresearch.org/projects
+https://investinopen.org/community/jrost-2020-conference/
+About RRI:
+[[https://fit4rri.eu/][fit4r]]
+[[https://ec.europa.eu/programmes/horizon2020/en/h2020-section/responsible-research-innovation][EU's definition]]
+[[https://en.wikipedia.org/wiki/Responsible_Research_and_Innovation][Wikipedia definition]]
+https://www.youtube.com/watch?v=D9Ihs241zeg
+https://www.youtube.com/watch?v=1DYxqEaj_Jg
