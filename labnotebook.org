@@ -16,9 +16,6 @@ reproducible and traceable.
      and using the R/Jupyter notebook to navigate it.
    :END:
 ** File structure to be implemented by the user
-   :LOGBOOK:
-   CLOCK: [2021-01-13 Mi 11:01]
-   :END:
 projet
 |-- README.md
 |-- main.Rmd
@@ -39,6 +36,15 @@ projet
 |   |-- journal2
 |       |-- first
 |       |-- revisions
+*** DONE illustration
+    :LOGBOOK:
+    CLOCK: [2021-01-13 Mi 13:54]--[2021-01-13 Mi 14:36] =>  0:42
+    CLOCK: [2021-01-13 Mi 11:25]--[2021-01-13 Mi 12:09] =>  0:44
+    CLOCK: [2021-01-13 Mi 10:30]--[2021-01-13 Mi 11:13] =>  0:43
+    :END:
+**** TODO relation between folders and files
+In particular, show how ~main.Rmd~ produces/calls the others
+    DEADLINE: <2021-01-13 Mi>
 ** Manuscript
 *** TODO contact Vik, Cédric, and Volker about collab, with abstract
 * Resources
