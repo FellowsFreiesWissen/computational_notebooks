@@ -1,12 +1,15 @@
 #+TITLE: Computational notebooks - Freies Wissen Fellowship
 #+BEGIN: clocktable :scope file :maxlevel 2
-#+CAPTION: Clock summary at [2021-01-13 Mi 21:49]
-| Headline                                   | Time   |      |
-|--------------------------------------------+--------+------|
-| *Total time*                               | *4:10* |      |
-|--------------------------------------------+--------+------|
-| Project                                    | 4:10   |      |
-| \_  File structure to be implemented by... |        | 4:10 |
+#+CAPTION: Clock summary at [2021-01-26 Di 18:05]
+| Headline                                   |    Time |      |
+|--------------------------------------------+---------+------|
+| *Total time*                               | *16:51* |      |
+|--------------------------------------------+---------+------|
+| Project                                    |   10:22 |      |
+| \_  Format                                 |         | 6:11 |
+| \_  File structure to be implemented by... |         | 4:10 |
+| \_  Manuscript                             |         | 0:01 |
+| Literature                                 |    6:29 |      |
 #+END:
 * Meetings
 ** <2020-12-18 Fr>
@@ -18,14 +21,39 @@ Open science does not needs to be publically available, it just need to be
 reproducible and traceable.
 * Project
 ** Format
+*** Pluto notebooks in Julia
+    :LOGBOOK:
+    CLOCK: [2021-01-22 Fr 15:12]--[2021-01-22 Fr 16:00] =>  0:48
+    CLOCK: [2021-01-22 Fr 12:35]--[2021-01-22 Fr 13:42] =>  1:07
+    CLOCK: b[2021-01-14 Do 18:35]--[2021-01-14 Do 19:50] =>  1:15
+    - Note taken on [2021-01-14 Do 19:29] \\
+      Learning notes in [[file:/home/ludmilla/Documents/my_library/julia/notes.org::*Interactive notebooks (Fons van der Plas & Mikolav Bochenski, JuliaCon 2020)][Julia notebook]]
+    - Note taken on [2021-01-14 Do 19:28] \\
+      Having a package to take care of all this would be great, but would also mean 
+      maintenance, which is not my objective here.
+      The objective is actually having a basic workflow of research and documentation, 
+      and using the R/Jupyter notebook to navigate it.
+    CLOCK: [2021-01-14 Do 18:30]--[2021-01-14 Do 19:25] =>  0:55
+    :END:
+*** Jupyter notebook
+    :LOGBOOK:
+    CLOCK: [2021-01-26 Di 17:40]--[2021-01-26 Di 18:05] =>  0:25
+    CLOCK: [2021-01-26 Di 16:43]--[2021-01-26 Di 17:09] =>  0:26
+    CLOCK: [2021-01-26 Di 16:04]--[2021-01-26 Di 16:29] =>  0:25
+    CLOCK: [2021-01-26 Di 15:17]--[2021-01-26 Di 15:46] =>  0:29
+    CLOCK: [2021-01-26 Di 14:39]--[2021-01-26 Di 15:10] =>  0:31
+    CLOCK: [2021-01-26 Di 13:53]--[2021-01-26 Di 14:28] =>  0:35
+    CLOCK: [2021-01-26 Di 13:21]--[2021-01-26 Di 13:47] =>  0:26
+    - Note taken on [2021-01-26 Di 11:23] \\
+      Learning notes in [[file:/home/ludmilla/Documents/my_library/computational_science/notes.org::*Jupyter notebooks][comp.scie notebook]]
+    CLOCK: [2021-01-26 Di 11:21]--[2021-01-26 Di 11:50] =>  0:29
+    :END:
+Beware of the [[Notebooks in Julia][reactivity issue]].
+** DONE File structure to be implemented by the user
    :LOGBOOK:
-   - Note taken on [2021-01-04 Mo 14:16] \\
-     Having a package to take care of all this would be great, but would also mean 
-     maintenance, which is not my objective here.
-     The objective is actually having a basic workflow of research and documentation, 
-     and using the R/Jupyter notebook to navigate it.
+   - State "DONE"       from "TODO"       [2021-01-13 Mi 21:07]
    :END:
-** File structure to be implemented by the user
+#+BEGIN_SRC sh
 projet
 |-- README.md
 |-- main.Rmd
@@ -47,6 +75,7 @@ projet
 |   |-- journal2
 |       |-- first
 |       |-- revisions
+#+END_SRC
 *** DONE illustration folder structure
     :LOGBOOK:
     - State "DONE"       from "IN-PROGRESS" [2021-01-13 Mi 21:46] \\
@@ -70,10 +99,17 @@ projet
 In particular, show how ~main.Rmd~ produces/calls the others
     DEADLINE: <2021-01-13 Mi>
 ** Manuscript
-*** TODO astract
-    DEADLINE: <2021-01-15 Fr> SCHEDULED: <2021-01-14 Do>
+*** IN-PROGRESS [[file:project/text/abstract.tex][abstract]]
+    DEADLINE: <2021-01-28 Do> SCHEDULED: <2021-01-14 Do>
+    :LOGBOOK:
+    - State "IN-PROGRESS" from "TODO"       [2021-01-26 Di 17:58] \\
+      Definition of basic contents and points of discussion.
+    :END:
 *** TODO contact Vik, Cédric, and Volker about collab, with abstract
     DEADLINE: <2021-01-15 Fr> SCHEDULED: <2021-01-15 Fr>
+    :LOGBOOK:
+    CLOCK: [2021-01-14 Do 19:27]--[2021-01-14 Do 19:28] =>  0:01
+    :END:
 
 * Resources
 https://ourresearch.org/projects
@@ -84,3 +120,17 @@ About RRI:
 [[https://en.wikipedia.org/wiki/Responsible_Research_and_Innovation][Wikipedia definition]]
 https://www.youtube.com/watch?v=D9Ihs241zeg
 https://www.youtube.com/watch?v=1DYxqEaj_Jg
+* Literature
+  :PROPERTIES:
+  :ORDERED:  t
+  :END:
+  :LOGBOOK:
+  CLOCK: [2021-01-26 Di 09:45]--[2021-01-26 Di 11:20] =>  1:35
+  CLOCK: [2021-01-26 Di 09:10]--[2021-01-26 Di 09:36] =>  0:26
+  CLOCK: [2021-01-26 Di 08:29]--[2021-01-26 Di 09:05] =>  0:36
+  CLOCK: [2021-01-23 Sa 19:30]--[2021-01-23 Sa 21:29] =>  1:59
+  CLOCK: [2021-01-22 Fr 17:07]--[2021-01-22 Fr 18:30] =>  1:23
+  CLOCK: [2021-01-14 Do 21:00]--[2021-01-14 Do 21:30] =>  0:30
+  :END:
+** [[file:~/Documents/my_library/paper_library/notes.org::*Chattopadhay et al. 2020 CHI][Chattopadhay et al. 2020 CHI]]
+** [[file:~/Documents/my_library/paper_library/notes.org::*
