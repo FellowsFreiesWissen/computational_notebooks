@@ -1,15 +1,15 @@
 #+TITLE: Computational notebooks - Freies Wissen Fellowship
-#+BEGIN: clocktable :scope file :maxlevel 2
-#+CAPTION: Clock summary at [2021-01-26 Di 18:05]
+#+BEGIN: clocktable :scope file :maxlevel 2 :link t :tstart "2021-01-13"
+#+CAPTION: Clock summary at [2021-01-29 Fr 09:07]
 | Headline                                   |    Time |      |
 |--------------------------------------------+---------+------|
-| *Total time*                               | *16:51* |      |
+| *Total time*                               | *17:16* |      |
 |--------------------------------------------+---------+------|
-| Project                                    |   10:22 |      |
-| \_  Format                                 |         | 6:11 |
-| \_  File structure to be implemented by... |         | 4:10 |
-| \_  Manuscript                             |         | 0:01 |
-| Literature                                 |    6:29 |      |
+| [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Project][Project]]                                    |   10:47 |      |
+| \_  [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Format][Format]]                                 |         | 6:36 |
+| \_  [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::File structure to be implemented by the user][File structure to be implemented by...]] |         | 4:10 |
+| \_  [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Manuscript][Manuscript]]                             |         | 0:01 |
+| [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Literature][Literature]]                                 |    6:29 |      |
 #+END:
 * Meetings
 ** <2020-12-18 Fr>
@@ -102,29 +102,152 @@ In particular, show how ~main.Rmd~ produces/calls the others
 *** IN-PROGRESS [[file:project/text/abstract.tex][abstract]]
     DEADLINE: <2021-01-28 Do> SCHEDULED: <2021-01-14 Do>
     :LOGBOOK:
+    CLOCK: [2021-01-29 Fr 18:07]--[2021-01-29 Fr 19:44] =>  1:37
+    CLOCK: [2021-01-29 Fr 09:32]--[2021-01-29 Fr 09:57] =>  0:25
+    CLOCK: [2021-01-29 Fr 08:35]--[2021-01-29 Fr 09:25] =>  0:50
     - State "IN-PROGRESS" from "TODO"       [2021-01-26 Di 17:58] \\
       Definition of basic contents and points of discussion.
     :END:
-*** TODO contact Vik, Cédric, and Volker about collab, with abstract
-    DEADLINE: <2021-01-15 Fr> SCHEDULED: <2021-01-15 Fr>
+#+BEGIN_SRC lisp
+#+TITLE: Computational notebooks to facilitate writing and improve 
+reproducibility of ecological research
+
+The use of lab notebooks is a a good practice, dating back to ...
+Currently, however, most work produced in labs is digital, they are 
+not so practical anymore.
+The alternative is the use of eletronic notebooks, which overcome this 
+shortcoming.
+However, the call for open science has yet to be answered by this format.
+Here, we present a starter kit to the practice of open science based on 
+open source software that still allows for secure storage of information.
+The kit not only allows the application of open science principles, as it 
+facilitates the production of manuscripts, including the figures and 
+supplementary materials.
+#+END_SRC
+*** TODO contact possible co-authors
+    DEADLINE: <2021-01-31 So> SCHEDULED: <2021-01-15 Fr>
     :LOGBOOK:
     CLOCK: [2021-01-14 Do 19:27]--[2021-01-14 Do 19:28] =>  0:01
     :END:
-
 * Resources
+** Responsible Research & Innovation
 https://ourresearch.org/projects
 https://investinopen.org/community/jrost-2020-conference/
 About RRI:
 [[https://fit4rri.eu/][fit4r]]
 [[https://ec.europa.eu/programmes/horizon2020/en/h2020-section/responsible-research-innovation][EU's definition]]
 [[https://en.wikipedia.org/wiki/Responsible_Research_and_Innovation][Wikipedia definition]]
+** Misc
 https://www.youtube.com/watch?v=D9Ihs241zeg
 https://www.youtube.com/watch?v=1DYxqEaj_Jg
+** Wikimedia's Lern Raum
+   :LOGBOOK:
+   CLOCK: [2021-01-29 Fr 17:32]--[2021-01-29 Fr 18:00] =>  0:28
+   CLOCK: [2021-01-29 Fr 11:21]--[2021-01-29 Fr 11:53] =>  0:32
+   CLOCK: [2021-01-29 Fr 10:41]--[2021-01-29 Fr 11:13] =>  0:32
+   CLOCK: [2021-01-29 Fr 10:08]--[2021-01-29 Fr 10:35] =>  0:27
+   :END:
+*** Open Science
+**** DONE Crash course Open Science
+"The Why open science", by Xenia Schmalz
+"Open science is not optional!"
+"Open science is just science done right" (John Tennant's sticker)
+- good science = derived from reproducible and replicable results
+**Replicable**: the text is enough to allow repeating the same methology
+**Reproducible**: IF the work is repeatable and the same methodology can be 
+repeated, the results are similar.
+- Necessary for decision/policy making, consistent empirical evidence for 
+theory building
+- Open science by itself is not good science, it's not a silver bullet.
+- Reasons for the replication crisis:
+  a. low power: sample sizes are too small to detect effects
+  b. publication bias: significant results are published, insignficant not -
+they might be actually more common, outweighing the significant ones
+  c. questionable research practices: massaging the data
+Open Science solutions for it:
+  a. collaboration for bigger samples
+  b. publication of preprints: if journal don't want to publish, 
+the result is nonetheless available
+  c. reprocuble methods and analyses
+**** DONE What makes Open Science relevant to you?
+     :LOGBOOK:
+     CLOCK: [2021-01-29 Fr 14:08]--[2021-01-29 Fr 14:36] =>  0:28
+     :END:
+"Tell us which feature of the Open Science Research Life Cycle is particularly 
+relevant for your research. If you are new to the Open Science community,
+let us know what you want to know more about. 
+Leave your answer in the comment section!"
+Comment:
+As an ecological modeller, the most relevant features of the Open Science
+Research Life Cycle are:
+- Processing: The use of open source software data improves reproducibility 
+and traceability of a study.
+It does so by allowing the use of the software in question to be independent
+of socio-economical background/constraints and potential errors can be readly
+ investigated.
+I personally benefited from such software during my education.
+- Reuse: Computational methods are particularly suited to be reused, thanks to
+tools allowing version control. Albeit increasing, this practice is not as wide
+spread in fields where such methods are "secondary" (e.g. Ecology) as they are in
+Computational science. I use "secondary" here for lack of a better word, because,
+computational analysis and data management are crucial for ecological research.
+My understanding, however, is that the teaching of such methods still 
+happens relatively late in the curriculum, which justifies the slow, albeit
+steady application of best practices to ensure its reuse.
+- Publication and distribution: Works addressing biodiversity loss and its 
+consequences have increasingly been the subject of unfounded denial.
+The availability of open research fosters sound argumentation and improves
+the understanding of the scientific method and the reasoning behind scientists
+claims regarding humanity's responsability in issues such as climate change
+and biodiversity loss.
+One as aspect of Open Science I am particularly curious about is the concept
+of "Knowledge equity", which I did know before entering the program.
+**** IN-PROGRESS [[https://www.youtube.com/watch?v=7GXvLpZ_E_M][Webinar: Principles, Tools & Applications]]
+     :LOGBOOK:
+     - State "IN-PROGRESS" from "TODO"       [2021-01-29 Fr 15:16] \\
+       Stopped at 25:30.
+     CLOCK: [2021-01-29 Fr 14:45]--[2021-01-29 Fr 15:30] =>  0:45
+     :END:
+***** Open Science is actualy rather broad term:
+- **Open research workflow** (focus of this workshop)
+  - Open Access
+  - Registered report
+  - Open code
+  - Open review
+- Citzen Science
+- Open education
+Open science is necessary for [[Crash course Open Science][good science]]
+***** Reproducibility issue
+- Causes
+  - Paywal
+  - Cherry-picking of experiments that worked "replication crisis"
+Baker et al. 2018 !500 scientists lift lid on reproducibility
+  - Click and point softwares: prone to errors
+Statcheck; Nutjen et al. 2017
+***** Replication crisis 
+Particularly strong in psychology. 
+Replication is repeating the same experiments with different samples.
+- Causes:
+  - Publication bias:
+Only significant results are published, either because of journal rejection
+or researchers own relunctancy to publish negative results
+  - Hypothesing After Results are Known (HARKing)
+  - p-hacking (due lack of statistical power):
+/Formal definition/: The **probability of finding** a significant effect, under
+the assumption that the **effect exists**.
+Required parameters (see [[:
+- Sample size
+- Effect site
+- Significance level
+The statistical power is similar to the power of a magnifying glass, the smaller
+the effect, the higher the power has to be (and that depends on sample size, 
+effect size, and significance level).
 * Literature
   :PROPERTIES:
   :ORDERED:  t
   :END:
   :LOGBOOK:
+  CLOCK: [2021-01-29 Fr 19:25]--[2021-01-29 Fr 20:56] =>  1:31
   CLOCK: [2021-01-26 Di 09:45]--[2021-01-26 Di 11:20] =>  1:35
   CLOCK: [2021-01-26 Di 09:10]--[2021-01-26 Di 09:36] =>  0:26
   CLOCK: [2021-01-26 Di 08:29]--[2021-01-26 Di 09:05] =>  0:36
@@ -133,4 +256,12 @@ https://www.youtube.com/watch?v=1DYxqEaj_Jg
   CLOCK: [2021-01-14 Do 21:00]--[2021-01-14 Do 21:30] =>  0:30
   :END:
 ** [[file:~/Documents/my_library/paper_library/notes.org::*Chattopadhay et al. 2020 CHI][Chattopadhay et al. 2020 CHI]]
-** [[file:~/Documents/my_library/paper_library/notes.org::*
+** [[file:~/Documents/my_library/paper_library/notes.org::*Ayllon et al. 2020 Env. Mod.][Ayllon et al. 2020 Env. Mod.]]
+** [[file:~/Documents/my_library/paper_library/notes.org::*Lee 2003 Drug. Inf.][Lee 2003 Drug. Inf.]]
+** [[file:~/Documents/my_library/paper_library/notes.org::*Kanare195_WritingLaboratoryNotebook.pdf][Kanare 1985 Writing Lab Notebook's book]]
+** [[file:~/Documents/my_library/paper_library/notes.org::*Nickla&Boehm2011JNeuroPharma_ProperLaboratoryNotebookPractices.pdf][Nickla & Boehm 2011 J. Neuro. Pharma.]]
+** [[file:~/Documents/my_library/paper_library/notes.org::*Boorregaard & Hart 2016 Ecography][Boorregaard & Hart 2016 Ecography]]
+** [[file:~/Documents/my_library/paper_library/notes.org::*Cassey & Blackburn 2003 TREE][Cassey & Blackburn 2003 TREE]]
+** [[file:file:~/Documents/my_library/paper_library/notes.org::*Rule et al. 2019 Plos][Rule et al. 2019 Plos]]
+** [[file:~/Documents/my_library/paper_library/notes.org::*Powers & Hampton 2019 Ecol. Appl.][Powers & Hampton 2019 Ecol. Appl.]]
+
