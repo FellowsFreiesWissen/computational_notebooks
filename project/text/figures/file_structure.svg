@@ -339,14 +339,14 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="110.30866"
-     inkscape:cy="685.50584"
+     inkscape:cx="154.33536"
+     inkscape:cy="645.50584"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1879"
      inkscape:window-height="1145"
-     inkscape:window-x="41"
+     inkscape:window-x="1961"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
      showguides="true"
@@ -388,15 +388,20 @@
          x="123.3877"
          y="38.544815"
          style="stroke-width:0.26458332"
-         id="tspan4881">*: any type of file, .md for optimal use on github</tspan><tspan
+         id="tspan4881">*: any type of text file, .md for optimal use</tspan><tspan
          sodipodi:role="line"
          x="123.3877"
          y="42.954536"
          style="stroke-width:0.26458332"
-         id="tspan9713">If the final submission final is a .doc/docx, RMarkdown</tspan><tspan
+         id="tspan5015">on github</tspan><tspan
          sodipodi:role="line"
          x="123.3877"
          y="47.364258"
+         style="stroke-width:0.26458332"
+         id="tspan9713">d/t*: If the final submission final is a .doc/docx, RMarkdown</tspan><tspan
+         sodipodi:role="line"
+         x="123.3877"
+         y="51.773983"
          style="stroke-width:0.26458332"
          id="tspan9715">capacity is limited</tspan></text>
     <g
@@ -1183,26 +1188,26 @@
              inkscape:label="Clip"
              id="g4800-1-2-4">
             <rect
-               inkscape:transform-center-y="-4.4141366"
-               inkscape:transform-center-x="-1.3304443"
-               ry="0.80376089"
-               y="25.386711"
-               x="16.336349"
-               height="7.5261254"
-               width="19.47687"
+               inkscape:transform-center-y="-4.4042027"
+               inkscape:transform-center-x="-1.5100196"
+               ry="0.80195183"
+               y="25.39518"
+               x="16.344818"
+               height="7.5091863"
+               width="22.105762"
                id="rect4749-2-6-5"
-               style="opacity:1;fill:#ffcb00;fill-opacity:1;stroke:#ffcb00;stroke-width:0.26404312;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+               style="opacity:1;fill:#ffcb00;fill-opacity:1;stroke:#ffcb00;stroke-width:0.28098217;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
             <text
                id="text4753-0-0-1"
                y="30.073921"
-               x="22.162878"
+               x="17.856508"
                style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
                xml:space="preserve"><tspan
                  id="tspan4755-7-6-0"
                  style="stroke-width:0.26458332"
                  y="30.073921"
-                 x="22.162878"
-                 sodipodi:role="line">data</tspan></text>
+                 x="17.856508"
+                 sodipodi:role="line">clean_data</tspan></text>
           </g>
         </g>
       </g>
