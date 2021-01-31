@@ -1,26 +1,77 @@
 #+TITLE: Computational notebooks - Freies Wissen Fellowship
+#+AUTHOR: Ludmilla Figueiredo
+#+EMAIL: ludmillafi@gmail.com
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+OPTIONS: tasks:nil
+#+OPTIONS: <:nil
+
 #+BEGIN: clocktable :scope file :maxlevel 2 :link t :tstart "2021-01-13"
-#+CAPTION: Clock summary at [2021-01-29 Fr 09:07]
+#+CAPTION: Clock summary at [2021-01-31 So 19:00]
 | Headline                                   |    Time |      |
 |--------------------------------------------+---------+------|
-| *Total time*                               | *17:16* |      |
+| *Total time*                               | *31:27* |      |
 |--------------------------------------------+---------+------|
-| [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Project][Project]]                                    |   10:47 |      |
-| \_  [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Format][Format]]                                 |         | 6:36 |
+| [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Project][Project]]                                    |   18:31 |      |
+| \_  [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Contents][Contents]]                               |         | 3:26 |
+| \_  [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Format][Format]]                                 |         | 8:02 |
 | \_  [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::File structure to be implemented by the user][File structure to be implemented by...]] |         | 4:10 |
-| \_  [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Manuscript][Manuscript]]                             |         | 0:01 |
-| [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Literature][Literature]]                                 |    6:29 |      |
+| \_  [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Manuscript][Manuscript]]                             |         | 2:53 |
+| [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Resources][Resources]]                                  |    3:12 |      |
+| \_  [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Wikimedia's Lern Raum][Wikimedia's Lern Raum]]                  |         | 3:12 |
+| [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Literature][Literature]]                                 |    9:44 |      |
+| \_  [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::[[file:~/Documents/my_library/paper_library/library.org::*Boorregaard & Hart 2016 Ecography\][Boorregaard & Hart 2016 Ecography]\]][Boorregaard & Hart 2016 Ecography]]      |         | 0:16 |
 #+END:
 * Meetings
-** <2020-12-18 Fr>
-*** TODO schedule Jo in CCTB seminar
+** December update
+<2020-12-18 Fr>
 *** Responsible research and innovation                                 :RRI:
 This is a conversation that must be had more often.
 Open science as a form to push for social justice.
 Open science does not needs to be publically available, it just need to be
 reproducible and traceable.
 * Project
+** TODO update Project Book
+   DEADLINE: <2021-03-03 Mi +1m>
+   :PROPERTIES:
+   :LAST_REPEAT: [2021-01-31 So 22:06]
+   :END:
+   :LOGBOOK:
+   - State "DONE"       from "TODO"       [2021-01-31 So 22:06] \\
+     January 2021: Over the last month, I have re-assessed the use of Jupyter
+     notebooks, due to some technical issues regarding the reproducibility of
+     such notebooks (Pimentel et al. 2019, Wang et al. 2020). They will still
+     be included on the starter-kit, but with a discussion of such issues, 
+     workarounds, and alternatives, such as the Pluto package for Julia language. 
+     For R code, the best alternative is an RNotebook, for which previous work has
+     been done to generate a reproducible workflow, notable in the form of the 
+     template package, the drake package, and the Reproducible Research Project
+     Initialization. All these projects overlap with my concept of what a notebook 
+     should do. My main job is therefore, to combine these tools in a kit that 
+     facilitates their use by scientists (biologists and ecologists in particular)
+      with limited experience (and time to learn) such computational methods.
+          
+     In parallel, I have also progressed on Wikimedia's online courses on Open 
+     Science, to complete my understanding of Open Science.
+   :END:
+** Contents
+   :LOGBOOK:
+   CLOCK: [2021-01-31 So 13:14]--[2021-01-31 So 16:14] =>  3:00
+   CLOCK: [2021-01-31 So 10:08]--[2021-01-31 So 10:34] =>  0:26
+   :END:
+- [X] Focus languages: R, Python, Julia
+Jupyter notebooks will probably cover the rest
+- [X] Project structure
+Check [[Project structure setup ][possible format]]
+*** TODO quick poll search at Uni würzburg and IZW?
+    SCHEDULED: <2021-01-31 So>
+Ask Biologists/ecologists about their use of computational tools, version control
+**** check if there is no recent publication on it
+     SCHEDULED: <2021-01-31 So>
 ** Format
+   :LOGBOOK:
+   CLOCK: [2021-01-31 So 18:22]--[2021-01-31 So 19:19] =>  0:57
+   CLOCK: [2021-01-31 So 09:07]--[2021-01-31 So 10:06] =>  0:59
+   :END:
 *** Pluto notebooks in Julia
     :LOGBOOK:
     CLOCK: [2021-01-22 Fr 15:12]--[2021-01-22 Fr 16:00] =>  0:48
@@ -48,7 +99,21 @@ reproducible and traceable.
       Learning notes in [[file:/home/ludmilla/Documents/my_library/computational_science/notes.org::*Jupyter notebooks][comp.scie notebook]]
     CLOCK: [2021-01-26 Di 11:21]--[2021-01-26 Di 11:50] =>  0:29
     :END:
-Beware of the [[Notebooks in Julia][reactivity issue]].
+Beware of the [[Pluto notebooks in Julia][reactivity issue]].
+**** Reproducibility
+     :LOGBOOK:
+     CLOCK: [2021-01-31 So 16:25]--[2021-01-31 So 16:52] =>  0:27
+     :END:
+- Julia: with ~PkgUtils; manifest!~ and ~InstantiateFromURL~ package
+*** RNotebook vs. Jupyter vs. Pluto
+| Tool      | Easy VC | Language | Functionality  | Version control | Reproducibility |
+|-----------+---------+----------+----------------+-----------------+-----------------|
+| RNotebook | Yes     | R        | Yes - built in | Yes             | Yes             |
+| ''        |         | Python   |                |                 | Yes             |
+| Jupyter   | No      | Julia    | Yes - built in | No              | [[Jupyter notebook][Yes]]             |
+| ''        | No      | Python   | Yes - built in | No              |                 |
+| ''        | No      | R        | Yes - built in | No              |                 |
+| Pluto     | Yes     | Julia    | Yes - built in | Yes             | Yes             |
 ** DONE File structure to be implemented by the user
    :LOGBOOK:
    - State "DONE"       from "TODO"       [2021-01-13 Mi 21:07]
@@ -60,7 +125,7 @@ projet
 |-- results
 |   |-- README.md
 |   |-- raw_data
-|   |-- data
+|   |-- clean_data
 |   |-- scripts
 |   |-- semi_products
 |-- text
@@ -78,6 +143,9 @@ projet
 #+END_SRC
 *** DONE illustration folder structure
     :LOGBOOK:
+    - State "DONE"       from "IN-PROGRESS" [2021-01-31 So 18:44]
+    - State "IN-PROGRESS" from "DONE"       [2021-01-31 So 18:39] \\
+      [[add ~clean_data~][Update name of cleaned data folder]].
     - State "DONE"       from "IN-PROGRESS" [2021-01-13 Mi 21:46] \\
       Fixed missing files and spacing.
     CLOCK: [2021-01-13 Mi 20:50]--[2021-01-13 Mi 21:45] =>  0:55
@@ -98,6 +166,25 @@ projet
      :END:
 In particular, show how ~main.Rmd~ produces/calls the others
     DEADLINE: <2021-01-13 Mi>
+*** Project structure setup 
+**** DONE include a setup?
+    SCHEDULED: <2021-01-31 So>
+    :LOGBOOK:
+    - State "DONE"       from "TODO"       [2021-01-31 So 19:16] \\
+      At best, a literal file structure, similar to the what the 'Reproducible 
+      research project initialzation' does.
+    :END:
+Available for R in the form as the template R package, but would 
+need to check for Python and Julia, and how it performs across OSs.
+*** DONE add ~clean_data~
+    :LOGBOOK:
+    - State "DONE"       from "TODO"       [2021-01-31 So 18:38] \\
+      Changed folder ~data~ into ~clean_data~.
+    :END:
+Inspired by Reproducible Research Project Initilization
+This folder/file contains the cleaned-up version of the raw_data and should
+ not be changed for practicality (optimally, a script would allow
+ rebuilding it in case of corruption).
 ** Manuscript
 *** IN-PROGRESS [[file:project/text/abstract.tex][abstract]]
     DEADLINE: <2021-01-28 Do> SCHEDULED: <2021-01-14 Do>
@@ -118,8 +205,12 @@ not so practical anymore.
 The alternative is the use of eletronic notebooks, which overcome this 
 shortcoming.
 However, the call for open science has yet to be answered by this format.
-Here, we present a starter kit to the practice of open science based on 
+Here, we present a starter kit to facilitate* the practice of open science based on 
 open source software that still allows for secure storage of information.
+Although common practice in fields sucha as mathematics and physics (REF),
+its application in ecology is still lacking (REF). Therefore, the objective 
+os this starter kit is to provide the essential tools for it. We also provide
+a discussion on more hard-core practices that can be implemented later.
 The kit not only allows the application of open science principles, as it 
 facilitates the production of manuscripts, including the figures and 
 supplementary materials.
@@ -142,111 +233,23 @@ https://www.youtube.com/watch?v=D9Ihs241zeg
 https://www.youtube.com/watch?v=1DYxqEaj_Jg
 ** Wikimedia's Lern Raum
    :LOGBOOK:
-   CLOCK: [2021-01-29 Fr 17:32]--[2021-01-29 Fr 18:00] =>  0:28
+   - Note taken on [2021-01-31 So 18:58] \\
+     See [[~/Documents/my_library/computational_ecology/wikimedia_lernraum.org][notes]]
+   CLOCK: [2021-01-29 Fr 17:32]--[2021-01-29 Fr 18:16] =>  0:43
+   CLOCK: [2021-01-29 Fr 14:45]--[2021-01-29 Fr 15:30] =>  0:45
+   CLOCK: [2021-01-29 Fr 14:08]--[2021-01-29 Fr 14:36] =>  0:28
    CLOCK: [2021-01-29 Fr 11:21]--[2021-01-29 Fr 11:53] =>  0:32
    CLOCK: [2021-01-29 Fr 10:41]--[2021-01-29 Fr 11:13] =>  0:32
    CLOCK: [2021-01-29 Fr 10:08]--[2021-01-29 Fr 10:35] =>  0:27
    :END:
-*** Open Science
-**** DONE Crash course Open Science
-"The Why open science", by Xenia Schmalz
-"Open science is not optional!"
-"Open science is just science done right" (John Tennant's sticker)
-- good science = derived from reproducible and replicable results
-**Replicable**: the text is enough to allow repeating the same methology
-**Reproducible**: IF the work is repeatable and the same methodology can be 
-repeated, the results are similar.
-- Necessary for decision/policy making, consistent empirical evidence for 
-theory building
-- Open science by itself is not good science, it's not a silver bullet.
-- Reasons for the replication crisis:
-  a. low power: sample sizes are too small to detect effects
-  b. publication bias: significant results are published, insignficant not -
-they might be actually more common, outweighing the significant ones
-  c. questionable research practices: massaging the data
-Open Science solutions for it:
-  a. collaboration for bigger samples
-  b. publication of preprints: if journal don't want to publish, 
-the result is nonetheless available
-  c. reprocuble methods and analyses
-**** DONE What makes Open Science relevant to you?
-     :LOGBOOK:
-     CLOCK: [2021-01-29 Fr 14:08]--[2021-01-29 Fr 14:36] =>  0:28
-     :END:
-"Tell us which feature of the Open Science Research Life Cycle is particularly 
-relevant for your research. If you are new to the Open Science community,
-let us know what you want to know more about. 
-Leave your answer in the comment section!"
-Comment:
-As an ecological modeller, the most relevant features of the Open Science
-Research Life Cycle are:
-- Processing: The use of open source software data improves reproducibility 
-and traceability of a study.
-It does so by allowing the use of the software in question to be independent
-of socio-economical background/constraints and potential errors can be readly
- investigated.
-I personally benefited from such software during my education.
-- Reuse: Computational methods are particularly suited to be reused, thanks to
-tools allowing version control. Albeit increasing, this practice is not as wide
-spread in fields where such methods are "secondary" (e.g. Ecology) as they are in
-Computational science. I use "secondary" here for lack of a better word, because,
-computational analysis and data management are crucial for ecological research.
-My understanding, however, is that the teaching of such methods still 
-happens relatively late in the curriculum, which justifies the slow, albeit
-steady application of best practices to ensure its reuse.
-- Publication and distribution: Works addressing biodiversity loss and its 
-consequences have increasingly been the subject of unfounded denial.
-The availability of open research fosters sound argumentation and improves
-the understanding of the scientific method and the reasoning behind scientists
-claims regarding humanity's responsability in issues such as climate change
-and biodiversity loss.
-One as aspect of Open Science I am particularly curious about is the concept
-of "Knowledge equity", which I did know before entering the program.
-**** IN-PROGRESS [[https://www.youtube.com/watch?v=7GXvLpZ_E_M][Webinar: Principles, Tools & Applications]]
-     :LOGBOOK:
-     - State "IN-PROGRESS" from "TODO"       [2021-01-29 Fr 15:16] \\
-       Stopped at 25:30.
-     CLOCK: [2021-01-29 Fr 14:45]--[2021-01-29 Fr 15:30] =>  0:45
-     :END:
-***** Open Science is actualy rather broad term:
-- **Open research workflow** (focus of this workshop)
-  - Open Access
-  - Registered report
-  - Open code
-  - Open review
-- Citzen Science
-- Open education
-Open science is necessary for [[Crash course Open Science][good science]]
-***** Reproducibility issue
-- Causes
-  - Paywal
-  - Cherry-picking of experiments that worked "replication crisis"
-Baker et al. 2018 !500 scientists lift lid on reproducibility
-  - Click and point softwares: prone to errors
-Statcheck; Nutjen et al. 2017
-***** Replication crisis 
-Particularly strong in psychology. 
-Replication is repeating the same experiments with different samples.
-- Causes:
-  - Publication bias:
-Only significant results are published, either because of journal rejection
-or researchers own relunctancy to publish negative results
-  - Hypothesing After Results are Known (HARKing)
-  - p-hacking (due lack of statistical power):
-/Formal definition/: The **probability of finding** a significant effect, under
-the assumption that the **effect exists**.
-Required parameters (see [[:
-- Sample size
-- Effect site
-- Significance level
-The statistical power is similar to the power of a magnifying glass, the smaller
-the effect, the higher the power has to be (and that depends on sample size, 
-effect size, and significance level).
 * Literature
   :PROPERTIES:
   :ORDERED:  t
   :END:
   :LOGBOOK:
+  CLOCK: [2021-01-31 So 17:40]--[2021-01-31 So 18:03] =>  0:23
+  CLOCK: [2021-01-31 So 17:00]--[2021-01-31 So 17:29] =>  0:29
+  CLOCK: [2021-01-31 So 08:23]--[2021-01-31 So 08:59] =>  0:36
   CLOCK: [2021-01-29 Fr 19:25]--[2021-01-29 Fr 20:56] =>  1:31
   CLOCK: [2021-01-26 Di 09:45]--[2021-01-26 Di 11:20] =>  1:35
   CLOCK: [2021-01-26 Di 09:10]--[2021-01-26 Di 09:36] =>  0:26
@@ -255,13 +258,22 @@ effect size, and significance level).
   CLOCK: [2021-01-22 Fr 17:07]--[2021-01-22 Fr 18:30] =>  1:23
   CLOCK: [2021-01-14 Do 21:00]--[2021-01-14 Do 21:30] =>  0:30
   :END:
-** [[file:~/Documents/my_library/paper_library/notes.org::*Chattopadhay et al. 2020 CHI][Chattopadhay et al. 2020 CHI]]
-** [[file:~/Documents/my_library/paper_library/notes.org::*Ayllon et al. 2020 Env. Mod.][Ayllon et al. 2020 Env. Mod.]]
-** [[file:~/Documents/my_library/paper_library/notes.org::*Lee 2003 Drug. Inf.][Lee 2003 Drug. Inf.]]
-** [[file:~/Documents/my_library/paper_library/notes.org::*Kanare195_WritingLaboratoryNotebook.pdf][Kanare 1985 Writing Lab Notebook's book]]
-** [[file:~/Documents/my_library/paper_library/notes.org::*Nickla&Boehm2011JNeuroPharma_ProperLaboratoryNotebookPractices.pdf][Nickla & Boehm 2011 J. Neuro. Pharma.]]
-** [[file:~/Documents/my_library/paper_library/notes.org::*Boorregaard & Hart 2016 Ecography][Boorregaard & Hart 2016 Ecography]]
-** [[file:~/Documents/my_library/paper_library/notes.org::*Cassey & Blackburn 2003 TREE][Cassey & Blackburn 2003 TREE]]
-** [[file:file:~/Documents/my_library/paper_library/notes.org::*Rule et al. 2019 Plos][Rule et al. 2019 Plos]]
-** [[file:~/Documents/my_library/paper_library/notes.org::*Powers & Hampton 2019 Ecol. Appl.][Powers & Hampton 2019 Ecol. Appl.]]
-
+** [[file:~/Documents/my_library/paper_library/library.org::*Chattopadhay et al. 2020 CHI][Chattopadhay et al. 2020 CHI]]
+** [[file:~/Documents/my_library/paper_library/notes.org::*Ayllon et al. 2020 Env. Mod.][Ayllon et al. 2020 Env. M]]
+** [[file:~/Documents/my_library/paper_library/library.org::*Lee 2003 Drug. Inf.][Lee 2003 Drug. Inf.]]
+** [[file:~/Documents/my_library/paper_library/library.org::*Kanare195_WritingLaboratoryNotebook.pdf][Kanare 1985 Writing Lab Notebook's book]]
+** [[file:~/Documents/my_library/paper_library/library.org::*Nickla&Boehm2011JNeuroPharma_ProperLaboratoryNotebookPractices.pdf][Nickla & Boehm 2011 J. Neuro. Pharma.]]
+** [[file:~/Documents/my_library/paper_library/library.org::*Boorregaard & Hart 2016 Ecography][Boorregaard & Hart 2016 Ecography]]
+** [[file:~/Documents/my_library/paper_library/library.org::*Cassey & Blackburn 2003 TREE][Cassey & Blackburn 2003 TREE]]
+** [[file:file:~/Documents/my_library/paper_library/library.org::*Rule et al. 2019 Plos][Rule et al. 2019 Plos]]
+** [[file:~/Documents/my_library/paper_library/library.org::*Powers & Hampton 2019 Ecol. Appl.][Powers & Hampton 2019 Ecol. Appl.]]
+** [[file:~/Documents/my_library/paper_library/library.org::*Noble 2009 PLOS Comp. Biol.][Noble 2009 PLOS Comp. Biol.]]
+** [[https://github.com/Reproducible-Science-Curriculum/rr-init][Reproducible Research Project Initilization]]
+Based on Noble 2009.
+The file structure is very similar to [[File structure to be implemented by the user][my original formulation]].
+The project structure is general, even if ~.Rmarkdown~ is used as an example.
+** [[file:~/Documents/my_library/paper_library/library.org::*Pimentel et al. 2019][Pimentel et al. 2019]]
+** [[file:~/Documents/my_library/paper_library/library.org::*Wang et al. 2020][Wang et al. 2020]]
+** [[https://github.com/Pakillo/template][template R package]]
+** [[https://github.com/ropensci/drake][drake R package]]
+** 
