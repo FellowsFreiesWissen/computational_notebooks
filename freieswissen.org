@@ -6,20 +6,20 @@
 #+OPTIONS: <:nil
 
 #+BEGIN: clocktable :scope file :maxlevel 2 :link t :tstart "2021-01-13"
-#+CAPTION: Clock summary at [2021-01-31 So 19:00]
+#+CAPTION: Clock summary at [2021-01-31 So 22:14]
 | Headline                                   |    Time |      |
 |--------------------------------------------+---------+------|
-| *Total time*                               | *31:27* |      |
+| *Total time*                               | *33:22* |      |
 |--------------------------------------------+---------+------|
-| [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Project][Project]]                                    |   18:31 |      |
+| [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Project][Project]]                                    |   20:26 |      |
+| \_  [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::update Project Book][update Project Book]]                    |         | 0:58 |
 | \_  [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Contents][Contents]]                               |         | 3:26 |
-| \_  [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Format][Format]]                                 |         | 8:02 |
+| \_  [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Format][Format]]                                 |         | 8:59 |
 | \_  [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::File structure to be implemented by the user][File structure to be implemented by...]] |         | 4:10 |
 | \_  [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Manuscript][Manuscript]]                             |         | 2:53 |
-| [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Resources][Resources]]                                  |    3:12 |      |
-| \_  [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Wikimedia's Lern Raum][Wikimedia's Lern Raum]]                  |         | 3:12 |
-| [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Literature][Literature]]                                 |    9:44 |      |
-| \_  [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::[[file:~/Documents/my_library/paper_library/library.org::*Boorregaard & Hart 2016 Ecography\][Boorregaard & Hart 2016 Ecography]\]][Boorregaard & Hart 2016 Ecography]]      |         | 0:16 |
+| [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Resources][Resources]]                                  |    3:28 |      |
+| \_  [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Wikimedia's Lern Raum][Wikimedia's Lern Raum]]                  |         | 3:28 |
+| [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Literature][Literature]]                                 |    9:28 |      |
 #+END:
 * Meetings
 ** December update
@@ -36,6 +36,7 @@ reproducible and traceable.
    :LAST_REPEAT: [2021-01-31 So 22:06]
    :END:
    :LOGBOOK:
+   CLOCK: [2021-01-31 So 21:14]--[2021-01-31 So 22:12] =>  0:58
    - State "DONE"       from "TODO"       [2021-01-31 So 22:06] \\
      January 2021: Over the last month, I have re-assessed the use of Jupyter
      notebooks, due to some technical issues regarding the reproducibility of
