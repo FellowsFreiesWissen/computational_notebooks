@@ -61,15 +61,97 @@ reproducible and traceable.
    :END:
 - [X] Focus languages: R, Python, Julia
 Jupyter notebooks will probably cover the rest
-- [X] Project structure
+*** Project structure
 Check [[Project structure setup ][possible format]]
-*** TODO quick poll search at Uni würzburg and IZW?
+**** DONE File structure to be implemented by the user
+   :LOGBOOK:
+   - State "DONE"       from "TODO"       [2021-01-13 Mi 21:07]
+   :END:
+#+BEGIN_SRC sh
+projet
+|-- README.md
+|-- main.Rmd
+|-- results
+|   |-- README.md
+|   |-- raw_data
+|   |-- clean_data
+|   |-- scripts
+|   |-- semi_products
+|-- text
+|   |-- README.md
+|   |-- main.doc
+|   |-- figures
+|   |-- tables
+|   |-- supplementary
+|-- submission
+|   |-- journal1
+|       |-- first
+|   |-- journal2
+|       |-- first
+|       |-- revisions
+#+END_SRC
+**** DONE illustration folder structure
+    :LOGBOOK:
+    - State "DONE"       from "IN-PROGRESS" [2021-01-31 So 18:44]
+    - State "IN-PROGRESS" from "DONE"       [2021-01-31 So 18:39] \\
+      [[add ~clean_data~][Update name of cleaned data folder]].
+    - State "DONE"       from "IN-PROGRESS" [2021-01-13 Mi 21:46] \\
+      Fixed missing files and spacing.
+    CLOCK: [2021-01-13 Mi 20:50]--[2021-01-13 Mi 21:45] =>  0:55
+    - State "IN-PROGRESS" from "DONE"       [2021-01-13 Mi 21:07] \\
+      Missing folders and files.
+    CLOCK: [2021-01-13 Mi 13:54]--[2021-01-13 Mi 14:36] =>  0:42
+    CLOCK: [2021-01-13 Mi 11:25]--[2021-01-13 Mi 12:09] =>  0:44
+    CLOCK: [2021-01-13 Mi 10:30]--[2021-01-13 Mi 11:13] =>  0:43
+    :END:
+**** DONE relation between folders and files
+     :LOGBOOK:
+     - State "DONE"       from "IN-PROGRESS" [2021-01-13 Mi 21:07]
+     CLOCK: [2021-01-13 Mi 20:50]--[2021-01-13 Mi 21:07] =>  0:17
+     CLOCK: [2021-01-13 Mi 19:57]--[2021-01-13 Mi 20:19] =>  0:22
+     - State "IN-PROGRESS" from "TODO"       [2021-01-13 Mi 14:57]
+     CLOCK: [2021-01-13 Mi 19:45]--[2021-01-13 Mi 19:53] =>  0:08
+     CLOCK: [2021-01-13 Mi 14:35]--[2021-01-13 Mi 14:54] =>  0:19
+     :END:
+In particular, show how ~main.Rmd~ produces/calls the others
+    DEADLINE: <2021-01-13 Mi>
+***** DONE add ~clean_data~
+    :LOGBOOK:
+    - State "DONE"       from "TODO"       [2021-01-31 So 18:38] \\
+      Changed folder ~data~ into ~clean_data~.
+    :END:
+Inspired by Reproducible Research Project Initilization
+This folder/file contains the cleaned-up version of the raw_data and should
+ not be changed for practicality (optimally, a script would allow
+ rebuilding it in case of corruption).
+**** +Project structure setup+ 
+***** DONE include a setup
     SCHEDULED: <2021-01-31 So>
+    :LOGBOOK:
+    - State "DONE"       from "TODO"       [2021-01-31 So 19:16] \\
+      At best, a literal file structure, similar to the what the 'Reproducible 
+      research project initialzation' does.
+    :END:
+Available for R in the form as the template R package, but would 
+need to check for Python and Julia, and how it performs across OSs.
+*** Work flow
+    :LOGBOOK:
+    - Note taken on [2021-02-05 Fr 09:14] \\
+      See [[file:appendix_labnotebook/fw_labnotes_sketchworkflow.pdf][sketch]].
+    :END:
+*** CANCELLED quick poll search at Uni würzburg and IZW?
+    SCHEDULED: <2021-01-31 So>
+    :LOGBOOK:
+    - State "CANCELLED"  from "TODO"       [2021-02-05 Fr 09:13] \\
+      No need, because there is enough literature on it, and processing would be
+      rather cumbersome.
+    :END:
 Ask Biologists/ecologists about their use of computational tools, version control
 **** check if there is no recent publication on it
      SCHEDULED: <2021-01-31 So>
 ** Format
    :LOGBOOK:
+   CLOCK: [2021-02-04 Do 19:40]--[2021-02-04 Do 20:18] =>  0:38
    CLOCK: [2021-01-31 So 18:22]--[2021-01-31 So 19:19] =>  0:57
    CLOCK: [2021-01-31 So 09:07]--[2021-01-31 So 10:06] =>  0:59
    :END:
@@ -115,82 +197,17 @@ Beware of the [[Pluto notebooks in Julia][reactivity issue]].
 | ''        | No      | Python   | Yes - built in | No              |                 |
 | ''        | No      | R        | Yes - built in | No              |                 |
 | Pluto     | Yes     | Julia    | Yes - built in | Yes             | Yes             |
-** DONE File structure to be implemented by the user
-   :LOGBOOK:
-   - State "DONE"       from "TODO"       [2021-01-13 Mi 21:07]
-   :END:
-#+BEGIN_SRC sh
-projet
-|-- README.md
-|-- main.Rmd
-|-- results
-|   |-- README.md
-|   |-- raw_data
-|   |-- clean_data
-|   |-- scripts
-|   |-- semi_products
-|-- text
-|   |-- README.md
-|   |-- main.doc
-|   |-- figures
-|   |-- tables
-|   |-- supplementary
-|-- submission
-|   |-- journal1
-|       |-- first
-|   |-- journal2
-|       |-- first
-|       |-- revisions
-#+END_SRC
-*** DONE illustration folder structure
-    :LOGBOOK:
-    - State "DONE"       from "IN-PROGRESS" [2021-01-31 So 18:44]
-    - State "IN-PROGRESS" from "DONE"       [2021-01-31 So 18:39] \\
-      [[add ~clean_data~][Update name of cleaned data folder]].
-    - State "DONE"       from "IN-PROGRESS" [2021-01-13 Mi 21:46] \\
-      Fixed missing files and spacing.
-    CLOCK: [2021-01-13 Mi 20:50]--[2021-01-13 Mi 21:45] =>  0:55
-    - State "IN-PROGRESS" from "DONE"       [2021-01-13 Mi 21:07] \\
-      Missing folders and files.
-    CLOCK: [2021-01-13 Mi 13:54]--[2021-01-13 Mi 14:36] =>  0:42
-    CLOCK: [2021-01-13 Mi 11:25]--[2021-01-13 Mi 12:09] =>  0:44
-    CLOCK: [2021-01-13 Mi 10:30]--[2021-01-13 Mi 11:13] =>  0:43
-    :END:
-*** DONE relation between folders and files
-     :LOGBOOK:
-     - State "DONE"       from "IN-PROGRESS" [2021-01-13 Mi 21:07]
-     CLOCK: [2021-01-13 Mi 20:50]--[2021-01-13 Mi 21:07] =>  0:17
-     CLOCK: [2021-01-13 Mi 19:57]--[2021-01-13 Mi 20:19] =>  0:22
-     - State "IN-PROGRESS" from "TODO"       [2021-01-13 Mi 14:57]
-     CLOCK: [2021-01-13 Mi 19:45]--[2021-01-13 Mi 19:53] =>  0:08
-     CLOCK: [2021-01-13 Mi 14:35]--[2021-01-13 Mi 14:54] =>  0:19
-     :END:
-In particular, show how ~main.Rmd~ produces/calls the others
-    DEADLINE: <2021-01-13 Mi>
-*** Project structure setup 
-**** DONE include a setup?
-    SCHEDULED: <2021-01-31 So>
-    :LOGBOOK:
-    - State "DONE"       from "TODO"       [2021-01-31 So 19:16] \\
-      At best, a literal file structure, similar to the what the 'Reproducible 
-      research project initialzation' does.
-    :END:
-Available for R in the form as the template R package, but would 
-need to check for Python and Julia, and how it performs across OSs.
-*** DONE add ~clean_data~
-    :LOGBOOK:
-    - State "DONE"       from "TODO"       [2021-01-31 So 18:38] \\
-      Changed folder ~data~ into ~clean_data~.
-    :END:
-Inspired by Reproducible Research Project Initilization
-This folder/file contains the cleaned-up version of the raw_data and should
- not be changed for practicality (optimally, a script would allow
- rebuilding it in case of corruption).
 ** Manuscript
-*** IN-PROGRESS [[file:project/text/abstract.tex][abstract]]
+*** DONE [[file:project/text/abstract.tex][abstract]]
     DEADLINE: <2021-01-28 Do> SCHEDULED: <2021-01-14 Do>
     :LOGBOOK:
-    CLOCK: [2021-01-29 Fr 18:07]--[2021-01-29 Fr 19:44] =>  1:37
+    - State "DONE"       from "IN-PROGRESS" [2021-02-04 Do 21:35]
+    - State "IN-PROGRESS" from "DONE"       [2021-02-04 Do 21:10]
+    CLOCK: [2021-02-04 Do 21:08]--[2021-02-04 Do 21:35] =>  0:27
+    - State "DONE"       from "IN-PROGRESS" [2021-02-04 Do 19:34]
+    CLOCK: [2021-02-04 Do 19:07]--[2021-02-04 Do 19:34] =>  0:27
+    CLOCK: [2021-02-04 Do 18:19]--[2021-02-04 Do 18:51] =>  0:32
+    CLOCK: [2021-01-29 Fr 18:07]--[2021-01-29 Fr 23:04] =>  4:57
     CLOCK: [2021-01-29 Fr 09:32]--[2021-01-29 Fr 09:57] =>  0:25
     CLOCK: [2021-01-29 Fr 08:35]--[2021-01-29 Fr 09:25] =>  0:50
     - State "IN-PROGRESS" from "TODO"       [2021-01-26 Di 17:58] \\
@@ -200,25 +217,34 @@ This folder/file contains the cleaned-up version of the raw_data and should
 #+TITLE: Computational notebooks to facilitate writing and improve 
 reproducibility of ecological research
 
-The use of lab notebooks is a a good practice, dating back to ...
-Currently, however, most work produced in labs is digital, they are 
-not so practical anymore.
-The alternative is the use of eletronic notebooks, which overcome this 
-shortcoming.
-However, the call for open science has yet to be answered by this format.
-Here, we present a starter kit to facilitate* the practice of open science based on 
-open source software that still allows for secure storage of information.
-Although common practice in fields sucha as mathematics and physics (REF),
-its application in ecology is still lacking (REF). Therefore, the objective 
-os this starter kit is to provide the essential tools for it. We also provide
-a discussion on more hard-core practices that can be implemented later.
-The kit not only allows the application of open science principles, as it 
-facilitates the production of manuscripts, including the figures and 
-supplementary materials.
+The increasing use of computational work for data generation, storage, and 
+processing, has made the storage of digital 
+documentation crucial to ensure quality of research.
+We show that, for a single project, the content of these documentation files 
+actually overlaps with that of classical lab notebooks and that of the 
+scientific manuscript reporting the project.
+Therefore, to minimize the amount of work required to manage all the files
+ related to these contents and optimize their production, we present a starter
+ kit to facilitate the use of computational notebooks in the research process, 
+including its publication.
+The starter kit contains the template of a computational notebook integrated into a 
+simplified fictional research workflow. ## package?
+Although intended at beginners, we also present practices that can be gradually 
+implemented to develop a completely digital research workflow. ## packages and org-mode
+Moreover, we compare software currently available to produce 
+computational notebooks for work done in R, Python, and Julia.
+Common practice among data scientists, who use such notebooks to produce 
+reports and inform decision making, its application in ecology is still lacking, 
+despite the tasks being similar.
+Moreover, besides documentation, computational notebooks also foster the implementation of
+principles of open science, such as reproducibility, traceability, and knowledge equity.
+Our hope is that the kit will provide the minimal tools for researchers to 
+adapt their workflow to integrate such practices.
 #+END_SRC
 *** TODO contact possible co-authors
-    DEADLINE: <2021-01-31 So> SCHEDULED: <2021-01-15 Fr>
+    DEADLINE: <2021-02-05 Fr> SCHEDULED: <2021-01-15 Fr>
     :LOGBOOK:
+    CLOCK: [2021-02-05 Fr 09:06]
     CLOCK: [2021-01-14 Do 19:27]--[2021-01-14 Do 19:28] =>  0:01
     :END:
 * Resources
