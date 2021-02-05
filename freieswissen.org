@@ -6,20 +6,19 @@
 #+OPTIONS: <:nil
 
 #+BEGIN: clocktable :scope file :maxlevel 2 :link t :tstart "2021-01-13"
-#+CAPTION: Clock summary at [2021-01-31 So 22:14]
-| Headline                                   |    Time |      |
-|--------------------------------------------+---------+------|
-| *Total time*                               | *33:22* |      |
-|--------------------------------------------+---------+------|
-| [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Project][Project]]                                    |   20:26 |      |
-| \_  [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::update Project Book][update Project Book]]                    |         | 0:58 |
-| \_  [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Contents][Contents]]                               |         | 3:26 |
-| \_  [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Format][Format]]                                 |         | 8:59 |
-| \_  [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::File structure to be implemented by the user][File structure to be implemented by...]] |         | 4:10 |
-| \_  [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Manuscript][Manuscript]]                             |         | 2:53 |
-| [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Resources][Resources]]                                  |    3:28 |      |
-| \_  [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Wikimedia's Lern Raum][Wikimedia's Lern Raum]]                  |         | 3:28 |
-| [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Literature][Literature]]                                 |    9:28 |      |
+#+CAPTION: Clock summary at [2021-02-05 Fr 21:07]
+| Headline                  |    Time |       |
+|---------------------------+---------+-------|
+| *Total time*              | *44:56* |       |
+|---------------------------+---------+-------|
+| [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Project][Project]]                   |   32:00 |       |
+| \_  [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::update Project Book][update Project Book]]   |         |  0:58 |
+| \_  [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Contents][Contents]]              |         | 13:02 |
+| \_  [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Format][Format]]                |         |  9:37 |
+| \_  [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Manuscript][Manuscript]]            |         |  8:23 |
+| [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Resources][Resources]]                 |    3:28 |       |
+| \_  [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Wikimedia's Lern Raum][Wikimedia's Lern Raum]] |         |  3:28 |
+| [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Literature][Literature]]                |    9:28 |       |
 #+END:
 * Meetings
 ** December update
@@ -136,6 +135,10 @@ Available for R in the form as the template R package, but would
 need to check for Python and Julia, and how it performs across OSs.
 *** Work flow
     :LOGBOOK:
+    CLOCK: [2021-02-05 Fr 18:06]--[2021-02-05 Fr 19:27] =>  1:21
+    - Note taken on [2021-02-05 Fr 09:50] \\
+      Official [[file:text/figures/workflow.svg][sketch]].
+    CLOCK: [2021-02-05 Fr 09:03]--[2021-02-05 Fr 13:08] =>  4:05
     - Note taken on [2021-02-05 Fr 09:14] \\
       See [[file:appendix_labnotebook/fw_labnotes_sketchworkflow.pdf][sketch]].
     :END:
@@ -241,10 +244,11 @@ principles of open science, such as reproducibility, traceability, and knowledge
 Our hope is that the kit will provide the minimal tools for researchers to 
 adapt their workflow to integrate such practices.
 #+END_SRC
-*** TODO contact possible co-authors
+*** DONE contact possible co-authors
     DEADLINE: <2021-02-05 Fr> SCHEDULED: <2021-01-15 Fr>
     :LOGBOOK:
-    CLOCK: [2021-02-05 Fr 09:06]
+    - State "DONE"       from "TODO"       [2021-02-05 Fr 19:27]
+    CLOCK: [2021-02-05 Fr 09:06]--[2021-02-05 Fr 09:50] =>  0:44
     CLOCK: [2021-01-14 Do 19:27]--[2021-01-14 Do 19:28] =>  0:01
     :END:
 * Resources
