@@ -1,0 +1,45 @@
+---
+title: "Mauscript title"
+output: word_document
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+---
+<!-- Submission to PLOS biology could fall into one of the two types of articles (no length limit in either case): -->
+<!-- - [...] high-quality tutorials (including multimedia presentations) teaching important concepts in the field of computational biology. -->
+<!-- - Software articles describing outstanding open source software of exceptional importance that has been shown to provide new biological insights. -->
+
+<!-- The second option would be Ecography, as a "Software note": Software note articles should be maximum 4000 words in length (main text) and maximum 2 figures, tables or boxes. -->
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<!-- Author information -->
+Corresponding author: First Author 
+
+E-mail: author1@institution1.org
+
+Corresponding author: Second Author 
+
+E-mail: author2@institution2.org
+---------------------------------
+    
+\newpage
+    
+# Abstract
+
+
+<!-- keywords -->
+**keywords:**
+
+\newpage
+
+# Introduction
+
+# Materials & Methods
+
+# Results
+
+# Discussion
+
+
+
