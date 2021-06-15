@@ -10,4 +10,4 @@ and a R and a Pluto (Julia language) notebook that structure the workflow as suc
 
 # Acknowledgements
 [[https://github.com/ludmillafigueiredo/rr-init][Reproducible Research Project Initialization]]
-<img class="resize" src="sponsoredbydeutsch.png" width="2560" height="768" align="center" />
+<img class="resize" src="fw_sponsorship.png" align="center" />
