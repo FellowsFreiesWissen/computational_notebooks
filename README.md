@@ -10,4 +10,4 @@ and a R and a Pluto (Julia language) notebook that structure the workflow as suc
 
 # Acknowledgements
 
-<img class="resize" src="fw_sponsorship.png" align="center" />
+![workflow](https://raw.githubusercontent.com/ludmillafigueiredo/computational_notebooks/master/project/text/figures/fw_sponsorship.png)
