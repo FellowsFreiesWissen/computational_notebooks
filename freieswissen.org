@@ -6,11 +6,13 @@
 #+OPTIONS: <:nil
 
 #+BEGIN: clocktable :scope file :maxlevel 2 :link t :tstart "2021-01-13"
-#+CAPTION: Clock summary at [2021-02-05 Fr 21:07]
+#+CAPTION: Clock summary at [2021-02-20 Sa 10:18]
 | Headline                  |    Time |       |
 |---------------------------+---------+-------|
-| *Total time*              | *44:56* |       |
+| *Total time*              | *54:51* |       |
 |---------------------------+---------+-------|
+| [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Meetings][Meetings]]                  |    9:55 |       |
+| \_  [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Winter School][Winter School]]         |         |  9:55 |
 | [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Project][Project]]                   |   32:00 |       |
 | \_  [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::update Project Book][update Project Book]]   |         |  0:58 |
 | \_  [[file:/home/ludmilla/Documents/training/openscience_202021/freieswissen.org::Contents][Contents]]              |         | 13:02 |
@@ -23,11 +25,16 @@
 * Meetings
 ** December update
 <2020-12-18 Fr>
-*** Responsible research and innovation                                 :RRI:
-This is a conversation that must be had more often.
-Open science as a form to push for social justice.
-Open science does not needs to be publically available, it just need to be
-reproducible and traceable.
+*** DONE Responsible research and innovation                            :RRI:
+    :LOGBOOK:
+    - State "DONE"       from "TODO"       [2020-12-18 Fr 18:38] \\
+      Notes in [[file:meetings.org][meetings notebook]].
+    :END:
+** Winter School
+   :LOGBOOK:
+   CLOCK: [2021-02-14 So 09:00]--[2021-02-14 So 13:55] =>  4:55
+   CLOCK: [2021-02-13 Sa 09:00]--[2021-02-13 Sa 14:00] =>  5:00
+   :END: 
 * Project
 ** TODO update Project Book
    DEADLINE: <2021-03-03 Mi +1m>
@@ -150,8 +157,11 @@ need to check for Python and Julia, and how it performs across OSs.
       rather cumbersome.
     :END:
 Ask Biologists/ecologists about their use of computational tools, version control
-**** check if there is no recent publication on it
+**** DONE check if there is no recent publication on it
      SCHEDULED: <2021-01-31 So>
+     :LOGBOOK:
+     - State "DONE"       from "TODO"       [2021-04-19 Mo 15:19]
+     :END:
 ** Format
    :LOGBOOK:
    CLOCK: [2021-02-04 Do 19:40]--[2021-02-04 Do 20:18] =>  0:38
@@ -192,14 +202,14 @@ Beware of the [[Pluto notebooks in Julia][reactivity issue]].
      :END:
 - Julia: with ~PkgUtils; manifest!~ and ~InstantiateFromURL~ package
 *** RNotebook vs. Jupyter vs. Pluto
-| Tool      | Easy VC | Language | Functionality  | Version control | Reproducibility |
-|-----------+---------+----------+----------------+-----------------+-----------------|
-| RNotebook | Yes     | R        | Yes - built in | Yes             | Yes             |
-| ''        |         | Python   |                |                 | Yes             |
-| Jupyter   | No      | Julia    | Yes - built in | No              | [[Jupyter notebook][Yes]]             |
-| ''        | No      | Python   | Yes - built in | No              |                 |
-| ''        | No      | R        | Yes - built in | No              |                 |
-| Pluto     | Yes     | Julia    | Yes - built in | Yes             | Yes             |
+| Tool      | Language | Functionality  | Version control | Reproducibility |
+|-----------+----------+----------------+-----------------+-----------------|
+| RNotebook | R        | Yes - built in | Yes             | Yes             |
+| ''        | Python   |                |                 | Yes             |
+| Jupyter   | Julia    | Yes - built in | No              | [[Jupyter notebook][Yes]]             |
+| ''        | Python   | Yes - built in | No              |                 |
+| ''        | R        | Yes - built in | No              |                 |
+| Pluto     | Julia    | Yes - built in | Yes             | Yes             |
 ** Manuscript
 *** DONE [[file:project/text/abstract.tex][abstract]]
     DEADLINE: <2021-01-28 Do> SCHEDULED: <2021-01-14 Do>
@@ -294,7 +304,7 @@ https://www.youtube.com/watch?v=1DYxqEaj_Jg
 ** [[file:~/Documents/my_library/paper_library/library.org::*Lee 2003 Drug. Inf.][Lee 2003 Drug. Inf.]]
 ** [[file:~/Documents/my_library/paper_library/library.org::*Kanare195_WritingLaboratoryNotebook.pdf][Kanare 1985 Writing Lab Notebook's book]]
 ** [[file:~/Documents/my_library/paper_library/library.org::*Nickla&Boehm2011JNeuroPharma_ProperLaboratoryNotebookPractices.pdf][Nickla & Boehm 2011 J. Neuro. Pharma.]]
-** [[file:~/Documents/my_library/paper_library/library.org::*Boorregaard & Hart 2016 Ecography][Boorregaard & Hart 2016 Ecography]]
+ ** [[file:~/Documents/my_library/paper_library/library.org::*Boorregaard & Hart 2016 Ecography][Boorregaard & Hart 2016 Ecography]]
 ** [[file:~/Documents/my_library/paper_library/library.org::*Cassey & Blackburn 2003 TREE][Cassey & Blackburn 2003 TREE]]
 ** [[file:file:~/Documents/my_library/paper_library/library.org::*Rule et al. 2019 Plos][Rule et al. 2019 Plos]]
 ** [[file:~/Documents/my_library/paper_library/library.org::*Powers & Hampton 2019 Ecol. Appl.][Powers & Hampton 2019 Ecol. Appl.]]

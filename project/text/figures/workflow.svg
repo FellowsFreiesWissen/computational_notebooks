@@ -16,7 +16,10 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="workflow.svg">
+   sodipodi:docname="workflow.svg"
+   inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/project/text/figures/workflow.svg.png"
+   inkscape:export-xdpi="600"
+   inkscape:export-ydpi="600">
   <defs
      id="defs2">
     <clipPath
@@ -215,15 +218,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="422.12311"
+     inkscape:zoom="1.2316035"
+     inkscape:cx="285.6515"
      inkscape:cy="328.3094"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer3"
      showgrid="false"
      showguides="true"
      inkscape:window-width="1879"
-     inkscape:window-height="1025"
+     inkscape:window-height="1145"
      inkscape:window-x="41"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -242,6 +245,20 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="fundo">
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:0.61960787;stroke:none;stroke-width:0.30000001;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect5004"
+       width="209.88727"
+       height="160.26193"
+       x="0.21482833"
+       y="-0.047105681"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+  </g>
   <g
      inkscape:groupmode="layer"
      id="layer2"

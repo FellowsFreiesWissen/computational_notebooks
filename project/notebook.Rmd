@@ -1,5 +1,5 @@
 ---
-title: "Computational notebooks to facilitate writing and improve reproducibility of ecological research"
+title: "Computational notebooks to facilitate writing and improve reproducibility of (ecological) research"
 output: word_document
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 ---
