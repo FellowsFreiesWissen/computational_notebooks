@@ -1,8 +1,14 @@
-#' Set up the minimal git for reproducibility
+#' Set a minimal file structure and create the notebook
+#'
+#' @param project_name a string, the name the folder of the project. 
+#'  It defaults to \"project\"
+#' @param project_path a string, the path where the project folder should be created. 
+#'  It defaults to the current folder.
+#'  
+#' @details The file structure and notebooks are detailed here \url{https://github.com/ludmillafigueiredo/computational_notebooks}.
 #' 
-#' 
-#' @example 
-#' source("set_folders.R")
+#' @example
+#' source("set_kit.R")
 set_kit <- function(project_name = "project", project_path = getwd()){
   ## Create project in path 
   setwd(project_path)

@@ -1,4 +1,18 @@
-function set_kit!(project_name = "project", project_path = pwd())
+"""
+    set_kit([project_name, project_path])
+
+Create a folder named 'project_name' in 'project_path' and set a file structure 
+and create a Pluto notebook inside it.
+
+File structure and notebooks are detailed [here](https://github.com/ludmillafigueiredo/computational_notebooks).
+
+# Example
+```julia-repl
+ julia> include("set_kit.jl")
+ julia> set_kit.jl
+```
+"""
+function set_kit(project_name::String = "project", project_path::String = pwd())
     ## Create project in path
     cd(project_path)
     ## Create file structure
