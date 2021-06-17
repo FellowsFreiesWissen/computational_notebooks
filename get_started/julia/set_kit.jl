@@ -1,85 +1,58 @@
 function set_kit!(project_name = "project")
-  ## Create file structure
-  ### first level
-  mkdir(project_name)
-  #### TODO: add README per folder
-  ### main folders of a project
-  map(mkdir, map(x -> joinpath(project_name, x),
-                 ["results","text", "submission"]))
-  ### main folders of results
-  map(mkdir, map(x -> joinpath(joinpath(project_name,"results"), x),
-                 ["raw_data","clean_data", "scripts", "semi_products"]))
-  ### main folders of text
-  map(mkdir, map(x -> joinpath(joinpath(project_name,"text"), x),
-                               ["figures","tables", "supplementary"]))
+    ## Create file structure
+    ### first level
+    mkdir(project_name)
+    #### TODO: add README per folder
+    ### main folders of a project
+    map(mkdir, map(x -> joinpath(project_name, x),
+                   ["results","text", "submission"]))
+    ### main folders of results
+    map(mkdir, map(x -> joinpath(joinpath(project_name,"results"), x),
+                   ["raw_data","clean_data", "scripts", "semi_products"]))
+    ### main folders of text
+    map(mkdir, map(x -> joinpath(joinpath(project_name,"text"), x),
+                   ["figures","tables", "supplementary"]))
 
-  ## Create the README file
-  touch(joinpath(project_name, "README.md"))
-  ## TODO: add basic description?
-  ## Create the minimal notebook
-  touch(joinpath(project_name, "notebook.jl"))
-  open(joinpath(project_name, "notebook.jl"), "w") do io
-  write(io, "---")
-  write(io, "\n")
-  write(io, "title: \"Your title here\"")
-  write(io, "\n")
-  write(io, "output: pdf_document")
-  write(io, "\n")
-  write(io, "---")
-  write(io, "\n")
-  write(io, "<!-- ---------------------------------- VERY MINIMAL INTRO TO RNOTEBOOKS ---------------------------------- -->")
-  write(io, "\n\n")
-  write(io, "<!-- Just erase this whole block, if you already know how it works) -->")
-  write(io, "\n\n")
-  write(io, "<!-- The basic idea of notebooks is having your text written without any marking: -->")
-  write(io, "\n\n")
-  write(io, "\"Unmarked\" text to show you how it works.")
-  write(io, "\n\n")
-  write(io, "<!-- and code is put inside blocks like this (also called 'chunks'): -->")
-  write(io, "\n\n")
-  write(io, " {r}")
-  write(io, "\n")
-  write(io, "print(\"This is an example of a code block\")")
-  write(io, "\n")
-  write(io, " ")
-  write(io, "\n")
-  write(io, "<!-- Very important, check the options of how much of your code and outputs you want to show when compiling your notebook: -->")
-  write(io, "<!-- https://bookdown.org/yihui/rmarkdown/r-code.html -->")
-  write(io, "\n\n")
-  write(io, "<!-- As explained above, these are defined in your code chunks. -->")
-  write(io, "\n\n")
-  write(io, "<!-- ----------------------------- END OF VERY MINIMAL INTRO TO RNOTEBOOKS -------------------------------- -->")
-  write(io, "\n\n")
-  write(io, " {r set-up, include = FALSE}")
-  write(io, "\n")
-  write(io, "## set up objects with the paths to folders you will often use. This will make it easier to call them when writing outputs")
-  write(io, "\n")
-  write(io, "## check the examples folder for, well, examples")
-  write(io, "\n")
-  write(io, "data_dir <- joinpath(\"results\", \"clean_data\") ## do NOT play with stuff in raw_data. That is your back-up")
-  write(io, "\n")
-  write(io, "scripts_dir <- joinpath(\"results\", \"scripts\")")
-  write(io, "\n")
-  write(io, "suppl_dir <- joinpath(\"results\", \"supplementary\")")
-  write(io, "\n")
-  write(io, "semiprods_dir <- joinpath(\"results\", \"semi_products\")")
-  write(io, "\n")
-  write(io, "figures_dir <- joinpath(\"text\", \"figures\")")
-  write(io, "\n")
-  write(io, "tables_dir <- joinpath(\"text\", \"tables\")")
-  write(io, "\n")
-  write(io, " ")
-  write(io, "\n\n")
-  write(io, "Your work.")
-  write(io, "\n\n")
-  write(io, "*R version, the OS and attached or loaded packages:*")
-  write(io, "\n")
-  write(io, "<!-- Leave this so people know the software they need to reproduce your work. -->")
-  write(io, "\n")
-  write(io, " {r}")
-  write(io, "\n")
-  write(io, "sessionInfo()")
-  write(io, "\n")
-  write(io, " ")
-  end
-  end
+    ## Create the README file
+    touch(joinpath(project_name, "README.md"))
+    ## TODO: add basic description?
+    ## Create the minimal notebook
+    touch(joinpath(project_name, "notebook.jl"))
+    open(joinpath(project_name, "notebook.jl"), "w") do io
+        write(io, "### A Pluto.jl notebook ###")
+        write(io, "\n\n")
+        write(io, "using Markdown")
+        write(io, "\n")
+        write(io, "using InteractiveUtils")
+        write(io, "\n\n")
+        write(io, "# ╔═╡ 307335ba-cf46-11eb-28b0-f199cf048ae6")
+        write(io, "\n")
+        write(io, "md\" ## Your title here\"")
+        write(io, "\n\n")
+        write(io, "# ╔═╡ 37c7bffc-cf46-11eb-19b8-4175e38e818b")
+        write(io, "\n")      
+        write(io, "## Paths for easy call from the Pluto notebook")
+        write(io, "\n")
+        write(io, "begin")
+        write(io, "\n")
+        write(io, "\tdata_dir = joinpath(\"results\", \"clean_data\") ## do NOT play with stuff in raw_data. That is your back-up")
+        write(io, "\n")
+        write(io, "\tscripts_dir = joinpath(\"results\", \"scripts\")")
+        write(io, "\n")
+        write(io, "\tsuppl_dir = joinpath(\"results\", \"supplementary\")")
+        write(io, "\n")
+        write(io, "\tsemiprods_dir = joinpath(\"results\", \"semi_products\")")
+        write(io, "\n")
+        write(io, "\tfigures_dir = joinpath(\"text\", \"figures\")")
+        write(io, "\n")
+        write(io, "\ttables_dir = joinpath(\"text\", \"tables\")")
+        write(io, "\n")
+        write(io, "end")
+        write(io, "\n\n\n")
+        write(io, "# ╔═╡ Cell order:")
+        write(io, "\n")
+        write(io, "# ╠═307335ba-cf46-11eb-28b0-f199cf048ae6")
+        write(io, "\n")
+        write(io, "# ╠═37c7bffc-cf46-11eb-19b8-4175e38e818b")
+    end
+end
