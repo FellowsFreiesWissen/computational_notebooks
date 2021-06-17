@@ -3,7 +3,10 @@
 #' 
 #' @example 
 #' source("set_folders.R")
-set_kit.R <- function(project_name = "project"){
+set_kit <- function(project_name = "project", project_path = getwd()){
+  ## Create project in path 
+  setwd(project_path)
+
   ## Create file structure
   ### first level
   dir.create(project_name)

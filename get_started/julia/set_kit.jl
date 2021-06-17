@@ -1,4 +1,6 @@
-function set_kit!(project_name = "project")
+function set_kit!(project_name = "project", project_path = pwd())
+    ## Create project in path
+    cd(project_path)
     ## Create file structure
     ### first level
     mkdir(project_name)
