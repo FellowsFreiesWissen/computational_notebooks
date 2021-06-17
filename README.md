@@ -4,15 +4,15 @@
 This repository contains a minimal starter-kit to use computational notebooks as
 accompanying pieces for your manuscript and make your analysis reproducible.
 
-In Figueiredo et al. (in prep), we detail and exemplify its use,but for now, here is who it works: 
+In Figueiredo et al. (in prep), we detail and exemplify its use, but for now, here is who it works: 
 
-In the [get\_started folder](https://github.com/ludmillafigueiredo/computational_notebooks/tree/master/get_started), 
-you can find a `set_kit` function (in both `R` and `Julia` languages) to create:
+In the [get\_started](https://github.com/ludmillafigueiredo/computational_notebooks/tree/master/get_started) 
+folder you can find a `set_kit` function (in both `R` and `Julia` languages) to create:
 
-+ This folder structure:
++ this file structure:
 ![file-structure](https://raw.githubusercontent.com/ludmillafigueiredo/computational_notebooks/master/figures/file_structure.png)
 
-and a computational notebook that structures the workflow as such:
++ a computational notebook that structures the workflow around it:
 ![workflow](https://raw.githubusercontent.com/ludmillafigueiredo/computational_notebooks/master/figures/workflow.png)
 
 ## Where to go next
@@ -22,9 +22,9 @@ to set up), and it is effective because of its simplicity, which makes it easy t
 
 Once users are comfortable with this set up, they are encouraged to move to more complex packages, e.g.:
 
-- (workflowr)[https://jdblischak.github.io/workflowr/]
-- (rticles)[https://github.com/rstudio/rticles]
-- Organize your code as an R package: (Hanß & Baldauf tutorial)[https://selinazitrone.github.io/YoMos2020/index.html] 
+- [workflowr](https://jdblischak.github.io/workflowr/)
+- [rticles](https://github.com/rstudio/rticles)
+- Organize your code as an R package: [Hanß & Baldauf tutorial](https://selinazitrone.github.io/YoMos2020/index.html) 
 
 # Acknowledgements
 
