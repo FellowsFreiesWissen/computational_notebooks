@@ -6,8 +6,8 @@ accompanying pieces for your manuscript and make your analysis reproducible.
 
 In Figueiredo et al. (in prep), we detail and exemplify its use, but for now, here is who it works: 
 
-In the [kits](https://github.com/ludmillafigueiredo/computational_notebooks/tree/master/get_started) 
-folder you can find a `set_kit` function (in both `R` and `Julia` languages) to create:
+In the [kits](https://github.com/ludmillafigueiredo/computational_notebooks/tree/master/kits) 
+folder, you can find a `set_kit` function (in both `R` and `Julia` languages).
 
 + this file structure:
 ![file-structure](https://raw.githubusercontent.com/ludmillafigueiredo/computational_notebooks/master/figures/file_structure.png)
