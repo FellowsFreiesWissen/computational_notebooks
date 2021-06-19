@@ -1,7 +1,9 @@
 #' Set a minimal file structure and create the notebook
 #'
+#' @param lang a string, the language \"r\" or \"python\", you want to create your notebook in.  
+#'  It defaults to "r".
 #' @param project_name a string, the name the folder of the project. 
-#'  It defaults to \"project\"
+#'  It defaults to \"project\".
 #' @param project_path a string, the path where the project folder should be created. 
 #'  It defaults to the current folder.
 #'  
@@ -9,7 +11,7 @@
 #' 
 #' @example
 #' source("set_kit.R")
-set_kit <- function(project_name = "project", project_path = getwd()){
+set_kit <- function(lang = "r", project_name = "project", project_path = getwd()){
   ## Create project in path 
   setwd(project_path)
 
@@ -55,7 +57,7 @@ set_kit <- function(project_name = "project", project_path = getwd()){
   cat("\n\n")
   cat("<!-- and code is put inside blocks like this (also called 'chunks'): -->")
   cat("\n\n")
-  cat("```{r}")
+  cat(paste("```{", lang, "}", sep = ""))
   cat("\n")
   cat("print(\"This is an example of a code block\")")
   cat("\n")
@@ -68,11 +70,13 @@ set_kit <- function(project_name = "project", project_path = getwd()){
   cat("\n\n")
   cat("<!-- ----------------------------- END OF VERY MINIMAL INTRO TO RNOTEBOOKS -------------------------------- -->")
   cat("\n\n")
-  cat("```{r set-up, include = FALSE}")
+  cat("<!-- Create objects for easy access to the folders related to the project. -->")
   cat("\n")
-  cat("## set up objects with the paths to folders you will often use. This will make it easier to call them when writing outputs")
+  cat("<!-- The code in this chunk is not relevant for the reader, and thus is not included in the knitted version. -->")
   cat("\n")
-  cat("## check the examples folder for, well, examples")
+  cat("<!-- This is also useful if you are not using the folders suggested by this kit, and want to preserve your privacy. -->")
+  cat("\n")
+  cat(paste("```{", lang, " set-up, include = FALSE}", sep = ""))
   cat("\n")
   cat("data_dir <- file.path(\"results\", \"clean_data\") ## do NOT play with stuff in raw_data. That is your back-up")
   cat("\n")
@@ -90,7 +94,7 @@ set_kit <- function(project_name = "project", project_path = getwd()){
   cat("\n\n")
   cat("# Read your data")
   cat("\n")
-  cat("```{r set-up, include = FALSE}")
+  cat(paste("```{", lang, "}", sep = ""))
   cat("\n")
   cat("## data <- read.csv(file.path(data_dir)")
   cat("\n")
@@ -100,7 +104,7 @@ set_kit <- function(project_name = "project", project_path = getwd()){
   cat("\n\n")
   cat("# Make your main figures/tables")
   cat("\n")
-  cat("```{r set-up, include = FALSE}")
+  cat(paste("```{", lang, "}", sep = ""))
   cat("\n")
   cat("## ggsave(file.path(data_dir, \"plot1.png\")")
   cat("\n")
