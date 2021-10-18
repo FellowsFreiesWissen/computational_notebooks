@@ -5,40 +5,41 @@
 #' @param project_name a string, the name the folder of the project. 
 #'  It defaults to \"project\".
 #' @param project_path a string, the path where the project folder should be created. 
-#'  It defaults to the current folder.
+#'  It defaults to the current current working directory.
 #'  
 #' @details The file structure and notebooks are detailed here \url{https://github.com/ludmillafigueiredo/computational_notebooks}.
 #' 
 #' @example
 #' source("set_kit.R")
 set_kit <- function(lang = "r", project_name = "project", project_path = getwd()){
+  
   ## Create project in path 
-  setwd(project_path)
-
+  dir.create(file.path(project_path, project_name), recursive = TRUE)
+  
+  ## Set working directory
+  setwd(file.path(project_path, project_name))
+  
   ## Create file structure
   ### first level
-  dir.create(project_name)
   #### TODO: add README per folder
   ### main folders of a project
-  sapply(file.path(paste(project_name, c("results","text", "submission"),
-                         sep = "/")), 
-         dir.create)
+  sapply(c("results","text", "submission"), dir.create)
   ### main folders of results
-  sapply(file.path(paste(file.path(project_name,"results"), 
+  sapply(file.path(paste(file.path("results"), 
                          c("raw_data","clean_data", "scripts", "semi_products"),
                          sep = "/")), 
          dir.create)
   ### main folders of text
-  sapply(file.path(paste(file.path(project_name,"text"), 
+  sapply(file.path(paste(file.path("text"), 
                          c("figures","tables", "supplementary"),
                          sep = "/")), 
          dir.create)
   
   ## Create the README file
-  file.create(file.path(project_name, "README.md"))
+  file.create("README.md")
   ## TODO: add basic description?
   ## Create the minimal notebook
-  sink(file.path(project_name, "notebook.Rmd"))
+  sink("notebook.Rmd")
   cat("---")
   cat("\n")
   cat("title: \"Your title here\"")
@@ -53,7 +54,7 @@ set_kit <- function(lang = "r", project_name = "project", project_path = getwd()
   cat("\n\n")
   cat("<!-- The basic idea of notebooks is having your text written without any marking: -->")
   cat("\n\n")
-  cat("\"Unmarked\" text to show you how it works.")
+  cat("\"Uncommented\" text to show you how it works.")
   cat("\n\n")
   cat("<!-- and code is put inside blocks like this (also called 'chunks'): -->")
   cat("\n\n")
