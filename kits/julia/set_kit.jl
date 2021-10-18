@@ -12,7 +12,7 @@ File structure and notebooks are detailed [here](https://github.com/ludmillafigu
  julia> set_kit.jl
 ```
 """
-function set_kit(project_name::String = "project", project_path::String = pwd())
+function set_kit(;project_name::String = "project", project_path::String = pwd())
     ## Create project in path
     cd(project_path)
     ## Create file structure
