@@ -35,9 +35,12 @@ set_kit <- function(lang = "r", project_name = "project", project_path = getwd()
                          sep = "/")), 
          dir.create)
   
-  ## Create the README file
-  file.create("README.md")
-  ## TODO: add basic description?
+  ## Create the README files
+  file.copy(from = "../READMEs/main.md", to = "README.md", overwrite = FALSE)
+  file.copy(from = "../READMEs/results.md", to = "results/README.md", overwrite = FALSE)
+  file.copy(from = "../READMEs/text.md", to = "text/README.md", overwrite = FALSE)
+  file.copy(from = "../READMEs/submission.md", to = "submission/README.md", overwrite = FALSE)
+  
   ## Create the minimal notebook
   sink("notebook.Rmd")
   cat("---")

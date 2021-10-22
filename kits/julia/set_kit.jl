@@ -29,9 +29,12 @@ function set_kit(;project_name::String = "project", project_path::String = pwd()
     map(mkdir, map(x -> joinpath(joinpath(project_name,"text"), x),
                    ["figures","tables", "supplementary"]))
 
-    ## Create the README file
-    touch(joinpath(project_name, "README.md"))
-    ## TODO: add basic description?
+    ## Create the README files
+    cp("../READMEs/main.md", joinpath(project_name, "README.md"), force = false)
+    cp("../READMEs/results.md", joinpath(project_name,"results","README.md"), force = false)
+    cp("../READMEs/text.md", joinpath(project_name, "text", "README.md"), force = false)
+    cp("../READMEs/submission.md", joinpath(project_name, "submission", "README.md"), force = false)
+    
     ## Create the minimal notebook
     touch(joinpath(project_name, "notebook.jl"))
     open(joinpath(project_name, "notebook.jl"), "w") do io
