@@ -24,7 +24,9 @@ function set_kit(;project_name::String = "project", project_path::String = pwd()
                    ["results","text", "submission"]))
     ### main folders of results
     map(mkdir, map(x -> joinpath(joinpath(project_name,"results"), x),
-                   ["raw_data","clean_data", "scripts", "semi_products"]))
+                   ["data", "scripts"]))
+    map(mkdir, map(x -> joinpath(joinpath(project_name,"results", "data"), x),
+                   ["raw", "processed"]))
     ### main folders of text
     map(mkdir, map(x -> joinpath(joinpath(project_name,"text"), x),
                    ["figures","tables", "supplementary"]))

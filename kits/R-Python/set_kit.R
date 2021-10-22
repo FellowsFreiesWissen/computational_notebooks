@@ -26,7 +26,11 @@ set_kit <- function(lang = "r", project_name = "project", project_path = getwd()
   sapply(c("results","text", "submission"), dir.create)
   ### main folders of results
   sapply(file.path(paste(file.path("results"), 
-                         c("raw_data","clean_data", "scripts", "semi_products"),
+                         c("data", "scripts"),
+                         sep = "/")), 
+         dir.create)
+  sapply(file.path(paste(file.path("results", "data"), 
+                         c("raw", "processed"),
                          sep = "/")), 
          dir.create)
   ### main folders of text
