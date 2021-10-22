@@ -38,8 +38,8 @@ function set_kit(;project_name::String = "project", project_path::String = pwd()
     cp("../READMEs/submission.md", joinpath(project_name, "submission", "README.md"), force = false)
     
     ## Create the minimal notebook
-    touch(joinpath(project_name, "notebook.jl"))
-    open(joinpath(project_name, "notebook.jl"), "w") do io
+    touch(joinpath(project_name, project_name*".jl"))
+    open(joinpath(project_name, project_name*".jl"), "w") do io
         write(io, "### A Pluto.jl notebook ###")
         write(io, "\n\n")
         write(io, "using Markdown")

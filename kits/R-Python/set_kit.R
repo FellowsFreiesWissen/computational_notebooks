@@ -46,7 +46,7 @@ set_kit <- function(lang = "r", project_name = "project", project_path = getwd()
   file.copy(from = "../READMEs/submission.md", to = "submission/README.md", overwrite = FALSE)
   
   ## Create the minimal notebook
-  sink("notebook.Rmd")
+  sink(paste0(project_name,".Rmd"))
   cat("---")
   cat("\n")
   cat("title: \"Your title here\"")
