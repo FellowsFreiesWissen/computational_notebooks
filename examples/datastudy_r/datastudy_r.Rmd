@@ -1,0 +1,179 @@
+---
+title: "Example of a computational notebook for data analysis"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r set-up, include = FALSE}
+## This chunk of code is not relevant for understanding the work done in this document.
+## Thus, it won't appear in the pdf or html 
+rawdata_dir <- file.path("results", "data", "raw") ## do NOT play with stuff in raw_data. That is your back-up
+scripts_dir <- file.path("results", "scripts")
+procdata_dir <- file.path("results", "data", "processed")
+figures_dir <- file.path("text", "figures")
+tables_dir <- file.path("text", "tables")
+suppl_dir <- file.path("text", "supplementary")
+```
+
+```{r package-upload,echo=FALSE}
+library(tidyverse) ## data processing
+library(ggplot2) ##visualization
+library(ggridges)
+library(kableExtra) ## nice looking tables for html and pdf files. Used here with default configuration. Simply calling the data frames or their header would have a similar, if less aesthetically pleasing result. 
+```
+In this example, we explore life history data on 2270 lemur individuals living in the Duke Lemur Center. 
+
+# Read your data
+```{r}
+lemurs_rawdf <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-08-24/lemur_data.csv',
+                          col_types = cols(
+                            .default = col_double(),
+                            taxon = col_character(),
+                            dlc_id = col_character(),
+                            hybrid = col_character(),
+                            sex = col_character(),
+                            name = col_character(),
+                            current_resident = col_character(),
+                            stud_book = col_character(),
+                            dob = col_date(format = ""),
+                            estimated_dob = col_character(),
+                            birth_type = col_character(),
+                            birth_institution = col_character(),
+                            estimated_concep = col_date(format = ""),
+                            dam_id = col_character(),
+                            dam_name = col_character(),
+                            dam_taxon = col_character(),
+                            dam_dob = col_date(format = ""),
+                            sire_id = col_character(),
+                            sire_name = col_character(),
+                            sire_taxon = col_character(),
+                            sire_dob = col_date(format = ""),
+                            dod = col_date(format = ""),
+                            age_of_living_y = col_double(), ## this column is typed wrong (as character) by default
+                            dob_estimated = col_character(),
+                            weight_date = col_date(format = ""),
+                            age_category = col_character(),
+                            preg_status = col_character(),
+                            concep_date_if_preg = col_date(format = ""),
+                            infant_dob_if_preg = col_date(format = "")
+                            )
+)
+
+lemurs_sppnames_df <- readr::read_csv(file.path(rawdata_dir, "lemurs_sppnames.csv"), 
+                                      col_names = TRUE)
+```
+
+```{r}
+lemurs_rawdf %>%
+  head() %>%
+  kableExtra::kbl(caption = "Header of the original data set on the health, reproduction, and social dynamics of lemurs housed at the Duke Lemur Center, in North Carolina, USA.")%>%
+  kableExtra::kable_styling(c("striped", "hover")) %>%
+  kableExtra::scroll_box(width = "100%", height = "300px")
+```
+
+## Pre-processing
+
+The data can be organized temporally, thanks to the `weight_date` and `month_of_weight` variables, which report the full date and the month when the weight was measured, respectively. 
+Moreover, we do not need all the 52 variables that were measured, so let's create smaller time-series with the variables of interest.
+```{r}
+lemurs_smallts <- lemurs_rawdf %>%
+  dplyr::mutate_at(vars(name, dam_name, sire_name), stringr::str_to_title) %>%
+  dplyr::mutate(year = lubridate::year(weight_date)) %>%
+  dplyr::select(c(year, month_of_weight, ## time variables
+                  taxon, dlc_id, ## id variables
+                  hybrid, sex, name, birth_month, litter_size, concep_month, ## birth variables
+                  dam_id, dam_name, dam_name, sire_id, sire_name, sire_taxon, ## parental history variables
+                  age_at_death_y, age_of_living_y, age_last_verified_y, 
+                  age_max_live_or_dead_y, age_at_wt_y, age_category, ## age variables
+                  weight_g, avg_daily_wt_change_g, ## weight variables
+                  preg_status, 
+                  n_known_offspring, infant_lit_sz_if_preg)) %>%
+  dplyr::rename(month = month_of_weight,
+                weight = weight_g,
+                avg_d_wt_chg = avg_daily_wt_change_g,
+                n_offspring = n_known_offspring)
+```
+
+# Explore it
+
+## Reproduction
+
+If we are trying to protect a species, reproduction is one of the most important aspects of a species' life history.
+With the DLC lemur data, we can estimate taxa fertility rates, productive season, and the relationship between age, sizes and offspring production.
+
+### Fertility rates per taxon
+
+TODO: mean and sd number of offspring (measured from litter size, n_offspring, or infant_lt_sz) per female
+```{r}
+lemurs_smallts %>%
+  dplyr::filter(!is.na(infant_lit_sz_if_preg)) %>%
+  dplyr::group_by(dlc_id, taxon) %>%
+  dplyr::summarize(inflt_mean_ind = mean(infant_lit_sz_if_preg)) %>%
+  ungroup() %>%
+  dplyr::group_by(taxon) %>%
+  dplyr::summarize(inflt_mean = mean(inflt_mean_ind),
+                   inflt_sd = sd(inflt_mean_ind),
+                   n = n())
+```
+
+## Main text figures/tables
+
+## Seasonality of species
+TODO: facetted plot of mean and sd number of births for seasonal species
+```{r}
+births_df <- lemurs_smallts %>%
+  dplyr::select(dlc_id, taxon, birth_month) %>%
+  dplyr::filter(!is.na(birth_month)) %>%
+  dplyr::mutate_at(vars(birth_month), lubridate::month, label = TRUE) %>% ## id months
+  dplyr::right_join(lemurs_sppnames_df,., by = "taxon")## id species
+
+birth_season_countdf <- births_df %>%
+  unique() %>%
+  dplyr::group_by(species, common_name, taxon, birth_month) %>%
+  dplyr::summarize(n_births = n()) %>%
+  ungroup() %>%
+  dplyr::arrange(species, common_name, taxon, birth_month) %>%
+  tidyr::pivot_wider(id_cols = c(species, common_name, taxon), 
+                     names_from = birth_month, values_from = n_births) %>%
+  tidyr::pivot_longer(as.character(lubridate::month(1:12, label = TRUE)), 
+                      names_to = "birth_month", values_to = "n_births")%>%
+  ##dplyr::mutate_at(vars(birth_month), as.numeric) %>%
+  dplyr::arrange(taxon, birth_month) 
+  
+  # unique() %>%
+  # dplyr::mutate(birth = TRUE) %>%
+  # tidyr::pivot_wider(id_cols = taxon, names_from = birth_month, values_from = birth) %>%
+  # tidyr::pivot_longer(cols = 2:13, names_to = "birth_month", values_to = "birth")%>%
+  # dplyr::mutate_at(vars(birth_month), as.numeric) %>%
+  # dplyr::arrange(taxon, birth_month)
+```
+
+```{r}
+births_df %>%
+  ggplot(aes(x = birth_month, y = taxon, fill = taxon)) +
+  geom_density_ridges(alpha=0.6, stat = "binline") + 
+  scale_fill_continuous()+
+  theme_minimal()
+```
+
+
+## age vs. offspring production
+TODO: get minimal weight of each individual (or weight at minimal age), and plot it against its litter size
+
+## individual weight vs. offspring production
+TODO: get weight of each pregnant individual, and plot it against against the n_offspring it produced
+
+TODO: get weight of each individual at its oldest, and plot it against the n_offspring it produced. Facet for males and females
+
+## individual weight vs. litter
+TODO: get minimal weight of each individual (or weight at minimal age), and plot it against against the litter it came from (color males and females differently)
+
+## Supplementary material
+TODO: daft punk graph of number of births per year, per species
+
+*R version, the OS and attached or loaded packages:*
+<!-- Leave this so people know the software they need to reproduce your work. -->
+```{r}
+sessionInfo()
+```
