@@ -125,8 +125,13 @@ TODO: facetted plot of mean and sd number of births for seasonal species
 births_df <- lemurs_smallts %>%
   dplyr::select(dlc_id, taxon, birth_month) %>%
   dplyr::filter(!is.na(birth_month)) %>%
-  dplyr::mutate_at(vars(birth_month), lubridate::month, label = TRUE) %>% ## id months
-  dplyr::right_join(lemurs_sppnames_df,., by = "taxon")## id species
+  dplyr::mutate_at(vars(birth_month), 
+                   lubridate::month, label = TRUE, 
+                   locale = Sys.getlocale(category = "LC_CTYPE")) %>% ## id months
+  dplyr::right_join(lemurs_sppnames_df,., by = "taxon") %>% ## id species
+  dplyr::arrange(taxon, birth_month) 
+ 
+months_fct <- lubridate::month(1:12, label = TRUE, locale = Sys.getlocale(category = "LC_CTYPE"))
 
 birth_season_countdf <- births_df %>%
   unique() %>%
@@ -136,17 +141,17 @@ birth_season_countdf <- births_df %>%
   dplyr::arrange(species, common_name, taxon, birth_month) %>%
   tidyr::pivot_wider(id_cols = c(species, common_name, taxon), 
                      names_from = birth_month, values_from = n_births) %>%
-  tidyr::pivot_longer(as.character(lubridate::month(1:12, label = TRUE)), 
+  tidyr::pivot_longer(all_of(months_fct), 
                       names_to = "birth_month", values_to = "n_births")%>%
-  ##dplyr::mutate_at(vars(birth_month), as.numeric) %>%
+  ## because strings can't be converted back to months, the following turns out quite cumbersome
+  dplyr::mutate_at(vars(birth_month), 
+                   ~ ordered(.,
+                             levels = all_of(months_fct)) %>%
+                     as.numeric) %>%
+  dplyr::mutate_at(vars(birth_month), 
+                   lubridate::month, label = TRUE,
+                                       locale = Sys.getlocale(category = "LC_CTYPE")) %>%
   dplyr::arrange(taxon, birth_month) 
-  
-  # unique() %>%
-  # dplyr::mutate(birth = TRUE) %>%
-  # tidyr::pivot_wider(id_cols = taxon, names_from = birth_month, values_from = birth) %>%
-  # tidyr::pivot_longer(cols = 2:13, names_to = "birth_month", values_to = "birth")%>%
-  # dplyr::mutate_at(vars(birth_month), as.numeric) %>%
-  # dplyr::arrange(taxon, birth_month)
 ```
 
 ```{r}
