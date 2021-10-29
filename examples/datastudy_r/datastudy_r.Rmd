@@ -53,7 +53,10 @@ library(kableExtra) ## nice looking tables for html and pdf files. Used here wit
 ```
 In this example, we explore life history data on 2270 lemur individuals living in the Duke Lemur Center. 
 
-# Read your data
+# Data
+
+In this example, we explore life history data on 2270 lemur individuals living in the [Duke Lemur Center](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-08-24/readme.md).
+
 ```{r}
 lemurs_rawdf <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-08-24/lemur_data.csv',
                           col_types = cols(
@@ -89,11 +92,10 @@ lemurs_rawdf <- readr::read_csv('https://raw.githubusercontent.com/rfordatascien
                             )
 )
 
+## key of species name and abbreviation in the taxon columns
 lemurs_sppnames_df <- readr::read_csv(file.path(rawdata_dir, "lemurs_sppnames.csv"), 
                                       col_names = TRUE)
-```
 
-```{r}
 lemurs_rawdf %>%
   head() %>%
   kableExtra::kbl(caption = "Header of the original data set on the health, reproduction, and social dynamics of lemurs housed at the Duke Lemur Center, in North Carolina, USA.")%>%
@@ -121,38 +123,34 @@ lemurs_smallts <- lemurs_rawdf %>%
   dplyr::rename(month = month_of_weight,
                 weight = weight_g,
                 avg_d_wt_chg = avg_daily_wt_change_g,
-                n_offspring = n_known_offspring)
+                n_offspring = n_known_offspring) %>%
+  dplyr::right_join(lemurs_sppnames_df,., by = "taxon") ## id species
 ```
 
-# Explore it
+# Main text figures and tables
 
-## Reproduction
+## Table 1: Females fertility rates per taxon
 
-If we are trying to protect a species, reproduction is one of the most important aspects of a species' life history.
-With the DLC lemur data, we can estimate taxa fertility rates, productive season, and the relationship between age, sizes and offspring production.
-
-### Fertility rates per taxon
-
-TODO: mean and sd number of offspring (measured from litter size, n_offspring, or infant_lt_sz) per female
 ```{r}
 lemurs_smallts %>%
-  dplyr::filter(!is.na(infant_lit_sz_if_preg)) %>%
-  dplyr::group_by(dlc_id, taxon) %>%
+  dplyr::filter(!is.na(infant_lit_sz_if_preg)) %>% ## filter the animals for which this information was available
+  dplyr::group_by(dlc_id, species) %>%
   dplyr::summarize(inflt_mean_ind = mean(infant_lit_sz_if_preg)) %>%
   ungroup() %>%
-  dplyr::group_by(taxon) %>%
+  dplyr::group_by(species) %>%
   dplyr::summarize(inflt_mean = mean(inflt_mean_ind),
                    inflt_sd = sd(inflt_mean_ind),
-                   n = n())
+                   n = n()) %>%
+  dplyr::rename(Species = species,
+                "Infant litter size (mean)" = inflt_mean,
+                "Infant litter size (sd)" = inflt_sd) %>%
+  readr::write_csv(file.path(figures_dir, "fertility_rates.csv"))
 ```
 
-## Main text figures/tables
-
 ## Seasonality of species
-TODO: facetted plot of mean and sd number of births for seasonal species
 ```{r}
 births_df <- lemurs_smallts %>%
-  dplyr::select(dlc_id, taxon, birth_month) %>%
+  dplyr::select(dlc_id, taxon, birth_month, year) %>%
   dplyr::filter(!is.na(birth_month)) %>%
   dplyr::mutate_at(vars(birth_month), 
                    lubridate::month, label = TRUE, 
@@ -162,13 +160,12 @@ births_df <- lemurs_smallts %>%
  
 months_fct <- lubridate::month(1:12, label = TRUE, locale = Sys.getlocale(category = "LC_CTYPE"))
 
-birth_season_countdf <- births_df %>%
+births_countdf <- births_df %>%
   unique() %>%
-  dplyr::group_by(species, common_name, taxon, birth_month) %>%
+  dplyr::group_by(species, common_name, taxon, birth_month, year) %>%
   dplyr::summarize(n_births = n()) %>%
   ungroup() %>%
-  dplyr::arrange(species, common_name, taxon, birth_month) %>%
-  tidyr::pivot_wider(id_cols = c(species, common_name, taxon), 
+  tidyr::pivot_wider(id_cols = c(species, common_name, taxon, year), 
                      names_from = birth_month, values_from = n_births) %>%
   tidyr::pivot_longer(all_of(months_fct), 
                       names_to = "birth_month", values_to = "n_births")%>%
@@ -180,28 +177,92 @@ birth_season_countdf <- births_df %>%
   dplyr::mutate_at(vars(birth_month), 
                    lubridate::month, label = TRUE,
                                        locale = Sys.getlocale(category = "LC_CTYPE")) %>%
-  dplyr::arrange(taxon, birth_month) 
+  dplyr::arrange(year, species, birth_month) 
+
+births_summdf <- births_countdf  %>%
+  dplyr::group_by(species, birth_month) %>%
+  dplyr::summarize(n_births_mean = mean(n_births, na.rm = TRUE),
+                 n_births_sd = sd(n_births, na.rm = TRUE))
+```
+
+```{r fig.height=6, fig.width=12, fig.caption = "Mean number of individuals born in each month of the year, averaged for species across years (1938-2019)."}
+births_summdf %>%
+  ggplot(aes(x = birth_month, y = n_births_mean, colour = species, group = species)) +
+  geom_step() +
+  theme_lemurs() + 
+  labs(x = "Month", y = "Number of births") +
+  theme(legend.position = "bottom")
+```
+
+```{r fig.height=10, fig.width=15}
+births_summdf  %>%
+  ggplot(aes(x = birth_month, y = n_births_mean, fill = species)) +
+  geom_bar(alpha=0.6, stat = "identity") + 
+  theme_lemurs() + 
+  facet_wrap(~species, ncol = 3) +
+  labs(x = "Month", y = "Number of births (mean)") +
+  theme(legend.position = "none", 
+        axis.text.x = element_text(angle = 45))
+```
+
+## Offspring production
+```{r}
+offspring_df <- lemurs_smallts %>%
+  dplyr::select(year, month, species, taxon, dlc_id, sex,
+                litter_size, ## size of litter it was born into
+                age_at_wt_y, weight, 
+                preg_status, 
+                n_offspring, ## total number of offspring produced until that day
+                infant_lit_sz_if_preg)
+```
+
+## Individual weight and litter size
+Get individual's weight at its younger age and plot it against against the litter it came from (separate males and females differently)
+```{r}
+litterweight_df <- offspring_df %>%
+  dplyr::group_by(dlc_id) %>%
+  dplyr::filter(age_at_wt_y == min(age_at_wt_y)) %>%
+  ungroup()
+
+litterweight_df %>%
+  dplyr::group_by(species) %>%
+  dplyr::summarize(weight_mean = mean(weight),
+                   weight_sd = sd(weight))
 ```
 
 ```{r}
-births_df %>%
-  ggplot(aes(x = birth_month, y = taxon, fill = taxon)) +
-  geom_density_ridges(alpha=0.6, stat = "binline") + 
-  scale_fill_continuous()+
-  theme_minimal()
+litterweight_df  %>%
+  dplyr::filter(sex != "ND") %>%
+  ggplot(aes(x = log(weight), y = species))+
+  geom_point(aes(size = litter_size), alpha = 0.2) +
+  facet_wrap(~sex, ncol = 2) +
+  labs(x = "Weight (log(g))", y = "Species", size = "Litter size") + 
+  theme_lemurs()
 ```
 
-
-## age vs. offspring production
-TODO: get minimal weight of each individual (or weight at minimal age), and plot it against its litter size
-
-## individual weight vs. offspring production
-TODO: get weight of each pregnant individual, and plot it against against the n_offspring it produced
+## Individual female weight and offspring production
+```{r}
+offspring_df  %>%
+  dplyr::filter(preg_status == "P") %>%
+  dplyr::group_by(dlc_id, species) %>%
+  ggplot(aes(x = log(weight), y = species))+
+  geom_point(aes(size = infant_lit_sz_if_preg), alpha = 0.2) +
+  labs(x = "Weight (log(g))", y = "Species", size = "Infant litter size") +
+  theme_lemurs()
+```
 
 TODO: get weight of each individual at its oldest, and plot it against the n_offspring it produced. Facet for males and females
-
-## individual weight vs. litter
-TODO: get minimal weight of each individual (or weight at minimal age), and plot it against against the litter it came from (color males and females differently)
+```{r}
+offspring_df  %>%
+  filter(sex != "ND") %>%
+  dplyr::group_by(dlc_id) %>%
+  dplyr::filter(age_at_wt_y == max(age_at_wt_y)) %>%
+  ggplot(aes(x = log(weight), y = n_offspring, colour = species))+
+  geom_point(alpha = 0.5) +
+  facet_wrap(~sex, ncol = 1) +
+  theme_lemurs() +
+  theme(legend.position = "none")
+```
 
 
 **R version, OS and packages used in this analysis:**
