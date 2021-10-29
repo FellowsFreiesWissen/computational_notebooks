@@ -3,6 +3,8 @@ title: "Example of a computational notebook for data analysis"
 output:
   html_document:
     df_print: paged
+    code_folding: hide
+  pdf_document: default
 ---
 
 ```{r set-up, include = FALSE}
@@ -14,9 +16,36 @@ procdata_dir <- file.path("results", "data", "processed")
 figures_dir <- file.path("text", "figures")
 tables_dir <- file.path("text", "tables")
 suppl_dir <- file.path("text", "supplementary")
+
+# internal formatting of the notebook file
+knitr::opts_chunk$set(message = FALSE)
+
+# custom aesthetics
+options(ggplot2.continuous.colour = pals::ocean.oxy(n = 27))
+options(ggplot2.discrete.colour = pals::ocean.oxy(n = 27))
+
+## base theme for plotting figures
+theme_lemurs <- function(){
+    theme_minimal(base_size = 8)%+replace%
+        theme(
+            axis.text = element_text(size = rel(1.25)),
+            axis.title.x = element_text(size = rel(1.25)),
+            axis.title.y = element_text(size = rel(1.25), angle = 90),
+            strip.text = element_text(size = 10, face = "bold"),
+            strip.background = element_rect(colour = "#E6E6F4",
+                                            fill = "#E6E6F4"),
+            legend.title = element_text(face = "bold", size = 10),
+            legend.text = element_text(size = 10),
+            legend.position="bottom",
+            legend.background = element_rect(fill = "transparent",
+                                             colour = NA),
+            legend.key = element_rect(fill="transparent", colour=NA)
+    )
+}
+
 ```
 
-```{r package-upload,echo=FALSE}
+```{r package-upload, echo=FALSE,message=FALSE}
 library(tidyverse) ## data processing
 library(ggplot2) ##visualization
 library(ggridges)
@@ -174,10 +203,8 @@ TODO: get weight of each individual at its oldest, and plot it against the n_off
 ## individual weight vs. litter
 TODO: get minimal weight of each individual (or weight at minimal age), and plot it against against the litter it came from (color males and females differently)
 
-## Supplementary material
-TODO: daft punk graph of number of births per year, per species
 
-*R version, the OS and attached or loaded packages:*
+**R version, OS and packages used in this analysis:**
 <!-- Leave this so people know the software they need to reproduce your work. -->
 ```{r}
 sessionInfo()
