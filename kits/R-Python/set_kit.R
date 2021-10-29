@@ -13,119 +13,168 @@
 #' source("set_kit.R")
 set_kit <- function(lang = "r", project_name = "project", project_path = getwd()){
   
-  ## Create project in path 
-  dir.create(file.path(project_path, project_name), recursive = TRUE)
-  
-  ## Set working directory
-  setwd(file.path(project_path, project_name))
-  
-  ## Create file structure
-  ### first level
-  #### TODO: add README per folder
-  ### main folders of a project
-  sapply(c("results","text", "submission"), dir.create)
-  ### main folders of results
-  sapply(file.path(paste(file.path("results"), 
-                         c("data", "scripts"),
-                         sep = "/")), 
-         dir.create)
-  sapply(file.path(paste(file.path("results", "data"), 
-                         c("raw", "processed"),
-                         sep = "/")), 
-         dir.create)
-  ### main folders of text
-  sapply(file.path(paste(file.path("text"), 
-                         c("figures","tables", "supplementary"),
-                         sep = "/")), 
-         dir.create)
-  
-  ## Create the README files
-  file.copy(from = "../READMEs/main.md", to = "README.md", overwrite = FALSE)
-  file.copy(from = "../READMEs/results.md", to = "results/README.md", overwrite = FALSE)
-  file.copy(from = "../READMEs/text.md", to = "text/README.md", overwrite = FALSE)
-  file.copy(from = "../READMEs/submission.md", to = "submission/README.md", overwrite = FALSE)
-  
-  ## Create the minimal notebook
-  sink(paste0(project_name,".Rmd"))
-  cat("---")
-  cat("\n")
-  cat("title: \"Your title here\"")
-  cat("\n")
-  cat("output: pdf_document")
-  cat("\n")
-  cat("---")
-  cat("\n")
-  cat("<!-- ---------------------------------- VERY MINIMAL INTRO TO RNOTEBOOKS ---------------------------------- -->")
-  cat("\n\n")
-  cat("<!-- Just erase this whole block, if you already know how it works) -->")
-  cat("\n\n")
-  cat("<!-- The basic idea of notebooks is having your text written without any marking: -->")
-  cat("\n\n")
-  cat("\"Uncommented\" text to show you how it works.")
-  cat("\n\n")
-  cat("<!-- and code is put inside blocks like this (also called 'chunks'): -->")
-  cat("\n\n")
-  cat(paste("```{", lang, "}", sep = ""))
-  cat("\n")
-  cat("print(\"This is an example of a code block\")")
-  cat("\n")
-  cat("```")
-  cat("\n")
-  cat("<!-- Very important, check the options of how much of your code and outputs you want to show when compiling your notebook: -->")
-  cat("<!-- https://bookdown.org/yihui/rmarkdown/r-code.html -->")
-  cat("\n\n")
-  cat("<!-- As explained above, these are defined in your code chunks. -->")
-  cat("\n\n")
-  cat("<!-- ----------------------------- END OF VERY MINIMAL INTRO TO RNOTEBOOKS -------------------------------- -->")
-  cat("\n\n")
-  cat("<!-- Create objects for easy access to the folders related to the project. -->")
-  cat("\n")
-  cat("<!-- The code in this chunk is not relevant for the reader, and thus is not included in the knitted version. -->")
-  cat("\n")
-  cat("<!-- This is also useful if you are not using the folders suggested by this kit, and want to preserve your privacy. -->")
-  cat("\n")
-  cat(paste("```{", lang, " set-up, include = FALSE}", sep = ""))
-  cat("\n")
-  cat("data_dir <- file.path(\"results\", \"clean_data\") ## do NOT play with stuff in raw_data. That is your back-up")
-  cat("\n")
-  cat("scripts_dir <- file.path(\"results\", \"scripts\")")
-  cat("\n")
-  cat("suppl_dir <- file.path(\"results\", \"supplementary\")")
-  cat("\n")
-  cat("semiprods_dir <- file.path(\"results\", \"semi_products\")")
-  cat("\n")
-  cat("figures_dir <- file.path(\"text\", \"figures\")")
-  cat("\n")
-  cat("tables_dir <- file.path(\"text\", \"tables\")")
-  cat("\n")
-  cat("```")
-  cat("\n\n")
-  cat("# Read your data")
-  cat("\n")
-  cat(paste("```{", lang, "}", sep = ""))
-  cat("\n")
-  cat("## data <- read.csv(file.path(data_dir)")
-  cat("\n")
-  cat("```")
-  cat("\n\n")
-  cat("# Explore it")
-  cat("\n\n")
-  cat("# Make your main figures/tables")
-  cat("\n")
-  cat(paste("```{", lang, "}", sep = ""))
-  cat("\n")
-  cat("## ggsave(file.path(data_dir, \"plot1.png\")")
-  cat("\n")
-  cat("```")
-  cat("\n\n")
-  cat("*R version, the OS and attached or loaded packages:*")
-  cat("\n")
-  cat("<!-- Leave this so people know the software they need to reproduce your work. -->")
-  cat("\n")
-  cat("```{r}")
-  cat("\n")
-  cat("sessionInfo()")
-  cat("\n")
-  cat("```")
-  sink()
+  if(dir.exists(file.path(project_path, project_name))){
+    print("There already is a project with this name in this path. Move it or change it.")
+  }else{
+    ## Create project in path 
+    dir.create(file.path(project_path, project_name), recursive = TRUE)
+    
+    ## Create file structure
+    ### first level
+    ### main folders of a project
+    sapply(c(file.path(project_path, project_name, "results"),
+             file.path(project_path, project_name, "text"), 
+             file.path(project_path, project_name, "submission")), 
+           dir.create)
+    ### main folders of results
+    sapply(file.path(paste(file.path(project_path, project_name, "results"), 
+                           c("data", "scripts"),
+                           sep = "/")), 
+           dir.create)
+    sapply(file.path(paste(file.path(project_path, project_name, "results", "data"), 
+                           c("raw", "processed"),
+                           sep = "/")), 
+           dir.create)
+    ### main folders of text
+    sapply(file.path(paste(file.path(project_path, project_name, "text"), 
+                           c("figures","tables", "supplementary"),
+                           sep = "/")), 
+           dir.create)
+    
+    ## Create the README files
+    ### main folder
+    sink(file.path(project_path, project_name, "README.md")) 
+    cat("This folder contains the set up for a reproducible workflow as described by https://github.com/ludmillafigueiredo/computational_notebooks.git\n")
+    cat("\n")
+    cat("The file structure is organized as such:\n")
+    cat("\n")  
+    cat("projet_name\n")
+    cat("|-- README.md\n")
+    cat("|-- main.Rmd\n")
+    cat("|-- results\n")
+    cat("|   |-- README.md\n")
+    cat("|   |-- data\n")
+    cat("|   |   |-- raw\n")
+    cat("|   |   |-- processed\n")
+    cat("|   |-- scripts\n")
+    cat("|-- text\n")
+    cat("|   |-- README.md\n")
+    cat("|   |-- main.doc\n")
+    cat("|   |-- figures\n")
+    cat("|   |-- tables\n")
+    cat("|   |-- supplementary\n")
+    cat("|-- submission\n")
+    cat("|   |-- README.md\n")
+    cat("|   |-- journal1\n")
+    cat("|       |-- first\n")
+    cat("|   |-- journal2\n")
+    cat("|       |-- first\n")
+    cat("|       |-- revisions\n")
+    sink()
+    
+    ### results folder
+    sink(file.path(project_path, project_name, "results/README.md"))
+    cat("This folder contains all files of results or their processing, organized in the following subfolders:")
+    cat("\n")
+    cat("`data/raw`: your raw data files. These should not be protected against any change after the first storage")
+    cat("\n")
+    cat("`data/processed`: these are files generated by processing the raw data and these are the ones used in the analysis. It can be a copy of the raw data if that is already ready to use. Any processing of the raw data to generate the files here should be documented in the notebook.")
+    cat("\n")
+    cat("`scripts`: all code used to process the data, and which, for some reason or another is not included in the notebook because they too cumbersome or not of upmost relevancy for comprehension.")
+    sink()
+    
+    ### text folder
+    sink(file.path(project_path, project_name, "text/README.md"))
+    cat("This folder contains the main text of the manuscript, folders containing the figures and tables (unformatted) to be included in it, as well as a folder with the supplementary material.")
+    sink()
+    
+    ### submission folder
+    sink(file.path(project_path, project_name, "submission/README.md"))
+    cat("This folder contains the files specific to journal submissions, e.g. cover letters, submitted versions.")
+    sink()
+    
+    ## Create the minimal notebook
+    sink(file.path(project_path, project_name, paste0(project_name,".Rmd")))
+    cat("---")
+    cat("\n")
+    cat("title: \"Your title here\"")
+    cat("\n")
+    cat("output: pdf_document")
+    cat("\n")
+    cat("---")
+    cat("\n")
+    cat("<!-- ---------------------------------- VERY MINIMAL INTRO TO RNOTEBOOKS ---------------------------------- -->")
+    cat("\n\n")
+    cat("<!-- Just erase this whole block, if you already know how it works) -->")
+    cat("\n\n")
+    cat("<!-- The basic idea of notebooks is having your text written without any marking: -->")
+    cat("\n\n")
+    cat("\"Uncommented\" text to show you how it works.")
+    cat("\n\n")
+    cat("<!-- and code is put inside blocks like this (also called 'chunks'): -->")
+    cat("\n\n")
+    cat(paste("```{", lang, "}", sep = ""))
+    cat("\n")
+    cat("print(\"This is an example of a code block\")")
+    cat("\n")
+    cat("```")
+    cat("\n")
+    cat("<!-- Very important, check the options of how much of your code and outputs you want to show when compiling your notebook: -->")
+    cat("<!-- https://bookdown.org/yihui/rmarkdown/r-code.html -->")
+    cat("\n\n")
+    cat("<!-- As explained above, these are defined in your code chunks. -->")
+    cat("\n\n")
+    cat("<!-- ----------------------------- END OF VERY MINIMAL INTRO TO RNOTEBOOKS -------------------------------- -->")
+    cat("\n\n")
+    cat("<!-- Create objects for easy access to the folders related to the project. -->")
+    cat("\n")
+    cat("<!-- The code in this chunk is not relevant for the reader, and thus is not included in the knitted version. -->")
+    cat("\n")
+    cat("<!-- This is also useful if you are not using the folders suggested by this kit, and want to preserve your privacy. -->")
+    cat("\n")
+    cat(paste("```{", lang, " set-up, include = FALSE}", sep = ""))
+    cat("\n")
+    cat("data_dir <- file.path(\"results\", \"clean_data\") ## do NOT play with stuff in raw_data. That is your back-up")
+    cat("\n")
+    cat("scripts_dir <- file.path(\"results\", \"scripts\")")
+    cat("\n")
+    cat("suppl_dir <- file.path(\"results\", \"supplementary\")")
+    cat("\n")
+    cat("semiprods_dir <- file.path(\"results\", \"semi_products\")")
+    cat("\n")
+    cat("figures_dir <- file.path(\"text\", \"figures\")")
+    cat("\n")
+    cat("tables_dir <- file.path(\"text\", \"tables\")")
+    cat("\n")
+    cat("```")
+    cat("\n\n")
+    cat("# Read your data")
+    cat("\n")
+    cat(paste("```{", lang, "}", sep = ""))
+    cat("\n")
+    cat("## data <- read.csv(file.path(data_dir)")
+    cat("\n")
+    cat("```")
+    cat("\n\n")
+    cat("# Explore it")
+    cat("\n\n")
+    cat("# Make your main figures/tables")
+    cat("\n")
+    cat(paste("```{", lang, "}", sep = ""))
+    cat("\n")
+    cat("## ggsave(file.path(data_dir, \"plot1.png\")")
+    cat("\n")
+    cat("```")
+    cat("\n\n")
+    cat("*R version, the OS and attached or loaded packages:*")
+    cat("\n")
+    cat("<!-- Leave this so people know the software they need to reproduce your work. -->")
+    cat("\n")
+    cat("```{r}")
+    cat("\n")
+    cat("sessionInfo()")
+    cat("\n")
+    cat("```")
+    sink()
+  }
 }
