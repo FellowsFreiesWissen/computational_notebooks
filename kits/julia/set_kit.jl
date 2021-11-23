@@ -1,7 +1,7 @@
 """
-    set_kit([project_name, project_path]) 
+    set_kit(proj_name, proj_path) 
 
-Create a folder named 'project_name' in 'project_path' (both are kyw and set a file structure 
+Create a folder named 'proj_name' in 'proj_path' (both are kyw and set a file structure 
 and create a Pluto notebook inside it.
 
 The function requires the `Pluto` package to be installed. If it is not, it will suggest it for the user
@@ -14,27 +14,27 @@ File structure and notebooks are detailed [here](https://github.com/ludmillafigu
  julia> set_kit("example_project", pwd())
 ```
 """
-function set_kit(; project_name::String, project_path::String)
+function set_kit(; proj_name::String, proj_path::String)
     ## Create project in path
-    cd(project_path)
+    cd(proj_path)
     ## Create file structure
     ### first level
-    mkdir(project_name)
+    mkdir(proj_name)
     ### main folders of a project
-    map(mkdir, map(x -> joinpath(project_name, x),
+    map(mkdir, map(x -> joinpath(proj_name, x),
                    ["results","text", "submission"]))
     ### main folders of results
-    map(mkdir, map(x -> joinpath(joinpath(project_name,"results"), x),
+    map(mkdir, map(x -> joinpath(joinpath(proj_name,"results"), x),
                    ["data", "scripts"]))
-    map(mkdir, map(x -> joinpath(joinpath(project_name,"results", "data"), x),
+    map(mkdir, map(x -> joinpath(joinpath(proj_name,"results", "data"), x),
                    ["raw", "processed"]))
     ### main folders of text
-    map(mkdir, map(x -> joinpath(joinpath(project_name,"text"), x),
+    map(mkdir, map(x -> joinpath(joinpath(proj_name,"text"), x),
                    ["figures","tables", "supplementary"]))
 
     ### main folder
-    touch(joinpath(project_path, project_name, "README.txt"))
-    open(joinpath(project_path, project_name, "README.txt"), "w") do io 
+    touch(joinpath(proj_path, proj_name, "README.txt"))
+    open(joinpath(proj_path, proj_name, "README.txt"), "w") do io 
         write(io, "This folder contains the set up for a reproducible workflow as described by https://github.com/ludmillafigueiredo/computational_notebooks.git\n")
         write(io, "\n")
         write(io, "The file structure is organized as such:\n")
@@ -64,8 +64,8 @@ function set_kit(; project_name::String, project_path::String)
     end
     
     ### results folder
-    touch(joinpath(project_path, project_name, "results/README.txt"))
-    open(joinpath(project_path, project_name, "results/README.txt"), "w") do io
+    touch(joinpath(proj_path, proj_name, "results/README.txt"))
+    open(joinpath(proj_path, proj_name, "results/README.txt"), "w") do io
         write(io, "This folder contains all files of results or their processing, organized in the following subfolders:")
         write(io, "\n")
         write(io, "`data/raw`: your raw data files. These should not be protected against any change after the first storage")
@@ -76,20 +76,20 @@ function set_kit(; project_name::String, project_path::String)
     end
     
     ### text folder
-    touch(joinpath(project_path, project_name, "text/README.txt"))
-    open(joinpath(project_path, project_name, "text/README.txt"), "w") do io
+    touch(joinpath(proj_path, proj_name, "text/README.txt"))
+    open(joinpath(proj_path, proj_name, "text/README.txt"), "w") do io
         write(io, "This folder contains the main text of the manuscript, folders containing the figures and tables (unformatted) to be included in it, as well as a folder with the supplementary material.")
     end
     
     ### submission folder
-    touch(joinpath(project_path, project_name, "submission/README.txt"))
-    open(joinpath(project_path, project_name, "submission/README.txt"), "w") do io
+    touch(joinpath(proj_path, proj_name, "submission/README.txt"))
+    open(joinpath(proj_path, proj_name, "submission/README.txt"), "w") do io
         write(io, "This folder contains the files specific to journal submissions, e.g. cover letters, submitted versions.")
     end
     
     ## Create the minimal notebook
-    touch(joinpath(project_path, string(project_name, ".jl")))
-    open(joinpath(project_path, string(project_name, ".jl")), "w") do io
+    touch(joinpath(proj_path, string(proj_name, ".jl")))
+    open(joinpath(proj_path, string(proj_name, ".jl")), "w") do io
         write(io, "### A Pluto.jl notebook ###")
         write(io, "\n\n")
         write(io, "using Markdown")
