@@ -1,10 +1,7 @@
 """
     set_kit(proj_name, proj_path) 
 
-Create a folder named 'proj_name' in 'proj_path' (both are kyw and set a file structure 
-and create a Pluto notebook inside it.
-
-The function requires the `Pluto` package to be installed. If it is not, it will suggest it for the user
+Create a folder named 'proj_name' in 'proj_path' (both are keyword arguments) and set a file structure and create a Pluto notebook inside it.
 
 File structure and notebooks are detailed [here](https://github.com/ludmillafigueiredo/computational_notebooks).
 
@@ -15,6 +12,12 @@ File structure and notebooks are detailed [here](https://github.com/ludmillafigu
 ```
 """
 function set_kit(; proj_name::String, proj_path::String)
+    println("Will set project at $(joinpath($proj_path,$proj_name)).")
+    println("Is that correct? Answer yes or no:")
+    user_ans = readLine()
+    if user_ans == "no"
+        error("Check help('set_kit') to set up the project path.")
+    end
     ## Create project in path
     cd(proj_path)
     ## Create file structure
