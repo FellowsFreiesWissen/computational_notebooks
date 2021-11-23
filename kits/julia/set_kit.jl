@@ -33,29 +33,29 @@ function set_kit(; project_name::String, project_path::String)
                    ["figures","tables", "supplementary"]))
 
     ### main folder
-    touch(joinpath(project_path, project_name, "README.md"))
-    open(joinpath(project_path, project_name, "README.md"), "w") do io 
+    touch(joinpath(project_path, project_name, "README.txt"))
+    open(joinpath(project_path, project_name, "README.txt"), "w") do io 
         write(io, "This folder contains the set up for a reproducible workflow as described by https://github.com/ludmillafigueiredo/computational_notebooks.git\n")
         write(io, "\n")
         write(io, "The file structure is organized as such:\n")
         write(io, "\n")  
         write(io, "projet_name\n")
-        write(io, "|-- README.md\n")
+        write(io, "|-- README.txt\n")
         write(io, "|-- main.Rmd\n")
         write(io, "|-- results\n")
-        write(io, "|   |-- README.md\n")
+        write(io, "|   |-- README.txt\n")
         write(io, "|   |-- data\n")
         write(io, "|   |   |-- raw\n")
         write(io, "|   |   |-- processed\n")
         write(io, "|   |-- scripts\n")
         write(io, "|-- text\n")
-        write(io, "|   |-- README.md\n")
+        write(io, "|   |-- README.txt\n")
         write(io, "|   |-- main.doc\n")
         write(io, "|   |-- figures\n")
         write(io, "|   |-- tables\n")
         write(io, "|   |-- supplementary\n")
         write(io, "|-- submission\n")
-        write(io, "|   |-- README.md\n")
+        write(io, "|   |-- README.txt\n")
         write(io, "|   |-- journal1\n")
         write(io, "|       |-- first\n")
         write(io, "|   |-- journal2\n")
@@ -64,8 +64,8 @@ function set_kit(; project_name::String, project_path::String)
     end
     
     ### results folder
-    touch(joinpath(project_path, project_name, "results/README.md"))
-    open(joinpath(project_path, project_name, "results/README.md"), "w") do io
+    touch(joinpath(project_path, project_name, "results/README.txt"))
+    open(joinpath(project_path, project_name, "results/README.txt"), "w") do io
         write(io, "This folder contains all files of results or their processing, organized in the following subfolders:")
         write(io, "\n")
         write(io, "`data/raw`: your raw data files. These should not be protected against any change after the first storage")
@@ -76,14 +76,14 @@ function set_kit(; project_name::String, project_path::String)
     end
     
     ### text folder
-    touch(joinpath(project_path, project_name, "text/README.md"))
-    open(joinpath(project_path, project_name, "text/README.md"), "w") do io
+    touch(joinpath(project_path, project_name, "text/README.txt"))
+    open(joinpath(project_path, project_name, "text/README.txt"), "w") do io
         write(io, "This folder contains the main text of the manuscript, folders containing the figures and tables (unformatted) to be included in it, as well as a folder with the supplementary material.")
     end
     
     ### submission folder
-    touch(joinpath(project_path, project_name, "submission/README.md"))
-    open(joinpath(project_path, project_name, "submission/README.md"), "w") do io
+    touch(joinpath(project_path, project_name, "submission/README.txt"))
+    open(joinpath(project_path, project_name, "submission/README.txt"), "w") do io
         write(io, "This folder contains the files specific to journal submissions, e.g. cover letters, submitted versions.")
     end
     
