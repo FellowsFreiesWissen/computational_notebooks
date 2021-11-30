@@ -14,12 +14,16 @@ See also: [`Pluto`](https://juliapackages.com/p/pluto)
 ```
 """
 function set_kit(proj_name::String = "project", proj_path::String = pwd())
+    ## Check project path and whether it is empty
     println(string("Will set project at ", joinpath(proj_path, proj_name)))
     println("Is that correct? Answer yes or no:")
     user_ans = readline()
     if user_ans == "no"
-        error("Check help('set_kit') to set up your project's location.")
+        println("Check help('set_kit') to set up your project's location.")
     end
+    if isdir(joinpath(proj_path, proj_name))
+        println("There already is a project with this name in this path. Move it or change it's name.")
+    else
     ## Create project in path
     cd(proj_path)
     ## Create file structure
@@ -131,4 +135,5 @@ function set_kit(proj_name::String = "project", proj_path::String = pwd())
         write(io, "\n")
         write(io, "# ╠═37c7bffc-cf46-11eb-19b8-4175e38e818b")
     end
+        end
 end

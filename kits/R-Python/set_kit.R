@@ -10,9 +10,15 @@
 #' @example
 #' source("set_kit.R")
 set_kit <- function(lang = "r", proj_name = "project", proj_path = getwd()){
-  
+  ## Check project path and whether it is empty
+  cat("Will set project at", file.path(proj_path, proj_name), "\n")
+  print("Is that correct? Answer yes or no:")
+  user_ans = readline()
+  if(user_ans == "no"){
+    print("Check help('set_kit') to set up your project's location.")
+  }
   if(dir.exists(file.path(proj_path, proj_name))){
-    print("There already is a project with this name in this path. Move it or change it.")
+    print("There already is a project with this name in this path. Move it or change it's name.")
   }else{
     ## Create project in path 
     dir.create(file.path(proj_path, proj_name), recursive = TRUE)
