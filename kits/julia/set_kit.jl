@@ -97,8 +97,8 @@ function set_kit(proj_name::String = "project", proj_path::String = pwd())
     end
     
     ## Create the minimal notebook
-    touch(joinpath(proj_path, string(proj_name, ".jl")))
-    open(joinpath(proj_path, string(proj_name, ".jl")), "w") do io
+    touch(joinpath(proj_path, proj_name, string(proj_name, ".jl")))
+    open(joinpath(proj_path, proj_name, string(proj_name, ".jl")), "w") do io
         write(io, "### A Pluto.jl notebook ###")
         write(io, "\n\n")
         write(io, "using Markdown")
