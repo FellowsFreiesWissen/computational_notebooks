@@ -1,12 +1,16 @@
 # Computational notebooks to increase productivity and reproducibility in (ecological) research
 
 ## A minimal set up to get you started
-This repository contains a starter-kit to use so called "computational notebooks" 
-(i.e. files containg both code and narrative text) as accompanying pieces for your manuscript.
-Besides making your work reproducible, the set up and tutorial included here should facilitate 
-the production of computational outputs included in the publication (particularly supplementary materials).
+This repository contains a starter-kit to use so called "computational notebooks" to structure your work.
+Computational notebooks are files that contain descriptive text, as well as code and its outputs, in a single, dynamic and visually appealing file (usuallly `.html`, but `.pdf` is also possible).
+Using this file to organize your work should facilitate:
 
-In Figueiredo et al. (in prep), we provide a full tutorial.
+- traceability: the file contains all the reasoning behind the study. Moreover, the file formats suggested here facilitate version control, arguably one of the best tools for tracking a project development.
+- reproducibility: 
+- reporting:  as accompanying pieces for your manuscript to share with co-authors during the development of the work, or to share with reviewers and readers, as supplementary material.
+
+In Figueiredo et al. (_in prep_), we report our reasoning for the kits in this repository and provide examples of implementation.
+Below, you can find the basic instructions on how to use it, as well as a video tutorial.
 
 ### How to use it
 In the [kits](https://github.com/ludmillafigueiredo/computational_notebooks/tree/master/kits) 
