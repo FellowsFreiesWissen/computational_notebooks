@@ -16,7 +16,7 @@ See also: [`Pluto`](https://juliapackages.com/p/pluto)
 function set_kit(proj_name::String = "project", proj_path::String = pwd())
     println(string("Will set project at ", joinpath(proj_path, proj_name)))
     println("Is that correct? Answer yes or no:")
-    user_ans = readLine()
+    user_ans = readline()
     if user_ans == "no"
         error("Check help('set_kit') to set up your project's location.")
     end
