@@ -15,15 +15,22 @@ Below, you can find the basic instructions on how to use it, as well as a video 
 ### How to use it
 In the [kits](https://github.com/ludmillafigueiredo/computational_notebooks/tree/master/kits) 
 folder, you can find a `set_kit` function (in both `R` and `Julia` languages).
+When calling this function (`source("set_kit.R")` or `include("set_kit.jl")`) you should provide two arguments:
 
-By default, calling this function (`set_kit()`) creates:
+-`project_path` to specify where the folder should be created (defaults to the current directory)
+-`project_name` to specify the name of the project folder to be created inside`project_path`(defaults to "project")
 
-+ a computational notebook (an `RMarkdown` or `Pluto` file) with a skeleton on how to organize
-your computational work
-![workflow](https://raw.githubusercontent.com/ludmillafigueiredo/computational_notebooks/master/figures/workflow.png)
++ a computational notebook (an `RMarkdown` or `Pluto` file) with a suggestion on how the file could be organized
 
-+ a file structure for easy access of relevant files and less wordy code
-![file-structure](https://raw.githubusercontent.com/ludmillafigueiredo/computational_notebooks/master/figures/file_structure.png)
+<p align="center">
+<img src="https://raw.githubusercontent.com/ludmillafigueiredo/computational_notebooks/master/figures/workflow.png" alt="drawing" width="500"/>
+</p>
+
++ a file structure for easy access of relevant files and less wordy code (through relative paths)
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/ludmillafigueiredo/computational_notebooks/master/figures/file_structure.png" alt="drawing" width="400"/>
+</p>
 
 The `results` folder contains all files related to data processing: 
 
@@ -33,16 +40,15 @@ The `results` folder contains all files related to data processing:
 
 - `scripts`: all code used to process the data, and which, for some reason or another is not included in the notebook because they too cumbersome or not of upmost relevancy for comprehension.
 
-
 The `text` folder contains the main text of the manuscript, folders containing the `figures` and `tables` (unformatted) to be included in it, as well as a folder with the `supplementary` material.
 
 The `submission` folder contains the files specific to journal submissions, e.g. cover letters, submitted versions.
 
 The `set_kit` functions also create the `README.md` files describing the contents of each of the main folders.
-
-The `project_path` argument allows specifying where the folder should be created, and the name of the project folder can be specified with the `project_name` argument.
  
 In the [examples](https://github.com/ludmillafigueiredo/computational_notebooks/tree/master/examples) folder, you can find examples of how the notebooks can be used.
+
+### Video tutorial
 
 ## Where to go next
 This starter-kit is an attempt to have the simplest, yet effective, reproducible 
@@ -57,4 +63,8 @@ Once users are comfortable with this set up, they are encouraged to try more com
 
 # Acknowledgements
 
-![workflow](https://raw.githubusercontent.com/ludmillafigueiredo/computational_notebooks/master/figures/fw_sponsorship.png)
+<p align="center">
+<img src="https://raw.githubusercontent.com/ludmillafigueiredo/computational_notebooks/master/figures/fw_sponsorship.png" alt="drawing" width="800"/>
+</p>
+
+I, Ludmilla, also acknowledge valuable mentoring from [Dr. Johanna Havemann](https://de.wikiversity.org/wiki/Wikiversity:Fellow-Programm_Freies_Wissen/MentorInnen/Johanna_Havemann), as well as valuable feedback from members of the [Ecosystem modeling group](https://www.biozentrum.uni-wuerzburg.de/cctb/research/ecosystem-modeling/) and the [CCTB](https://www.biozentrum.uni-wuerzburg.de/cctb/research/ecosystem-modeling/), at the University of Würzburg.
