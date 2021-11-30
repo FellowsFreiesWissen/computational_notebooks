@@ -1,9 +1,11 @@
 """
     set_kit(proj_name, proj_path) 
 
-Create a folder named 'proj_name' in 'proj_path' (both are keyword arguments) and set a file structure and create a Pluto notebook inside it.
+Create a folder named `proj_name` in `proj_path`, as well as a Pluto notebook and an internal file structure inside `proj_path/proj_name`.
 
-File structure and notebooks are detailed [here](https://github.com/ludmillafigueiredo/computational_notebooks).
+File structure and use of the notebook are detailed [here](https://github.com/ludmillafigueiredo/computational_notebooks).
+
+See also: [`Pluto`](https://juliapackages.com/p/pluto)
 
 # Example
 ```julia-repl
@@ -11,12 +13,12 @@ File structure and notebooks are detailed [here](https://github.com/ludmillafigu
  julia> set_kit("example_project", pwd())
 ```
 """
-function set_kit(; proj_name::String, proj_path::String)
-    println("Will set project at $(joinpath($proj_path,$proj_name)).")
+function set_kit(proj_name::String = "project", proj_path::String = pwd())
+    println(string("Will set project at ", joinpath(proj_path, proj_name)))
     println("Is that correct? Answer yes or no:")
     user_ans = readLine()
     if user_ans == "no"
-        error("Check help('set_kit') to set up the project path.")
+        error("Check help('set_kit') to set up your project's location.")
     end
     ## Create project in path
     cd(proj_path)

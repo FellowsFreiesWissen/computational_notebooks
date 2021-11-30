@@ -1,4 +1,4 @@
-#' Set a minimal file structure and create the notebook
+#' Create a folder named 'proj_name' in 'proj_path', as well as create a Pluto notebook and an internal file structure inside 'proj_path/proj_name'.
 #'
 #' @param lang a string, the language \"r\" or \"python\", you want to create your notebook in.  
 #'  It defaults to "r".
@@ -6,9 +6,7 @@
 #'  It defaults to \"project\".
 #' @param proj_path a string, the path where the project folder should be created. 
 #'  It defaults to the current current working directory.
-#'  
 #' @details The file structure and notebooks are detailed here \url{https://github.com/ludmillafigueiredo/computational_notebooks}.
-#' 
 #' @example
 #' source("set_kit.R")
 set_kit <- function(lang = "r", proj_name = "project", proj_path = getwd()){
