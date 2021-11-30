@@ -5,9 +5,9 @@ This repository contains a starter-kit to use so called "computational notebooks
 Computational notebooks are files that contain descriptive text, as well as code and its outputs, in a single, dynamic and visually appealing file (usuallly `.html`, but `.pdf` is also possible).
 Using this file to organize your work should facilitate:
 
-- traceability: the file contains all the reasoning behind the study. Moreover, the file formats suggested here facilitate version control, arguably one of the best tools for tracking a project development.
-- reproducibility: 
-- reporting:  as accompanying pieces for your manuscript to share with co-authors during the development of the work, or to share with reviewers and readers, as supplementary material.
+- traceability: the notebook file contains all the reasoning behind the study. Moreover, the file formats suggested here facilitate version control, arguably one of the best tools for tracking a project development.
+- reproducibility: by concentrating the computational work in a single, descriptive file, along with a fixed file structure, the notebook facilitates reproduction of the study in question. 
+- reporting:  the notebook can be an accompanying piece to share with co-authors during the development of the work, or to share with reviewers and readers, as supplementary material.
 
 In Figueiredo et al. (_in prep_), we report our reasoning for the kits in this repository and provide examples of implementation.
 Below, you can find the basic instructions on how to use it, as well as a video tutorial.
