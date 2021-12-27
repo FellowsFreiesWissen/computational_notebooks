@@ -134,6 +134,8 @@ function set_kit(proj_name::String = "project", proj_path::String = pwd())
             write(io, "# ╠═307335ba-cf46-11eb-28b0-f199cf048ae6")
             write(io, "\n")
             write(io, "# ╠═37c7bffc-cf46-11eb-19b8-4175e38e818b")
+
+            println("Your project is ready to go")
         end
     end
 end
