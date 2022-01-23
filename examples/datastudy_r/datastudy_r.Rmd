@@ -4,6 +4,7 @@ output:
   html_document:
     df_print: paged
     code_folding: hide
+    toc: true
   pdf_document: default
 ---
 
@@ -16,40 +17,10 @@ procdata_dir <- file.path("results", "data", "processed")
 figures_dir <- file.path("text", "figures")
 tables_dir <- file.path("text", "tables")
 suppl_dir <- file.path("text", "supplementary")
-
-# internal formatting of the notebook file
-knitr::opts_chunk$set(message = FALSE)
-
-# custom aesthetics
-options(ggplot2.continuous.colour = pals::ocean.oxy(n = 27))
-options(ggplot2.discrete.colour = pals::ocean.oxy(n = 27))
-
-## base theme for plotting figures
-theme_lemurs <- function(){
-    theme_minimal(base_size = 8)%+replace%
-        theme(
-            axis.text = element_text(size = rel(1.25)),
-            axis.title.x = element_text(size = rel(1.25)),
-            axis.title.y = element_text(size = rel(1.25), angle = 90),
-            strip.text = element_text(size = 10, face = "bold"),
-            strip.background = element_rect(colour = "#E6E6F4",
-                                            fill = "#E6E6F4"),
-            legend.title = element_text(face = "bold", size = 10),
-            legend.text = element_text(size = 10),
-            legend.position="bottom",
-            legend.background = element_rect(fill = "transparent",
-                                             colour = NA),
-            legend.key = element_rect(fill="transparent", colour=NA)
-    )
-}
-
 ```
 
-```{r package-upload, echo=FALSE,message=FALSE}
+```{r package-upload, echo=FALSE, message=FALSE}
 library(tidyverse) ## data processing
-library(ggplot2) ##visualization
-library(ggridges)
-library(kableExtra) ## nice looking tables for html and pdf files. Used here with default configuration. Simply calling the data frames or their header would have a similar, if less aesthetically pleasing result. 
 ```
 In this example, we explore life history data on 2270 lemur individuals living in the Duke Lemur Center. 
 
@@ -143,8 +114,7 @@ lemurs_smallts %>%
                    n = n()) %>%
   dplyr::rename(Species = species,
                 "Infant litter size (mean)" = inflt_mean,
-                "Infant litter size (sd)" = inflt_sd) %>%
-  readr::write_csv(file.path(figures_dir, "fertility_rates.csv"))
+                "Infant litter size (sd)" = inflt_sd)
 ```
 
 ## Seasonality of species
@@ -189,7 +159,6 @@ births_summdf <- births_countdf  %>%
 births_summdf %>%
   ggplot(aes(x = birth_month, y = n_births_mean, colour = species, group = species)) +
   geom_step() +
-  theme_lemurs() + 
   labs(x = "Month", y = "Number of births") +
   theme(legend.position = "bottom")
 ```
@@ -198,7 +167,6 @@ births_summdf %>%
 births_summdf  %>%
   ggplot(aes(x = birth_month, y = n_births_mean, fill = species)) +
   geom_bar(alpha=0.6, stat = "identity") + 
-  theme_lemurs() + 
   facet_wrap(~species, ncol = 3) +
   labs(x = "Month", y = "Number of births (mean)") +
   theme(legend.position = "none", 
@@ -236,8 +204,7 @@ litterweight_df  %>%
   ggplot(aes(x = log(weight), y = species))+
   geom_point(aes(size = litter_size), alpha = 0.2) +
   facet_wrap(~sex, ncol = 2) +
-  labs(x = "Weight (log(g))", y = "Species", size = "Litter size") + 
-  theme_lemurs()
+  labs(x = "Weight (log(g))", y = "Species", size = "Litter size")
 ```
 
 ## Individual female weight and offspring production
@@ -247,8 +214,7 @@ offspring_df  %>%
   dplyr::group_by(dlc_id, species) %>%
   ggplot(aes(x = log(weight), y = species))+
   geom_point(aes(size = infant_lit_sz_if_preg), alpha = 0.2) +
-  labs(x = "Weight (log(g))", y = "Species", size = "Infant litter size") +
-  theme_lemurs()
+  labs(x = "Weight (log(g))", y = "Species", size = "Infant litter size")
 ```
 
 TODO: get weight of each individual at its oldest, and plot it against the n_offspring it produced. Facet for males and females
@@ -260,7 +226,6 @@ offspring_df  %>%
   ggplot(aes(x = log(weight), y = n_offspring, colour = species))+
   geom_point(alpha = 0.5) +
   facet_wrap(~sex, ncol = 1) +
-  theme_lemurs() +
   theme(legend.position = "none")
 ```
 

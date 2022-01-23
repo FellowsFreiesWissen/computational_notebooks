@@ -180,5 +180,7 @@ set_kit <- function(lang = "r", proj_name = "project", proj_path = getwd()){
     cat("\n")
     cat("```")
     sink()
+
+    print("Your project is ready to go")
   }
 }
