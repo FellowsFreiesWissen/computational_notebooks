@@ -9,7 +9,7 @@
 #' @details The file structure and notebooks are detailed here \url{https://github.com/ludmillafigueiredo/computational_notebooks}.
 #' @example
 #' source("set_kit.R")
-set_kit <- function(lang = "r", proj_name = "project", proj_path = getwd()){
+set_kit <- function(proj_name = "project", proj_path = getwd(), lang = "r"){
   ## Check project path and whether it is empty
   cat("Will set project at", file.path(proj_path, proj_name), "\n")
   print("Is that correct? Answer yes or no:")
