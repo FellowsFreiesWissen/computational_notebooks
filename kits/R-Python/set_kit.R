@@ -4,7 +4,7 @@
 #' @param proj_path a string, the path where the project folder should be created. 
 #' @param lang a string, the language \"r\" or \"python\", you want to create your notebook in.  
 #'  It defaults to "r".
-#' @details The file structure and notebooks are detailed here \url{https://github.com/ludmillafigueiredo/computational_notebooks}.
+#' @details The file structure and notebooks are detailed here \url{https://github.com/FellowsFreiesWissen/computational_notebooks}.
 #' @example
 #' source("set_kit.R")
 #' set_kit("my_project", getwd())
@@ -47,7 +47,7 @@ set_kit <- function(proj_name, proj_path, lang = "r"){
     ## Create the README files
     ### main folder
     sink(file.path(proj_path, proj_name, "README.txt")) 
-    cat("This folder contains the set up for a reproducible workflow as described by https://github.com/ludmillafigueiredo/computational_notebooks.git\n")
+    cat("This folder contains the set up for a reproducible workflow as described by https://github.com/FellowsFreiesWissen/computational_notebooks.git\n")
     cat("\n")
     cat("The file structure is organized as such:\n")
     cat("\n")  

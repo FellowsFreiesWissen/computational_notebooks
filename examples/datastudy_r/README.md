@@ -1,4 +1,4 @@
-This folder contains the set up for a reproducible workflow as described by https://github.com/ludmillafigueiredo/computational_notebooks.git
+This folder contains the set up for a reproducible workflow as described by https://github.com/FellowsFreiesWissen/computational_notebooks.git
 
 The file structure is organized as such:
 

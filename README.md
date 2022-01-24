@@ -16,7 +16,7 @@ Below, you can find the basic instructions on how to use it, as well as a video 
 
 Before starting, make sure you have installed [RStudio](https://www.rstudio.com/) (if you are using R or Python) or the [Pluto package](https://juliapackages.com/p/pluto) (if you are using Julia).
 
-In the [kits](https://github.com/ludmillafigueiredo/computational_notebooks/tree/master/kits) 
+In the [kits](https://github.com/FellowsFreiesWissen/computational_notebooks/tree/master/kits) 
 folder, you can find a `set_kit` function in both `R` and `Julia` languages -- `set_kit.R` can also be used to setup a Python project.
 
 To use the function, you first have to load it into your environment (run `source("path/where/you/saved/set_kit.R")` or `include("path/where/you/saved/set_kit.jl")`). When calling the function, you must provide two arguments: `proj_path` to specify where you want the project folder to be created, and `proj_name` to specify the name of the project folder inside `proj_path`. For `set_kit.R` you can also provide the `lang` argument, to choose between R and Python (defaults to `"r"`). Note that `proj_path` does not have to (arguably should not) be the same where `set_kit` is stored.
@@ -26,13 +26,13 @@ This will create:
 + a computational notebook (an `RMarkdown` or `Pluto` file) with a suggestion on how the contents of the file should be organized
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/ludmillafigueiredo/computational_notebooks/master/figures/workflow.png" alt="drawing" width="500"/>
+<img src="https://raw.githubusercontent.com/FellowsFreiesWissen/computational_notebooks/master/figures/workflow.png" alt="drawing" width="500"/>
 </p>
 
 + a file structure for easy access of relevant files and less wordy code (through relative paths)
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/ludmillafigueiredo/computational_notebooks/master/figures/file_structure.png" alt="drawing" width="400"/>
+<img src="https://raw.githubusercontent.com/FellowsFreiesWissen/computational_notebooks/master/figures/file_structure.png" alt="drawing" width="400"/>
 </p>
 
 The `results` folder contains all files related to data processing: 
@@ -49,7 +49,7 @@ The `submission` folder contains the files specific to journal submissions, e.g.
 
 The `set_kit` functions also create the `README.md` files describing the contents of each of the main folders (i.e. `proj_name`, `results`, `text`, and `submission`).
  
-In the [examples](https://github.com/ludmillafigueiredo/computational_notebooks/tree/master/examples) folder, we provide examples of how the notebooks can be used.
+In the [examples](https://github.com/FellowsFreiesWissen/computational_notebooks/tree/master/examples) folder, we provide examples of how the notebooks can be used.
 
 ### Video tutorial
 
@@ -67,7 +67,7 @@ Once users are comfortable with this set up, they are encouraged to try more com
 # Acknowledgements
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/ludmillafigueiredo/computational_notebooks/master/figures/fw_sponsorship.png" alt="drawing" width="800"/>
+<img src="https://raw.githubusercontent.com/FellowsFreiesWissen/computational_notebooks/master/figures/fw_sponsorship.png" alt="drawing" width="800"/>
 </p>
 
 I, [Ludmilla Figueiredo](https://github.com/ludmillafigueiredo), also acknowledge valuable mentoring from [Dr. Johanna Havemann](https://de.wikiversity.org/wiki/Wikiversity:Fellow-Programm_Freies_Wissen/MentorInnen/Johanna_Havemann), as well as valuable feedback from members of the [Ecosystem modeling group](https://www.biozentrum.uni-wuerzburg.de/cctb/research/ecosystem-modeling/) and the [CCTB](https://www.biozentrum.uni-wuerzburg.de/cctb/research/ecosystem-modeling/), at the University of Würzburg.

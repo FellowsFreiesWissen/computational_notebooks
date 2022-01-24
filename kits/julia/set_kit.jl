@@ -3,7 +3,7 @@
 
     Create a folder named `proj_name` in `proj_path`, as well as a Pluto notebook and an internal file structure inside `proj_path/proj_name`.
 
-    File structure and use of the notebook are detailed [here](https://github.com/ludmillafigueiredo/computational_notebooks).
+    File structure and use of the notebook are detailed [here](https://github.com/FellowsFreiesWissen/computational_notebooks).
 
     See also: [`Pluto`](https://juliapackages.com/p/pluto)
 
@@ -44,7 +44,7 @@ function set_kit(proj_name::String, proj_path::String)
             ### main folder
             touch(joinpath(proj_path, proj_name, "README.txt"))
             open(joinpath(proj_path, proj_name, "README.txt"), "w") do io 
-                write(io, "This folder contains the set up for a reproducible workflow as described by https://github.com/ludmillafigueiredo/computational_notebooks.git\n")
+                write(io, "This folder contains the set up for a reproducible workflow as described by https://github.com/FellowsFreiesWissen/computational_notebooks.git\n")
                 write(io, "\n")
                 write(io, "The file structure is organized as such:\n")
                 write(io, "\n")  
