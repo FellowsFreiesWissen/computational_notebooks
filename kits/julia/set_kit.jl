@@ -13,7 +13,7 @@
      julia> set_kit("example_project", pwd())
     ```
     """
-function set_kit(proj_name::String = "project", proj_path::String = pwd())
+function set_kit(proj_name::String, proj_path::String)
     ## Check project path and whether it is empty
     println(string("Will set project at ", joinpath(proj_path, proj_name)))
     println("Is that correct? Answer yes or no:")

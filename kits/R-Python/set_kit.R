@@ -1,15 +1,14 @@
 #' Create a folder named 'proj_name' in 'proj_path', as well as create a Pluto notebook and an internal file structure inside 'proj_path/proj_name'.
 #'
+#' @param proj_name a string, the name the folder of the project. 
+#' @param proj_path a string, the path where the project folder should be created. 
 #' @param lang a string, the language \"r\" or \"python\", you want to create your notebook in.  
 #'  It defaults to "r".
-#' @param proj_name a string, the name the folder of the project. 
-#'  It defaults to \"project\".
-#' @param proj_path a string, the path where the project folder should be created. 
-#'  It defaults to the current current working directory.
 #' @details The file structure and notebooks are detailed here \url{https://github.com/ludmillafigueiredo/computational_notebooks}.
 #' @example
 #' source("set_kit.R")
-set_kit <- function(proj_name = "project", proj_path = getwd(), lang = "r"){
+#' set_kit("my_project", getwd())
+set_kit <- function(proj_name, proj_path, lang = "r"){
   ## Check project path and whether it is empty
   cat("Will set project at", file.path(proj_path, proj_name), "\n")
   print("Is that correct? Answer yes or no:")
