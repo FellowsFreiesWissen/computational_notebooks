@@ -155,7 +155,7 @@ set_kit <- function(proj_name, proj_path, lang = "r"){
     cat("\n")
     cat("# Feel free to edit these paths to adapt them to your needs or not use this suggestion at all.")
     cat("\n\n")
-    cat("data_dir <- file.path(\"results\", \"process\")  ## Do NOT play with stuff in raw_data. That is your back-up. Work only on `process`.")
+    cat("data_dir <- file.path(\"results\", \"data\", \"process\")  ## Do NOT play with stuff in raw_data. That is your back-up. Work only on `process`.")
     cat("\n")
     cat("scripts_dir <- file.path(\"results\", \"scripts\")")
     cat("\n")
