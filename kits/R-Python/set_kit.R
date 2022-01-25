@@ -35,7 +35,7 @@ set_kit <- function(proj_name, proj_path, lang = "r"){
                            sep = "/")), 
            dir.create)
     sapply(file.path(paste(file.path(proj_path, proj_name, "results", "data"), 
-                           c("raw", "process"),
+                           c("raw", "process", "metadata"),
                            sep = "/")), 
            dir.create)
     ### main folders of text

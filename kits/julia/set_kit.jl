@@ -36,7 +36,7 @@ function set_kit(proj_name::String, proj_path::String)
             map(mkdir, map(x -> joinpath(joinpath(proj_name,"results"), x),
                            ["data", "scripts"]))
             map(mkdir, map(x -> joinpath(joinpath(proj_name,"results", "data"), x),
-                           ["raw", "processed"]))
+                           ["raw", "processed", "metadata"]))
             ### main folders of text
             map(mkdir, map(x -> joinpath(joinpath(proj_name,"text"), x),
                            ["figures","tables", "supplementary"]))
