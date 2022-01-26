@@ -22,7 +22,7 @@ function set_kit(proj_name::String, proj_path::String)
         println("Check help('set_kit') to set up your project's location.")
     else
         if isdir(joinpath(proj_path, proj_name))
-            println("There already is a project with this name in this path. Move it or change it's name.")
+            println("There already is a project with this name in this path. Move it or change its name.")
         else
             ## Create project in path
             cd(proj_path)
@@ -39,7 +39,7 @@ function set_kit(proj_name::String, proj_path::String)
                            ["raw", "processed", "metadata"]))
             ### main folders of text
             map(mkdir, map(x -> joinpath(joinpath(proj_name,"text"), x),
-                           ["figures","tables", "supplementary"]))
+                           ["figures","tables", "supplementary", "references"]))
     
             ### main folder
             touch(joinpath(proj_path, proj_name, "README.txt"))
@@ -156,7 +156,7 @@ function set_kit(proj_name::String, proj_path::String)
                 write(io, "\n")
                 write(io, "```")
                 write(io, "\n\n")
-                write(io, "To execute the code in code cell and have it's results appear above it, click the \"play\" (\"Run cell\") button below the cells or place your cursor inside the chunk and press `Shift+Enter`.")
+                write(io, "To execute the code in code cell and have its results appear above it, click the \"play\" (\"Run cell\") button below the cells or place your cursor inside the chunk and press `Shift+Enter`.")
                 write(io, "\n\n")
                 write(io, "The outputs of a cell are always show, unless the cell is disabled (available in the `...` - \"Actions\" - button on top of the cell). To hide the contents of the cell itself, click the eye icon on top of the cell.")
                 write(io, "\n")
