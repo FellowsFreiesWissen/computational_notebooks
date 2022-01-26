@@ -10,7 +10,7 @@
 #' set_kit("my_project", getwd())
 set_kit <- function(proj_name, proj_path, lang = "r"){
   ## Check project path and whether it is empty
-  cat("Will set project at", file.path(proj_path, proj_name), "\n")
+  cat("Will create a project at and set your working directory to:", file.path(proj_path, proj_name), "\n")
   print("Is that correct? Answer yes or no:")
   user_ans = readline()
   if(user_ans == "no"){
@@ -21,6 +21,9 @@ set_kit <- function(proj_name, proj_path, lang = "r"){
   }else{
     ## Create project in path 
     dir.create(file.path(proj_path, proj_name), recursive = TRUE)
+    
+    ## Set up working directory
+    setwd(file.path(proj_path, proj_name))
     
     ## Create file structure
     ### first level

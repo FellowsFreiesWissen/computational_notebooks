@@ -15,7 +15,7 @@
     """
 function set_kit(proj_name::String, proj_path::String)
     ## Check project path and whether it is empty
-    println(string("Will set project at ", joinpath(proj_path, proj_name)))
+    println(string("Will create a project at and set your working directory to: ", joinpath(proj_path, proj_name)))
     println("Is that correct? Answer yes or no:")
     user_ans = readline()
     if user_ans == "no"
