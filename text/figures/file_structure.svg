@@ -1,0 +1,1940 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="file_structure.svg"
+   inkscape:export-filename="/home/ludmilla/Documents/training/freieswissen/computational_notebooks/text/figures/file_structure.png"
+   inkscape:export-xdpi="600"
+   inkscape:export-ydpi="600">
+  <defs
+     id="defs2">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4804">
+      <g
+         inkscape:label="Clip"
+         id="use4806">
+        <rect
+           inkscape:transform-center-y="-4.4272072"
+           inkscape:transform-center-x="-1.1120473"
+           ry="0.8061409"
+           y="25.375568"
+           x="16.325207"
+           height="7.5484109"
+           width="16.279669"
+           id="rect5566"
+           style="opacity:1;fill:#ffcb00;fill-opacity:1;stroke:#ffcb00;stroke-width:0.24175757;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <text
+           id="text5570"
+           y="30.123013"
+           x="18.222528"
+           style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             id="tspan5568"
+             style="stroke-width:0.26458332"
+             y="30.123013"
+             x="18.222528"
+             sodipodi:role="line">project</tspan></text>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4804-0">
+      <use
+         x="0"
+         y="0"
+         xlink:href="#g4800-1"
+         id="use4806-1"
+         width="100%"
+         height="100%" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4804-9">
+      <g
+         inkscape:label="Clip"
+         id="use4806-0">
+        <rect
+           inkscape:transform-center-y="-4.4272072"
+           inkscape:transform-center-x="-1.1120473"
+           ry="0.8061409"
+           y="25.375568"
+           x="16.325207"
+           height="7.5484109"
+           width="16.279669"
+           id="rect4970"
+           style="opacity:1;fill:#ffcb00;fill-opacity:1;stroke:#ffcb00;stroke-width:0.24175757;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <text
+           id="text4974"
+           y="30.123013"
+           x="18.222528"
+           style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             id="tspan4972"
+             style="stroke-width:0.26458332"
+             y="30.123013"
+             x="18.222528"
+             sodipodi:role="line">project</tspan></text>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4804-0-7">
+      <g
+         inkscape:label="Clip"
+         id="use4806-1-4">
+        <rect
+           inkscape:transform-center-y="-4.4141366"
+           inkscape:transform-center-x="-1.3304443"
+           ry="0.80376089"
+           y="25.386711"
+           x="16.336349"
+           height="7.5261254"
+           width="19.47687"
+           id="rect5101"
+           style="opacity:1;fill:#ffcb00;fill-opacity:1;stroke:#ffcb00;stroke-width:0.26404312;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <text
+           id="text5105"
+           y="30.073921"
+           x="17.965891"
+           style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             id="tspan5103"
+             style="stroke-width:0.26458332"
+             y="30.073921"
+             x="17.965891"
+             sodipodi:role="line">raw_data</tspan></text>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4804-0-6">
+      <use
+         x="0"
+         y="0"
+         xlink:href="#g4800-1-6"
+         id="use4806-1-46"
+         width="100%"
+         height="100%" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4804-0-1">
+      <g
+         inkscape:label="Clip"
+         id="use4806-1-0">
+        <rect
+           inkscape:transform-center-y="-4.3814264"
+           inkscape:transform-center-x="-1.9664024"
+           ry="0.79780477"
+           y="25.414597"
+           x="16.364235"
+           height="7.4703546"
+           width="28.786882"
+           id="rect5029"
+           style="opacity:1;fill:#ffcb00;fill-opacity:1;stroke:#ffcb00;stroke-width:0.319814;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <text
+           id="text5033"
+           y="30.073921"
+           x="17.943644"
+           style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             id="tspan5031"
+             style="stroke-width:0.26458332"
+             y="30.073921"
+             x="17.943644"
+             sodipodi:role="line">semi_products</tspan></text>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4804-0-2">
+      <use
+         x="0"
+         y="0"
+         xlink:href="#g4800-1-4"
+         id="use4806-1-02"
+         width="100%"
+         height="100%" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4804-0-78">
+      <use
+         x="0"
+         y="0"
+         xlink:href="#g4800-1-76"
+         id="use4806-1-8"
+         width="100%"
+         height="100%" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4804-0-1-7">
+      <use
+         x="0"
+         y="0"
+         xlink:href="#g4800-1-7-8"
+         id="use4806-1-0-8"
+         width="100%"
+         height="100%" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4804-0-78-3">
+      <use
+         x="0"
+         y="0"
+         xlink:href="#g4800-1-76-1"
+         id="use4806-1-8-7"
+         width="100%"
+         height="100%"
+         transform="translate(-0.12087942)" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4804-0-78-8">
+      <use
+         x="0"
+         y="0"
+         xlink:href="#g4800-1-76-7"
+         id="use4806-1-8-8"
+         width="100%"
+         height="100%" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4804-0-78-8-0">
+      <use
+         x="0"
+         y="0"
+         xlink:href="#g4800-1-76-7-3"
+         id="use4806-1-8-8-9"
+         width="100%"
+         height="100%" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4804-0-2-7">
+      <use
+         x="0"
+         y="0"
+         xlink:href="#g4800-1-4-2"
+         id="use4806-1-02-1"
+         width="100%"
+         height="100%" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4804-0-2-1">
+      <g
+         inkscape:label="Clip"
+         id="use4806-1-02-7">
+        <rect
+           inkscape:transform-center-y="-4.4272072"
+           inkscape:transform-center-x="-1.1120473"
+           ry="0.8061409"
+           y="25.375568"
+           x="16.325207"
+           height="7.5484109"
+           width="16.279669"
+           id="rect5344"
+           style="opacity:1;fill:#ffcb00;fill-opacity:1;stroke:#ffcb00;stroke-width:0.24175757;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <text
+           id="text5348"
+           y="30.363308"
+           x="20.977743"
+           style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             id="tspan5346"
+             style="stroke-width:0.26458332"
+             y="30.363308"
+             x="20.977743"
+             sodipodi:role="line">text</tspan></text>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4804-0-2-0">
+      <use
+         x="0"
+         y="0"
+         xlink:href="#g4800-1-4-6"
+         id="use4806-1-02-8"
+         width="100%"
+         height="100%" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4804-0-2-7-6">
+      <use
+         x="0"
+         y="0"
+         xlink:href="#g4800-1-4-2-1"
+         id="use4806-1-02-1-4"
+         width="100%"
+         height="100%" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4804-0-6-9">
+      <use
+         x="0"
+         y="0"
+         xlink:href="#g4800-1-6-6"
+         id="use4806-1-46-7"
+         width="100%"
+         height="100%" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4804-06">
+      <g
+         inkscape:label="Clip"
+         id="use4806-08">
+        <rect
+           inkscape:transform-center-y="-4.4272072"
+           inkscape:transform-center-x="-1.1120473"
+           ry="0.8061409"
+           y="25.375568"
+           x="16.325207"
+           height="7.5484109"
+           width="16.279669"
+           id="rect5540"
+           style="opacity:1;fill:#ffcb00;fill-opacity:1;stroke:#ffcb00;stroke-width:0.24175757;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <text
+           id="text5544"
+           y="30.123013"
+           x="18.222528"
+           style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             id="tspan5542"
+             style="stroke-width:0.26458332"
+             y="30.123013"
+             x="18.222528"
+             sodipodi:role="line">project</tspan></text>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4804-0-6-4">
+      <g
+         inkscape:label="Clip"
+         id="use4806-1-46-0">
+        <rect
+           inkscape:transform-center-y="-4.4272072"
+           inkscape:transform-center-x="-1.1120473"
+           ry="0.8061409"
+           y="25.375568"
+           x="16.325207"
+           height="7.5484109"
+           width="16.279669"
+           id="rect9767"
+           style="opacity:1;fill:#ffcb00;fill-opacity:1;stroke:#ffcb00;stroke-width:0.24175757;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <text
+           id="text9771"
+           y="30.123013"
+           x="18.616991"
+           style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             id="tspan9769"
+             style="stroke-width:0.26458332"
+             y="30.123013"
+             x="18.616991"
+             sodipodi:role="line">scripts</tspan></text>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4804-0-7-2">
+      <g
+         inkscape:label="Clip"
+         id="use4806-1-4-9">
+        <rect
+           inkscape:transform-center-y="-4.4042027"
+           inkscape:transform-center-x="-1.5100196"
+           ry="0.80195183"
+           y="25.39518"
+           x="16.344818"
+           height="7.5091863"
+           width="22.105762"
+           id="rect5346"
+           style="opacity:1;fill:#ffcb00;fill-opacity:1;stroke:#ffcb00;stroke-width:0.28098217;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <text
+           id="text5350"
+           y="30.073921"
+           x="17.856508"
+           style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             id="tspan5348"
+             style="stroke-width:0.26458332"
+             y="30.073921"
+             x="17.856508"
+             sodipodi:role="line">processed</tspan></text>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4804-0-1-1">
+      <g
+         inkscape:label="Clip"
+         id="use4806-1-0-7">
+        <rect
+           inkscape:transform-center-y="-4.3814264"
+           inkscape:transform-center-x="-1.9664024"
+           ry="0.79780477"
+           y="25.414597"
+           x="16.364235"
+           height="7.4703546"
+           width="28.786882"
+           id="rect10186"
+           style="opacity:1;fill:#ffcb00;fill-opacity:1;stroke:#ffcb00;stroke-width:0.319814;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <text
+           id="text10190"
+           y="30.073921"
+           x="17.943644"
+           style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             id="tspan10188"
+             style="stroke-width:0.26458332"
+             y="30.073921"
+             x="17.943644"
+             sodipodi:role="line">semi_products</tspan></text>
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4804-0-7-2-7">
+      <use
+         x="0"
+         y="0"
+         xlink:href="#g4800-1-2-4-0"
+         id="use4806-1-4-9-2"
+         width="100%"
+         height="100%" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4804-0-1-7-5">
+      <g
+         id="use4806-1-0-8-4"
+         inkscape:label="Clip">
+        <rect
+           style="opacity:1;fill:#ffcb00;fill-opacity:1;stroke:#ffcb00;stroke-width:0.32126346;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect5167"
+           width="29.054045"
+           height="7.468905"
+           x="16.36496"
+           y="25.415321"
+           ry="0.79764998"
+           inkscape:transform-center-x="-1.9846517"
+           inkscape:transform-center-y="-4.3805763" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="17.526733"
+           y="30.123013"
+           id="text5171"><tspan
+             sodipodi:role="line"
+             x="17.526733"
+             y="30.123013"
+             style="stroke-width:0.26458332"
+             id="tspan5169">supplementary</tspan></text>
+      </g>
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="150"
+     inkscape:cy="681.5"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     inkscape:window-width="1879"
+     inkscape:window-height="1145"
+     inkscape:window-x="41"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:measure-start="128.872,696.336"
+     inkscape:measure-end="129.228,696.336" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="connectors_folders"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="109.62938"
+       y="36.658291"
+       id="text4810-5-4"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan4808-3-9"
+         x="109.62938"
+         y="39.779549"
+         style="stroke-width:0.26458332" /><tspan
+         sodipodi:role="line"
+         x="109.62938"
+         y="44.18927"
+         style="stroke-width:0.26458332"
+         id="tspan5015">RJ*: .Rmd or .jl</tspan><tspan
+         sodipodi:role="line"
+         x="109.62938"
+         y="48.598991"
+         style="stroke-width:0.26458332"
+         id="tspan9715">d/t*: .doc or .tex</tspan></text>
+    <g
+       transform="translate(92.943362,12.530933)"
+       id="g5587-5"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <path
+         sodipodi:nodetypes="sssssssss"
+         inkscape:connector-curvature="0"
+         id="rect4761-5"
+         d="m 16.589508,17.314226 h 4.542841 c 0.179177,0 0.244195,0.135396 0.323425,0.246886 l 1.5875,2.233891 c 0.07923,0.111489 -0.144248,0.246886 -0.323425,0.246886 h -6.130341 c -0.179178,0 -0.323425,-0.110112 -0.323425,-0.246886 v -2.233891 c 0,-0.136775 0.144247,-0.246886 0.323425,-0.246886 z"
+         style="opacity:1;fill:#ffa800;fill-opacity:1;stroke:#ffa800;stroke-width:0.91099995;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <g
+         id="g5580-4">
+        <rect
+           inkscape:transform-center-y="-4.4272072"
+           inkscape:transform-center-x="-1.1120473"
+           ry="0.8061409"
+           y="18.496401"
+           x="15.931461"
+           height="7.5484109"
+           width="16.279669"
+           id="rect4749-98"
+           style="opacity:1;fill:#ffcb00;fill-opacity:1;stroke:#ffcb00;stroke-width:0.24175757;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <text
+           id="text4753-3"
+           y="23.243845"
+           x="18.913126"
+           style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             id="tspan4755-8"
+             style="stroke-width:0.26458332"
+             y="23.243845"
+             x="18.913126"
+             sodipodi:role="line">folder</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g5288">
+      <rect
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#c2c2c2;stroke-width:0.56018353;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4749-9-3-6"
+         width="29.028942"
+         height="7.4301057"
+         x="109.03403"
+         y="19.082945"
+         ry="0"
+         inkscape:transform-center-x="-1.9829359"
+         inkscape:transform-center-y="-4.3578182" />
+      <g
+         id="g5755-3"
+         transform="translate(77.216213,-23.285353)">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="35.084133"
+           y="47.398514"
+           id="text4810-5-5-6"><tspan
+             sodipodi:role="line"
+             id="tspan4808-3-2-3"
+             x="35.084133"
+             y="47.398514"
+             style="stroke-width:0.26458332">file.extension</tspan></text>
+      </g>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 23.492983,27.39333 Z"
+       id="path9575"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#a3a3ae;stroke-width:1.10425508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 23.519296,39.471919 c 7.742959,0 7.742959,0 7.742959,0"
+       id="path9573-7-7"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#a3a3ae;stroke-width:1.10425508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 23.519296,27.489806 c 7.742959,0 7.742959,0 7.742959,0"
+       id="path9573-7-7-2"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#a3a3ae;stroke-width:1.10425508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 23.519296,51.855554 c 7.742959,0 7.742959,0 7.742959,0"
+       id="path9573-7-7-0"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#a3a3ae;stroke-width:1.10425508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 23.519296,135.23498 c 7.742959,0 7.742959,0 7.742959,0"
+       id="path9573-7-7-0-3"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#a3a3ae;stroke-width:1.10425508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 23.519296,222.2594 c 7.742959,0 7.742959,0 7.742959,0"
+       id="path9573-7-7-0-3-1"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <g
+       transform="translate(-0.08069175,41.460546)"
+       id="g9876"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <path
+         style="fill:none;stroke:#a3a3ae;stroke-width:0.94261646;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 39.451678,185.37417 c 0,32.59619 0,32.59619 0,32.59619"
+         id="path9573-3-2-0"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#a3a3ae;stroke-width:1.10425508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 38.98037,193.06242 c 7.742959,0 7.742959,0 7.742959,0"
+         id="path9573-7-7-8-9-6"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#a3a3ae;stroke-width:1.10425508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 38.98037,217.49802 c 7.742959,0 7.742959,0 7.742959,0"
+         id="path9573-7-7-8-1-3-1-9"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g9907-3"
+       transform="translate(0,139.53846)"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <path
+         style="fill:none;stroke:#a3a3ae;stroke-width:1.10399997;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 54.850432,99.500294 c 0,8.128076 0,8.128076 0,8.128076"
+         id="path9573-3-2-0-3-1"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#a3a3ae;stroke-width:1.10425508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 54.298432,107.18854 c 7.742959,0 7.742959,0 7.742959,0"
+         id="path9573-7-7-8-9-6-8-0"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       transform="translate(0,26.396425)"
+       id="g10225"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <path
+         style="fill:none;stroke:#a3a3ae;stroke-width:1.10242569;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 54.850432,237.14194 c 0,20.33026 0,20.33026 0,20.33026"
+         id="path9573-3-2-0-3"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#a3a3ae;stroke-width:1.10425508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 54.298432,244.77208 c 7.742959,0 7.742959,0 7.742959,0"
+         id="path9573-7-7-8-9-6-8"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#a3a3ae;stroke-width:1.10425508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 54.298432,257.01825 c 7.742959,0 7.742959,0 7.742959,0"
+         id="path9573-7-7-8-9-6-8-05"
+         inkscape:connector-curvature="0" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path9573-7-7-8-9-6-8-4"
+       d="m 54.298432,100.82508 c 7.742959,0 7.742959,0 7.742959,0"
+       style="fill:none;stroke:#a3a3ae;stroke-width:1.10425508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path9573-7-7-8-9-6-8-05-7"
+       d="m 54.298432,113.07125 c 7.742959,0 7.742959,0 7.742959,0"
+       style="fill:none;stroke:#a3a3ae;stroke-width:1.10425508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <g
+       transform="translate(15.462604,111.60011)"
+       id="g5818-3-7"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <rect
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#c2c2c2;stroke-width:0.44017938;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4749-9-4-8"
+         width="18.126455"
+         height="7.5500965"
+         x="31.431881"
+         y="32.141861"
+         ry="0"
+         inkscape:transform-center-x="-1.2382"
+         inkscape:transform-center-y="-4.4281963" />
+      <text
+         id="text4810-4-9"
+         y="37.226044"
+         x="32.989811"
+         style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="37.226044"
+           x="32.989811"
+           id="tspan4808-3-15"
+           sodipodi:role="line">README</tspan></text>
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       id="path9573-7-7-8-9-6-8-05-7-5"
+       d="m 54.664597,124.98598 c 7.742959,0 7.742959,0 7.742959,0"
+       style="fill:none;stroke:#a3a3ae;stroke-width:1.10425508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="folders">
+    <path
+       style="opacity:1;fill:#ffa800;fill-opacity:1;stroke:#ffa800;stroke-width:0.91099995;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 16.710386,10.964226 h 4.542841 c 0.179177,0 0.244195,0.135396 0.323425,0.246886 l 1.5875,2.233891 c 0.07923,0.111489 -0.144248,0.246886 -0.323425,0.246886 h -6.130341 c -0.179178,0 -0.323425,-0.110112 -0.323425,-0.246886 v -2.233891 c 0,-0.136775 0.144247,-0.246886 0.323425,-0.246886 z"
+       id="rect4761"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssssssss" />
+    <rect
+       inkscape:transform-center-y="-4.4053293"
+       inkscape:transform-center-x="-1.4890417"
+       ry="0.80215722"
+       y="12.165051"
+       x="15.950112"
+       height="7.5111094"
+       width="21.798618"
+       id="rect4749"
+       style="opacity:1;fill:#ffcb00;fill-opacity:1;stroke:#ffcb00;stroke-width:0.27905902;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       id="text4753"
+       y="16.893845"
+       x="17.828783"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         id="tspan4755"
+         style="stroke-width:0.26458332"
+         y="16.893845"
+         x="17.828783"
+         sodipodi:role="line">proj_name</tspan></text>
+    <g
+       id="g4907-9-6-8"
+       transform="translate(15.380383,200.8185)"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <path
+         style="opacity:1;fill:#ffa800;fill-opacity:1;stroke:#ffa800;stroke-width:0.91099995;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         d="m 16.710386,17.314226 h 4.542841 c 0.179177,0 0.244195,0.135396 0.323425,0.246886 l 1.5875,2.233891 c 0.07923,0.111489 -0.144248,0.246886 -0.323425,0.246886 h -6.130341 c -0.179178,0 -0.323425,-0.110112 -0.323425,-0.246886 v -2.233891 c 0,-0.136775 0.144247,-0.246886 0.323425,-0.246886 z"
+         id="rect4761-6-04-7"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssssssss" />
+      <g
+         id="g4802-2-6-4"
+         clip-path="url(#clipPath4804-0-78-3)"
+         transform="translate(-0.41583855,-6.879167)">
+        <g
+           transform="translate(0.12087942)"
+           inkscape:label="Clip"
+           id="g4800-1-76-1">
+          <rect
+             inkscape:transform-center-y="-4.4012919"
+             inkscape:transform-center-x="-1.5648624"
+             ry="0.80142188"
+             y="25.397661"
+             x="16.3473"
+             height="7.5042238"
+             width="22.908602"
+             id="rect4749-2-09-9"
+             style="opacity:1;fill:#ffcb00;fill-opacity:1;stroke:#ffcb00;stroke-width:0.28594449;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+          <text
+             id="text4753-0-75-0"
+             y="30.464939"
+             x="17.963268"
+             style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             xml:space="preserve"><tspan
+               id="tspan4755-7-9-9"
+               style="stroke-width:0.26458332"
+               y="30.464939"
+               x="17.963268"
+               sodipodi:role="line">submission</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g4907-9-6-5"
+       transform="translate(30.779138,213.0405)"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <path
+         style="opacity:1;fill:#ffa800;fill-opacity:1;stroke:#ffa800;stroke-width:0.91099995;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         d="m 16.710386,17.314226 h 4.542841 c 0.179177,0 0.244195,0.135396 0.323425,0.246886 l 1.5875,2.233891 c 0.07923,0.111489 -0.144248,0.246886 -0.323425,0.246886 h -6.130341 c -0.179178,0 -0.323425,-0.110112 -0.323425,-0.246886 v -2.233891 c 0,-0.136775 0.144247,-0.246886 0.323425,-0.246886 z"
+         id="rect4761-6-04-8"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssssssss" />
+      <g
+         id="g4802-2-6-43"
+         clip-path="url(#clipPath4804-0-78-8)"
+         transform="translate(-0.39374573,-6.879167)">
+        <g
+           inkscape:label="Clip"
+           id="g4800-1-76-7">
+          <rect
+             inkscape:transform-center-y="-4.42271"
+             inkscape:transform-center-x="-1.1849178"
+             ry="0.80532193"
+             y="25.379402"
+             x="16.329041"
+             height="7.5407424"
+             width="17.346451"
+             id="rect4749-2-09-1"
+             style="opacity:1;fill:#ffcb00;fill-opacity:1;stroke:#ffcb00;stroke-width:0.2494261;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+          <text
+             id="text4753-0-75-3"
+             y="30.123013"
+             x="18.000971"
+             style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             xml:space="preserve"><tspan
+               id="tspan4755-7-9-8"
+               style="stroke-width:0.26458332"
+               y="30.123013"
+               x="18.000971"
+               sodipodi:role="line">journal1</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g4907-9-9-2"
+       transform="translate(46.14994,225.2697)"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <path
+         style="opacity:1;fill:#ffa800;fill-opacity:1;stroke:#ffa800;stroke-width:0.91099995;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         d="m 16.710386,17.314226 h 4.542841 c 0.179177,0 0.244195,0.135396 0.323425,0.246886 l 1.5875,2.233891 c 0.07923,0.111489 -0.144248,0.246886 -0.323425,0.246886 h -6.130341 c -0.179178,0 -0.323425,-0.110112 -0.323425,-0.246886 v -2.233891 c 0,-0.136775 0.144247,-0.246886 0.323425,-0.246886 z"
+         id="rect4761-6-0-2"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssssssss" />
+      <g
+         id="g4802-2-99-0"
+         clip-path="url(#clipPath4804-0-2-7)"
+         transform="translate(-0.39374573,-6.879167)">
+        <g
+           inkscape:label="Clip"
+           id="g4800-1-4-2">
+          <rect
+             inkscape:transform-center-y="-4.4272072"
+             inkscape:transform-center-x="-1.1120473"
+             ry="0.8061409"
+             y="25.375568"
+             x="16.325207"
+             height="7.5484109"
+             width="16.279669"
+             id="rect4749-2-5-1"
+             style="opacity:1;fill:#ffcb00;fill-opacity:1;stroke:#ffcb00;stroke-width:0.24175757;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+          <text
+             id="text4753-0-1-7"
+             y="30.464939"
+             x="21.01564"
+             style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             xml:space="preserve"><tspan
+               id="tspan4755-7-03-5"
+               style="stroke-width:0.26458332"
+               y="30.464939"
+               x="21.01564"
+               sodipodi:role="line">first</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g4907-9-6-5-7"
+       transform="translate(30.779138,237.50272)"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <path
+         style="opacity:1;fill:#ffa800;fill-opacity:1;stroke:#ffa800;stroke-width:0.91099995;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         d="m 16.710386,17.314226 h 4.542841 c 0.179177,0 0.244195,0.135396 0.323425,0.246886 l 1.5875,2.233891 c 0.07923,0.111489 -0.144248,0.246886 -0.323425,0.246886 h -6.130341 c -0.179178,0 -0.323425,-0.110112 -0.323425,-0.246886 v -2.233891 c 0,-0.136775 0.144247,-0.246886 0.323425,-0.246886 z"
+         id="rect4761-6-04-8-9"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssssssss" />
+      <g
+         id="g4802-2-6-43-9"
+         clip-path="url(#clipPath4804-0-78-8-0)"
+         transform="translate(-0.3975795,-6.879167)">
+        <g
+           inkscape:label="Clip"
+           id="g4800-1-76-7-3">
+          <rect
+             inkscape:transform-center-y="-4.42271"
+             inkscape:transform-center-x="-1.1849178"
+             ry="0.80532193"
+             y="25.379402"
+             x="16.329041"
+             height="7.5407424"
+             width="17.346451"
+             id="rect4749-2-09-1-2"
+             style="opacity:1;fill:#ffcb00;fill-opacity:1;stroke:#ffcb00;stroke-width:0.2494261;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+          <text
+             id="text4753-0-75-3-4"
+             y="30.123013"
+             x="18.000971"
+             style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             xml:space="preserve"><tspan
+               id="tspan4755-7-9-8-3"
+               style="stroke-width:0.26458332"
+               y="30.123013"
+               x="18.000971"
+               sodipodi:role="line">journal2</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g4907-9-9-5"
+       transform="translate(46.14994,261.9674)"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <path
+         style="opacity:1;fill:#ffa800;fill-opacity:1;stroke:#ffa800;stroke-width:0.91099995;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         d="m 16.710386,17.314226 h 4.542841 c 0.179177,0 0.244195,0.135396 0.323425,0.246886 l 1.5875,2.233891 c 0.07923,0.111489 -0.144248,0.246886 -0.323425,0.246886 h -6.130341 c -0.179178,0 -0.323425,-0.110112 -0.323425,-0.246886 v -2.233891 c 0,-0.136775 0.144247,-0.246886 0.323425,-0.246886 z"
+         id="rect4761-6-0-1"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssssssss" />
+      <g
+         id="g4802-2-99-6"
+         clip-path="url(#clipPath4804-0-2-0)"
+         transform="translate(-0.39374573,-6.879167)">
+        <g
+           inkscape:label="Clip"
+           id="g4800-1-4-6">
+          <rect
+             inkscape:transform-center-y="-4.417016"
+             inkscape:transform-center-x="-1.2805859"
+             ry="0.80428535"
+             y="25.384256"
+             x="16.333895"
+             height="7.5310359"
+             width="18.74696"
+             id="rect4749-2-5-2"
+             style="opacity:1;fill:#ffcb00;fill-opacity:1;stroke:#ffcb00;stroke-width:0.25913274;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+          <text
+             id="text4753-0-1-1"
+             y="30.464939"
+             x="17.800018"
+             style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             xml:space="preserve"><tspan
+               id="tspan4755-7-03-9"
+               style="stroke-width:0.26458332"
+               y="30.464939"
+               x="17.800018"
+               sodipodi:role="line">revisions</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g4907-9-9-2-8"
+       transform="translate(46.14994,249.73194)"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <path
+         style="opacity:1;fill:#ffa800;fill-opacity:1;stroke:#ffa800;stroke-width:0.91099995;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         d="m 16.710386,17.314226 h 4.542841 c 0.179177,0 0.244195,0.135396 0.323425,0.246886 l 1.5875,2.233891 c 0.07923,0.111489 -0.144248,0.246886 -0.323425,0.246886 h -6.130341 c -0.179178,0 -0.323425,-0.110112 -0.323425,-0.246886 v -2.233891 c 0,-0.136775 0.144247,-0.246886 0.323425,-0.246886 z"
+         id="rect4761-6-0-2-0"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssssssss" />
+      <g
+         id="g4802-2-99-0-8"
+         clip-path="url(#clipPath4804-0-2-7-6)"
+         transform="translate(-0.39374573,-6.879167)">
+        <g
+           inkscape:label="Clip"
+           id="g4800-1-4-2-1">
+          <rect
+             inkscape:transform-center-y="-4.4272072"
+             inkscape:transform-center-x="-1.1120473"
+             ry="0.8061409"
+             y="25.375568"
+             x="16.325207"
+             height="7.5484109"
+             width="16.279669"
+             id="rect4749-2-5-1-0"
+             style="opacity:1;fill:#ffcb00;fill-opacity:1;stroke:#ffcb00;stroke-width:0.24175757;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+          <text
+             id="text4753-0-1-7-2"
+             y="30.464939"
+             x="21.01564"
+             style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             xml:space="preserve"><tspan
+               id="tspan4755-7-03-5-2"
+               style="stroke-width:0.26458332"
+               y="30.464939"
+               x="21.01564"
+               sodipodi:role="line">first</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="relations">
+    <path
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#6f0f78;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.32846707;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="m 87.691406,41.794922 v 70.839168 h 0.300782 V 41.794922 Z"
+       id="path9573-3-7"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-opacity:1"
+       x="-69.349327"
+       y="75.807953"
+       id="text8960"
+       transform="rotate(-90)"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan8958"
+         x="-69.349327"
+         y="75.807953"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';stroke:none;stroke-width:0.26458332;stroke-opacity:1">called by</tspan></text>
+    <g
+       transform="matrix(1.1281823,0,0,0.99639179,0.81372115,-6.175695)"
+       id="g5018"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <path
+         style="fill:none;stroke:#6f0f78;stroke-width:0.30250925;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 54.787659,48.144583 c 22.470687,0 22.470687,0 22.470687,0"
+         id="path9573-3-7-4-8"
+         inkscape:connector-curvature="0" />
+      <path
+         transform="matrix(0,-0.21317869,0.33965598,0,39.404967,59.463878)"
+         inkscape:transform-center-y="0.0017835136"
+         inkscape:transform-center-x="0.31434312"
+         d="m 56.330074,45.830984 -6.462094,-0.02892 3.256094,-5.581876 z"
+         inkscape:randomized="0"
+         inkscape:rounded="0"
+         inkscape:flatsided="true"
+         sodipodi:arg2="1.575272"
+         sodipodi:arg1="0.52807445"
+         sodipodi:r2="1.8654646"
+         sodipodi:r1="3.7309291"
+         sodipodi:cy="43.951077"
+         sodipodi:cx="53.107376"
+         sodipodi:sides="3"
+         id="path9398"
+         style="opacity:1;fill:#6f0f78;fill-opacity:1;stroke:#6f0f78;stroke-width:0.59957206;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         sodipodi:type="star" />
+    </g>
+    <rect
+       inkscape:transform-center-y="-4.3627133"
+       inkscape:transform-center-x="-1.9221663"
+       ry="0"
+       y="35.905212"
+       x="31.587763"
+       height="7.4384465"
+       width="28.139303"
+       id="rect4749-9-3"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#c2c2c2;stroke-width:0.55184233;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="33.187378"
+       y="40.611458"
+       id="text4810-5-5"><tspan
+         sodipodi:role="line"
+         id="tspan4808-3-2"
+         x="33.187378"
+         y="40.611458"
+         style="stroke-width:0.26458332">proj_name.RJ*</tspan></text>
+    <g
+       id="g11510"
+       transform="translate(0,-3.7660853)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 34.784961,65.724989 Z"
+       id="path9575-5"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#a3a3ae;stroke-width:1.06734705;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 38.931436,64.105898 c 7.234015,0 7.234015,0 7.234015,0"
+       id="path9573-7-7-2-6"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#a3a3ae;stroke-width:1.10425508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 38.931436,64.105898 c 7.742959,0 7.742959,0 7.742959,0"
+       id="path9573-7-7-8"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#a3a3ae;stroke-width:1.10425508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 38.931436,76.005024 c 7.742959,0 7.742959,0 7.742959,0"
+       id="path9573-7-7-8-1"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#a3a3ae;stroke-width:1.10425508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 38.931436,88.541496 c 7.742959,0 7.742959,0 7.742959,0"
+       id="path9573-7-7-8-1-3"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <g
+       transform="translate(15.380383,30.396351)"
+       id="g4907-9"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <path
+         sodipodi:nodetypes="sssssssss"
+         inkscape:connector-curvature="0"
+         id="rect4761-6"
+         d="m 16.710386,17.314226 h 4.542841 c 0.179177,0 0.244195,0.135396 0.323425,0.246886 l 1.5875,2.233891 c 0.07923,0.111489 -0.144248,0.246886 -0.323425,0.246886 h -6.130341 c -0.179178,0 -0.323425,-0.110112 -0.323425,-0.246886 v -2.233891 c 0,-0.136775 0.144247,-0.246886 0.323425,-0.246886 z"
+         style="opacity:1;fill:#ffa800;fill-opacity:1;stroke:#ffa800;stroke-width:0.91099995;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <g
+         transform="translate(-0.39374573,-6.879167)"
+         clip-path="url(#clipPath4804-0)"
+         id="g4802-2">
+        <g
+           id="g4800-1"
+           inkscape:label="Clip">
+          <rect
+             style="opacity:1;fill:#ffcb00;fill-opacity:1;stroke:#ffcb00;stroke-width:0.24175757;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+             id="rect4749-2"
+             width="16.279669"
+             height="7.5484109"
+             x="16.325207"
+             y="25.375568"
+             ry="0.8061409"
+             inkscape:transform-center-x="-1.1120473"
+             inkscape:transform-center-y="-4.4272072" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             x="18.222528"
+             y="30.123013"
+             id="text4753-0"><tspan
+               sodipodi:role="line"
+               x="18.222528"
+               y="30.123013"
+               style="stroke-width:0.26458332"
+               id="tspan4755-7">results</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(30.647116,54.924626)"
+       id="g4907-9-2"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <path
+         sodipodi:nodetypes="sssssssss"
+         inkscape:connector-curvature="0"
+         id="rect4761-6-8"
+         d="m 16.710386,17.314226 h 4.542841 c 0.179177,0 0.244195,0.135396 0.323425,0.246886 l 1.5875,2.233891 c 0.07923,0.111489 -0.144248,0.246886 -0.323425,0.246886 h -6.130341 c -0.179178,0 -0.323425,-0.110112 -0.323425,-0.246886 v -2.233891 c 0,-0.136775 0.144247,-0.246886 0.323425,-0.246886 z"
+         style="opacity:1;fill:#ffa800;fill-opacity:1;stroke:#ffa800;stroke-width:0.91099995;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <g
+         transform="translate(-0.39374573,-6.879167)"
+         clip-path="url(#clipPath4804-0-6)"
+         id="g4802-2-9">
+        <g
+           id="g4800-1-6"
+           inkscape:label="Clip">
+          <rect
+             style="opacity:1;fill:#ffcb00;fill-opacity:1;stroke:#ffcb00;stroke-width:0.24175757;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+             id="rect4749-2-0"
+             width="16.279669"
+             height="7.5484109"
+             x="16.325207"
+             y="25.375568"
+             ry="0.8061409"
+             inkscape:transform-center-x="-1.1120473"
+             inkscape:transform-center-y="-4.4272072" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             x="18.616991"
+             y="30.123013"
+             id="text4753-0-7"><tspan
+               sodipodi:role="line"
+               x="18.616991"
+               y="30.123013"
+               style="stroke-width:0.26458332"
+               id="tspan4755-7-0">scripts</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(15.498807,28.162353)"
+       id="g5818-3"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <rect
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#c2c2c2;stroke-width:0.44017938;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4749-9-4"
+         width="18.126455"
+         height="7.5500965"
+         x="31.431881"
+         y="32.141861"
+         ry="0"
+         inkscape:transform-center-x="-1.2382"
+         inkscape:transform-center-y="-4.4281963" />
+      <text
+         id="text4810-4"
+         y="37.226044"
+         x="32.989811"
+         style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="37.226044"
+           x="32.989811"
+           id="tspan4808-3"
+           sodipodi:role="line">README</tspan></text>
+    </g>
+    <g
+       id="g5361"
+       transform="translate(0,-6.3500003)">
+      <path
+         sodipodi:nodetypes="sssssssss"
+         inkscape:connector-curvature="0"
+         id="rect4761-6-5-9"
+         d="m 62.83536,115.16076 h 4.542841 c 0.179177,0 0.244195,0.1354 0.323425,0.24689 l 1.5875,2.23389 c 0.07923,0.11149 -0.144248,0.24689 -0.323425,0.24689 H 62.83536 c -0.179178,0 -0.323425,-0.11011 -0.323425,-0.24689 v -2.23389 c 0,-0.13677 0.144247,-0.24689 0.323425,-0.24689 z"
+         style="opacity:1;fill:#ffa800;fill-opacity:1;stroke:#ffa800;stroke-width:0.91099995;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <rect
+         style="opacity:1;fill:#ffcb00;fill-opacity:1;stroke:#ffcb00;stroke-width:0.26572827;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4749-2-6-5"
+         width="19.730684"
+         height="7.5244403"
+         x="62.057278"
+         y="116.36486"
+         ry="0.80358088"
+         inkscape:transform-center-x="-1.3477824"
+         inkscape:transform-center-y="-4.4131516" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="65.066017"
+         y="121.05123"
+         id="text4753-0-0-1"><tspan
+           sodipodi:role="line"
+           x="65.066017"
+           y="121.05123"
+           style="stroke-width:0.26458332"
+           id="tspan4755-7-6-0">process</tspan></text>
+    </g>
+    <g
+       id="g5098"
+       transform="translate(-0.361436,-7.4083337)">
+      <g
+         inkscape:export-ydpi="600"
+         inkscape:export-xdpi="600"
+         inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+         id="g9942-2"
+         transform="translate(15.80006,38.325652)">
+        <path
+           style="opacity:1;fill:#ffa800;fill-opacity:1;stroke:#ffa800;stroke-width:0.91099995;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="m 47.396736,89.932617 h 4.542841 c 0.179177,0 0.244195,0.135396 0.323425,0.246886 l 1.5875,2.233891 c 0.07923,0.111489 -0.144248,0.246886 -0.323425,0.246886 h -6.130341 c -0.179178,0 -0.323425,-0.110112 -0.323425,-0.246886 v -2.233891 c 0,-0.136775 0.144247,-0.246886 0.323425,-0.246886 z"
+           id="rect4761-6-5-9-6"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssssssss" />
+        <g
+           id="g4802-2-8-9-1"
+           clip-path="url(#clipPath4804-0-7-2-7)"
+           transform="translate(30.281462,65.74916)">
+          <g
+             inkscape:label="Clip"
+             id="g4800-1-2-4-0">
+            <rect
+               inkscape:transform-center-y="-4.4121341"
+               inkscape:transform-center-x="-1.3657174"
+               ry="0.80339593"
+               y="25.388418"
+               x="16.338057"
+               height="7.5227084"
+               width="19.993277"
+               id="rect4749-2-6-5-6"
+               style="opacity:1;fill:#ffcb00;fill-opacity:1;stroke:#ffcb00;stroke-width:0.2674599;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+            <text
+               id="text4753-0-0-1-1"
+               y="30.073921"
+               x="17.781384"
+               style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+               xml:space="preserve"><tspan
+                 id="tspan5080"
+                 style="stroke-width:0.26458332"
+                 y="30.073921"
+                 x="17.781384"
+                 sodipodi:role="line">metadata</tspan></text>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g11299" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path9575-5-0"
+       d="M 33.608333,138.7735 Z"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#a3a3ae;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.22484386;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="m 38.900391,139.82884 v 70.16861 h 1.103515 v -70.16861 z"
+       id="path9573-3-2"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path9573-7-7-8-9"
+       d="m 38.931436,147.51702 c 7.742959,0 7.742959,0 7.742959,0"
+       style="fill:none;stroke:#a3a3ae;stroke-width:1.10425508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path9573-7-7-8-1-0"
+       d="m 38.931436,159.41615 c 7.742959,0 7.742959,0 7.742959,0"
+       style="fill:none;stroke:#a3a3ae;stroke-width:1.10425508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path9573-7-7-8-1-3-1"
+       d="m 38.931436,171.95262 c 7.742959,0 7.742959,0 7.742959,0"
+       style="fill:none;stroke:#a3a3ae;stroke-width:1.10425508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path9573-7-7-8-1-3-6-2"
+       d="m 38.931436,184.18376 c 7.742959,0 7.742959,0 7.742959,0"
+       style="fill:none;stroke:#a3a3ae;stroke-width:1.10425508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="fill:none;stroke:#a3a3ae;stroke-width:1.10425508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 38.931436,196.33094 c 7.742959,0 7.742959,0 7.742959,0"
+       id="path9573-7-7-8-1-3-6-2-7"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <g
+       id="g4907-9-9"
+       transform="translate(15.380383,113.78376)"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <path
+         style="opacity:1;fill:#ffa800;fill-opacity:1;stroke:#ffa800;stroke-width:0.91099995;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         d="m 16.710386,17.314226 h 4.542841 c 0.179177,0 0.244195,0.135396 0.323425,0.246886 l 1.5875,2.233891 c 0.07923,0.111489 -0.144248,0.246886 -0.323425,0.246886 h -6.130341 c -0.179178,0 -0.323425,-0.110112 -0.323425,-0.246886 v -2.233891 c 0,-0.136775 0.144247,-0.246886 0.323425,-0.246886 z"
+         id="rect4761-6-0"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssssssss" />
+      <g
+         id="g4802-2-99"
+         clip-path="url(#clipPath4804-0-2)"
+         transform="translate(-0.39374573,-6.879167)">
+        <g
+           inkscape:label="Clip"
+           id="g4800-1-4">
+          <rect
+             inkscape:transform-center-y="-4.4272072"
+             inkscape:transform-center-x="-1.1120473"
+             ry="0.8061409"
+             y="25.375568"
+             x="16.325207"
+             height="7.5484109"
+             width="16.279669"
+             id="rect4749-2-5"
+             style="opacity:1;fill:#ffcb00;fill-opacity:1;stroke:#ffcb00;stroke-width:0.24175757;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+          <text
+             id="text4753-0-1"
+             y="30.363308"
+             x="20.977743"
+             style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             xml:space="preserve"><tspan
+               id="tspan4755-7-03"
+               style="stroke-width:0.26458332"
+               y="30.363308"
+               x="20.977743"
+               sodipodi:role="line">text</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g4907-9-6"
+       transform="translate(30.779138,150.50085)"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <path
+         style="opacity:1;fill:#ffa800;fill-opacity:1;stroke:#ffa800;stroke-width:0.91099995;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         d="m 16.710386,17.314226 h 4.542841 c 0.179177,0 0.244195,0.135396 0.323425,0.246886 l 1.5875,2.233891 c 0.07923,0.111489 -0.144248,0.246886 -0.323425,0.246886 h -6.130341 c -0.179178,0 -0.323425,-0.110112 -0.323425,-0.246886 v -2.233891 c 0,-0.136775 0.144247,-0.246886 0.323425,-0.246886 z"
+         id="rect4761-6-04"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssssssss" />
+      <g
+         id="g4802-2-6"
+         clip-path="url(#clipPath4804-0-78)"
+         transform="translate(-0.39374573,-6.879167)">
+        <g
+           inkscape:label="Clip"
+           id="g4800-1-76">
+          <rect
+             inkscape:transform-center-y="-4.4272072"
+             inkscape:transform-center-x="-1.1120473"
+             ry="0.8061409"
+             y="25.375568"
+             x="16.325207"
+             height="7.5484109"
+             width="16.279669"
+             id="rect4749-2-09"
+             style="opacity:1;fill:#ffcb00;fill-opacity:1;stroke:#ffcb00;stroke-width:0.24175757;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+          <text
+             id="text4753-0-75"
+             y="30.123013"
+             x="18.222528"
+             style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             xml:space="preserve"><tspan
+               id="tspan4755-7-9"
+               style="stroke-width:0.26458332"
+               y="30.123013"
+               x="18.222528"
+               sodipodi:role="line">figures</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g4907-9-1-5"
+       transform="translate(30.779138,174.89905)"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <path
+         style="opacity:1;fill:#ffa800;fill-opacity:1;stroke:#ffa800;stroke-width:0.91099995;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         d="m 16.710386,17.314226 h 4.542841 c 0.179177,0 0.244195,0.135396 0.323425,0.246886 l 1.5875,2.233891 c 0.07923,0.111489 -0.144248,0.246886 -0.323425,0.246886 h -6.130341 c -0.179178,0 -0.323425,-0.110112 -0.323425,-0.246886 v -2.233891 c 0,-0.136775 0.144247,-0.246886 0.323425,-0.246886 z"
+         id="rect4761-6-3-3"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssssssss" />
+      <g
+         id="g4802-2-7-3"
+         clip-path="url(#clipPath4804-0-1-7)"
+         transform="translate(-0.4327739,-6.879167)">
+        <g
+           inkscape:label="Clip"
+           id="g4800-1-7-8">
+          <rect
+             inkscape:transform-center-y="-4.3805763"
+             inkscape:transform-center-x="-1.9846517"
+             ry="0.79764998"
+             y="25.415321"
+             x="16.36496"
+             height="7.468905"
+             width="29.054045"
+             id="rect4749-2-2-3"
+             style="opacity:1;fill:#ffcb00;fill-opacity:1;stroke:#ffcb00;stroke-width:0.32126346;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+          <text
+             id="text4753-0-6-7"
+             y="30.123013"
+             x="17.526733"
+             style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             xml:space="preserve"><tspan
+               id="tspan4755-7-4-9"
+               style="stroke-width:0.26458332"
+               y="30.123013"
+               x="17.526733"
+               sodipodi:role="line">supplementary</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g4907-9-2-5"
+       transform="translate(30.779138,162.73199)"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <path
+         style="opacity:1;fill:#ffa800;fill-opacity:1;stroke:#ffa800;stroke-width:0.91099995;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         d="m 16.710386,17.314226 h 4.542841 c 0.179177,0 0.244195,0.135396 0.323425,0.246886 l 1.5875,2.233891 c 0.07923,0.111489 -0.144248,0.246886 -0.323425,0.246886 h -6.130341 c -0.179178,0 -0.323425,-0.110112 -0.323425,-0.246886 v -2.233891 c 0,-0.136775 0.144247,-0.246886 0.323425,-0.246886 z"
+         id="rect4761-6-8-6"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssssssss" />
+      <g
+         id="g4802-2-9-4"
+         clip-path="url(#clipPath4804-0-6-9)"
+         transform="translate(-0.39374573,-6.879167)">
+        <g
+           inkscape:label="Clip"
+           id="g4800-1-6-6">
+          <rect
+             inkscape:transform-center-y="-4.4272072"
+             inkscape:transform-center-x="-1.1120473"
+             ry="0.8061409"
+             y="25.375568"
+             x="16.325207"
+             height="7.5484109"
+             width="16.279669"
+             id="rect4749-2-0-3"
+             style="opacity:1;fill:#ffcb00;fill-opacity:1;stroke:#ffcb00;stroke-width:0.24175757;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+          <text
+             id="text4753-0-7-7"
+             y="30.123013"
+             x="19.116529"
+             style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+             xml:space="preserve"><tspan
+               id="tspan4755-7-0-9"
+               style="stroke-width:0.26458332"
+               y="30.123013"
+               x="19.116529"
+               sodipodi:role="line">tables</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g5818-3-9-8"
+       transform="translate(15.498807,123.49924)"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <g
+         id="g10477">
+        <rect
+           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#c2c2c2;stroke-width:0.47600001;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4749-9-4-7-8"
+           width="21.297705"
+           height="7.514276"
+           x="31.449791"
+           y="32.159771"
+           ry="0"
+           inkscape:transform-center-x="-1.4548241"
+           inkscape:transform-center-y="-4.4071874" />
+        <text
+           id="text4810-4-2-6"
+           y="37.226044"
+           x="32.989811"
+           style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             style="stroke-width:0.26458332"
+             y="37.226044"
+             x="32.989811"
+             id="tspan4808-3-5-0"
+             sodipodi:role="line">main.d/t*</tspan></text>
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-opacity:1"
+       x="73.455711"
+       y="37.653698"
+       id="text8960-0"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         sodipodi:role="line"
+         id="tspan8958-6"
+         x="73.455711"
+         y="37.653698"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';stroke:none;stroke-width:0.26458332;stroke-opacity:1">generates</tspan></text>
+    <path
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#00978f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.30996785;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="M 91.425781,38.472656 V 197.37019 h 0.314453 V 38.472656 Z"
+       id="path9573-3-7-8"
+       inkscape:connector-curvature="0" />
+    <path
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#00978f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.29389894;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="m 60.01407,38.466797 v 0.300781 h 31.716399 v -0.300781 z"
+       id="path9573-3-7-4-2"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g9454"
+       transform="matrix(0.38690465,0,0,1,52.37036,7.4672425)"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <path
+         style="fill:none;stroke:#00978f;stroke-width:0.30250925;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 79.306928,107.66307 c 22.470662,0 22.470662,0 22.470662,0"
+         id="path9573-3-7-4-8-6"
+         inkscape:connector-curvature="0" />
+      <path
+         transform="matrix(0,-0.21317869,0.33965598,0,63.792529,118.98243)"
+         inkscape:transform-center-y="0.0017835136"
+         inkscape:transform-center-x="0.31434312"
+         d="m 56.330074,45.830984 -6.462094,-0.02892 3.256094,-5.581876 z"
+         inkscape:randomized="0"
+         inkscape:rounded="0"
+         inkscape:flatsided="true"
+         sodipodi:arg2="1.575272"
+         sodipodi:arg1="0.52807445"
+         sodipodi:r2="1.8654646"
+         sodipodi:r1="3.7309291"
+         sodipodi:cy="43.951077"
+         sodipodi:cx="53.107376"
+         sodipodi:sides="3"
+         id="path9398-6"
+         style="opacity:1;fill:#00978f;fill-opacity:1;stroke:#00978f;stroke-width:0.59957206;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         sodipodi:type="star" />
+    </g>
+    <text
+       id="text9711"
+       y="184.15146"
+       x="66.390251"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         style="stroke-width:0.26458332"
+         y="184.15146"
+         x="66.390251"
+         id="tspan9709"
+         sodipodi:role="line">**</tspan></text>
+    <g
+       id="g9454-7-3"
+       transform="matrix(0.58769126,0,0,1,31.934339,77.411453)"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <path
+         style="fill:none;stroke:#00978f;stroke-width:0.39282301;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 57.532942,107.66307 c 44.244648,0 44.244648,0 44.244648,0"
+         id="path9573-3-7-4-8-6-0-7"
+         inkscape:connector-curvature="0" />
+      <path
+         transform="matrix(0,-0.21317869,0.33965598,0,42.182545,118.98243)"
+         inkscape:transform-center-y="0.0017835136"
+         inkscape:transform-center-x="0.31434312"
+         d="m 56.330074,45.830984 -6.462094,-0.02892 3.256094,-5.581876 z"
+         inkscape:randomized="0"
+         inkscape:rounded="0"
+         inkscape:flatsided="true"
+         sodipodi:arg2="1.575272"
+         sodipodi:arg1="0.52807445"
+         sodipodi:r2="1.8654646"
+         sodipodi:r1="3.7309291"
+         sodipodi:cy="43.951077"
+         sodipodi:cx="53.107376"
+         sodipodi:sides="3"
+         id="path9398-6-1-7"
+         style="opacity:1;fill:#00978f;fill-opacity:1;stroke:#00978f;stroke-width:0.59957206;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         sodipodi:type="star" />
+    </g>
+    <g
+       id="g9454-7-3-2"
+       transform="matrix(0.58769126,0,0,1,31.934339,89.55864)"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <path
+         style="fill:none;stroke:#00978f;stroke-width:0.30250925;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 79.306928,107.66307 c 22.470662,0 22.470662,0 22.470662,0"
+         id="path9573-3-7-4-8-6-0-7-6"
+         inkscape:connector-curvature="0" />
+      <path
+         transform="matrix(0,-0.21317869,0.33965598,0,63.792529,118.98243)"
+         inkscape:transform-center-y="0.0017835136"
+         inkscape:transform-center-x="0.31434312"
+         d="m 56.330074,45.830984 -6.462094,-0.02892 3.256094,-5.581876 z"
+         inkscape:randomized="0"
+         inkscape:rounded="0"
+         inkscape:flatsided="true"
+         sodipodi:arg2="1.575272"
+         sodipodi:arg1="0.52807445"
+         sodipodi:r2="1.8654646"
+         sodipodi:r1="3.7309291"
+         sodipodi:cy="43.951077"
+         sodipodi:cx="53.107376"
+         sodipodi:sides="3"
+         id="path9398-6-1-7-4"
+         style="opacity:1;fill:#00978f;fill-opacity:1;stroke:#00978f;stroke-width:0.59957206;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         sodipodi:type="star" />
+    </g>
+    <g
+       id="g9454-7-3-5"
+       transform="matrix(0.58769126,0,0,1,31.934339,65.180313)"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <path
+         style="fill:none;stroke:#00978f;stroke-width:0.39282301;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 57.532942,107.66307 c 44.244648,0 44.244648,0 44.244648,0"
+         id="path9573-3-7-4-8-6-0-7-2"
+         inkscape:connector-curvature="0" />
+      <path
+         transform="matrix(0,-0.21317869,0.33965598,0,42.182545,118.98243)"
+         inkscape:transform-center-y="0.0017835136"
+         inkscape:transform-center-x="0.31434312"
+         d="m 56.330074,45.830984 -6.462094,-0.02892 3.256094,-5.581876 z"
+         inkscape:randomized="0"
+         inkscape:rounded="0"
+         inkscape:flatsided="true"
+         sodipodi:arg2="1.575272"
+         sodipodi:arg1="0.52807445"
+         sodipodi:r2="1.8654646"
+         sodipodi:r1="3.7309291"
+         sodipodi:cy="43.951077"
+         sodipodi:cx="53.107376"
+         sodipodi:sides="3"
+         id="path9398-6-1-7-0"
+         style="opacity:1;fill:#00978f;fill-opacity:1;stroke:#00978f;stroke-width:0.59957206;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         sodipodi:type="star" />
+    </g>
+    <text
+       id="text9711-2"
+       y="172.07851"
+       x="66.390251"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         style="stroke-width:0.26458332"
+         y="172.07851"
+         x="66.390251"
+         id="tspan9709-6"
+         sodipodi:role="line">**</tspan></text>
+    <path
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#6f0f78;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.4096722;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="m 63.007812,76.833984 v 0.40625 h 14.147622 v -0.40625 z"
+       id="path9573-3-7-4-6"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#6f0f78;stroke-width:0.29425341;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 77.008753,41.930887 c 0,35.106134 0,35.106134 0,35.106134"
+       id="path9573-3-7-9"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <text
+       transform="rotate(-90)"
+       id="text8960-6"
+       y="86.806526"
+       x="-68.690826"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-opacity:1"
+       xml:space="preserve"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"><tspan
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';stroke:none;stroke-width:0.26458332;stroke-opacity:1"
+         y="86.806526"
+         x="-68.690826"
+         id="tspan8958-0"
+         sodipodi:role="line">input to</tspan></text>
+    <g
+       id="g5303"
+       transform="translate(0,-6.3500003)">
+      <path
+         sodipodi:nodetypes="sssssssss"
+         inkscape:connector-curvature="0"
+         id="rect4761-6-5-4"
+         d="m 47.489524,90.693517 h 4.542841 c 0.179177,0 0.244195,0.135396 0.323425,0.246886 l 1.5875,2.233891 c 0.07923,0.111489 -0.144248,0.246886 -0.323425,0.246886 h -6.130341 c -0.179178,0 -0.323425,-0.110112 -0.323425,-0.246886 v -2.233891 c 0,-0.136775 0.144247,-0.246886 0.323425,-0.246886 z"
+         style="opacity:1;fill:#ffa800;fill-opacity:1;stroke:#ffa800;stroke-width:0.91099995;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <rect
+         style="opacity:1;fill:#ffcb00;fill-opacity:1;stroke:#ffcb00;stroke-width:0.23821461;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4749-2-6-0"
+         width="15.798591"
+         height="7.5519543"
+         x="46.697681"
+         y="91.873924"
+         ry="0.80651927"
+         inkscape:transform-center-x="-1.0791826"
+         inkscape:transform-center-y="-4.4292798" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="50.68507"
+         y="96.574043"
+         id="text4753-0-0-4"><tspan
+           sodipodi:role="line"
+           x="50.68507"
+           y="96.574043"
+           style="stroke-width:0.26458332"
+           id="tspan4755-7-6-8">data</tspan></text>
+    </g>
+    <g
+       transform="translate(0.05046374,-8.4270996)"
+       id="g5818-3-8"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <rect
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#c2c2c2;stroke-width:0.44017938;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4749-9-4-3"
+         width="18.126455"
+         height="7.5500965"
+         x="31.431881"
+         y="32.141861"
+         ry="0"
+         inkscape:transform-center-x="-1.2382"
+         inkscape:transform-center-y="-4.4281963" />
+      <text
+         id="text4810-4-0"
+         y="37.226044"
+         x="32.989811"
+         style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           y="37.226044"
+           x="32.989811"
+           id="tspan4808-3-1"
+           sodipodi:role="line">README</tspan></text>
+    </g>
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="rect4761-6-3-3-2"
+       d="m 47.489524,204.4973 h 4.542841 c 0.179177,0 0.244195,0.13539 0.323425,0.24688 l 1.5875,2.23389 c 0.07923,0.11149 -0.144248,0.24689 -0.323425,0.24689 h -6.130341 c -0.179178,0 -0.323425,-0.11011 -0.323425,-0.24689 v -2.23389 c 0,-0.13677 0.144247,-0.24688 0.323425,-0.24688 z"
+       style="opacity:1;fill:#ffa800;fill-opacity:1;stroke:#ffa800;stroke-width:0.91099995;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#ffcb00;fill-opacity:1;stroke:#ffcb00;stroke-width:0.27503523;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4749-2-2-3-4"
+       width="21.163177"
+       height="7.5151334"
+       x="46.68821"
+       y="205.69632"
+       ry="0.80258697"
+       inkscape:transform-center-x="-1.4456354"
+       inkscape:transform-center-y="-4.4076924" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="47.873096"
+       y="210.42714"
+       id="text4753-0-6-7-9"><tspan
+         sodipodi:role="line"
+         x="47.873096"
+         y="210.42714"
+         style="stroke-width:0.26458332"
+         id="tspan4755-7-4-9-9">references</tspan></text>
+    <path
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#a3a3ae;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.08168936;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="M 23.496094,19.808152 V 222.48921 h 1.103515 V 19.808152 Z"
+       id="path9573-3-2-4"
+       inkscape:connector-curvature="0" />
+    <path
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#a3a3ae;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.83557767;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="m 38.899921,56.441163 v 32.655406 h 1.103515 V 56.441163 Z"
+       id="path9573-3-2-4-0"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#a3a3ae;stroke-width:1.10425508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 39.689294,209.45367 c 7.742959,0 7.742959,0 7.742959,0"
+       id="path9573-7-7-8-1-3-6-2-7-6"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/ludmilla/Documents/training/openscience_202021/figures/file_structure.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" />
+    <path
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#a3a3ae;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.83141935;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="m 54.045219,93.194976 v 32.331154 h 1.103515 V 93.194976 Z"
+       id="path9573-3-2-4-0-4"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:1;fill:#ffa800;fill-opacity:1;stroke:#ffa800;stroke-width:0.91099995;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 62.967385,96.627121 h 4.542841 c 0.179177,0 0.244195,0.13539 0.323425,0.246877 l 1.5875,2.233878 c 0.07923,0.11149 -0.144248,0.24689 -0.323425,0.24689 h -6.130341 c -0.179178,0 -0.323425,-0.11011 -0.323425,-0.24689 v -2.233878 c 0,-0.136767 0.144247,-0.246877 0.323425,-0.246877 z"
+       id="rect4761-6-5-4-0"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssssssss" />
+    <rect
+       inkscape:transform-center-y="-4.4292798"
+       inkscape:transform-center-x="-1.0791826"
+       ry="0.80651927"
+       y="97.807556"
+       x="62.175541"
+       height="7.5519543"
+       width="15.798591"
+       id="rect4749-2-6-0-6"
+       style="opacity:1;fill:#ffcb00;fill-opacity:1;stroke:#ffcb00;stroke-width:0.23821461;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       id="text4753-0-0-4-6"
+       y="102.50766"
+       x="66.737404"
+       style="font-style:normal;font-weight:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         id="tspan4755-7-6-8-4"
+         style="stroke-width:0.26458332"
+         y="102.50766"
+         x="66.737404"
+         sodipodi:role="line">raw</tspan></text>
+    <path
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#6f0f78;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.09289043;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="m 82.326773,112.93487 h 5.665415 v -0.30078 h -5.665415 z"
+       id="path9573-3-7-7"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

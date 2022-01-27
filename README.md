@@ -26,13 +26,13 @@ This will create:
 + a computational notebook (an `RMarkdown` or `Pluto` file) with a suggestion on how the contents of the file should be organized
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/FellowsFreiesWissen/computational_notebooks/master/figures/workflow.png" alt="drawing" width="500"/>
+<img src="https://raw.githubusercontent.com/FellowsFreiesWissen/computational_notebooks/text/figures/workflow.png" alt="drawing" width="500"/>
 </p>
 
 + a file structure for easy access of relevant files and less wordy code (through relative paths)
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/FellowsFreiesWissen/computational_notebooks/master/figures/file_structure.png" alt="drawing" width="400"/>
+<img src="https://raw.githubusercontent.com/FellowsFreiesWissen/computational_notebooks/text/figures/file_structure.png" alt="drawing" width="400"/>
 </p>
 
 The `results` folder contains all files related to data processing: 
@@ -67,7 +67,7 @@ Once users are comfortable with this set up, they are encouraged to try more com
 # Acknowledgements
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/FellowsFreiesWissen/computational_notebooks/master/figures/fw_sponsorship.png" alt="drawing" width="800"/>
+<img src="https://raw.githubusercontent.com/FellowsFreiesWissen/computational_notebooks/master/fw_sponsorship.png" alt="drawing" width="800"/>
 </p>
 
 I, [Ludmilla Figueiredo](https://github.com/ludmillafigueiredo), also acknowledge valuable mentoring from [Dr. Johanna Havemann](https://de.wikiversity.org/wiki/Wikiversity:Fellow-Programm_Freies_Wissen/MentorInnen/Johanna_Havemann), as well as valuable feedback from members of the [Ecosystem modeling group](https://www.biozentrum.uni-wuerzburg.de/cctb/research/ecosystem-modeling/) and the [CCTB](https://www.biozentrum.uni-wuerzburg.de/cctb/research/ecosystem-modeling/), at the University of Würzburg.
