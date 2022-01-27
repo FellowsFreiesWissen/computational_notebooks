@@ -26,13 +26,13 @@ This will create:
 + a computational notebook (an `RMarkdown` or `Pluto` file) with a suggestion on how the contents of the file should be organized
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/FellowsFreiesWissen/computational_notebooks/text/figures/workflow.png" alt="drawing" width="500"/>
+<img src="https://raw.githubusercontent.com/FellowsFreiesWissen/computational_notebooks/master/text/figures/workflow.png" alt="drawing" width="500"/>
 </p>
 
 + a file structure for easy access of relevant files and less wordy code (through relative paths)
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/FellowsFreiesWissen/computational_notebooks/text/figures/file_structure.png" alt="drawing" width="400"/>
+<img src="https://raw.githubusercontent.com/FellowsFreiesWissen/computational_notebooks/master/text/figures/file_structure.png" alt="drawing" width="400"/>
 </p>
 
 The `results` folder contains all files related to data processing: 
