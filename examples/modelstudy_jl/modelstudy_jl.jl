@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.16.1
+# v0.17.7
 
 using Markdown
 using InteractiveUtils
@@ -9,12 +9,11 @@ begin
 	using Distributions, Random, DifferentialEquations, Plots, Test, Debugger, ComponentArrays,PlutoUI
 
 ## Paths to relevant folders
-	data_dir = joinpath("results", "clean_data");
+	data_dir = joinpath("results", "data", "process");
 	scripts_dir = joinpath("results", "scripts");
 	suppl_dir = joinpath("results", "supplementary");
-	semiprods_dir = joinpath("results", "semi_products");
-	figures_dir = joinpath("text", "figures");
-	tables_dir = joinpath("text", "tables");
+	figs_dir = joinpath("text", "figures");
+	tabs_dir = joinpath("text", "tables");
 end
 
 # ╔═╡ 307335ba-cf46-11eb-28b0-f199cf048ae6
@@ -37,18 +36,18 @@ $\frac{dP_i}{dt}(mutualistic) = r_{Pi}P_i - D_{Pi}P_{i}² +\sum_{j=1}^{N_a}\frac
 
 where  
 
-_P_ is the plant species density (1 \times 2 matrix)
+_P_ is the plant species density (1 x 2 matrix)
 
-_A_ is the animal species density (2 \times 1 matrix)
+_A_ is the animal species density (2 x 1 matrix)
 
-_r_ is the intrisic growth rate of A or P (2 \times 1 matrix for each), 
+_r_ is the intrisic growth rate of A or P (2 x 1 matrix for each), 
 
-_D_ is the density-dependent self-limitation of A or P (2 \times 1 matrix for each), 
+_D_ is the density-dependent self-limitation of A or P (2 x 1 matrix for each), 
 
-_c_ is the maximal rate of trophic/mutualistic interaction (2 \times 2 matrix),
+_c_ is the maximal rate of trophic/mutualistic interaction (2 x 2 matrix),
 
 
-\alpha is the half saturation constants of the functional response
+_alpha_ is the half saturation constants of the functional response
 """
 
 # ╔═╡ c44e930c-3969-4db6-bab8-4f91ba640f7f
@@ -126,9 +125,8 @@ end
 # ╔═╡ 511a8b7b-31f4-4397-9d63-4d30d67df46c
 md"""
 ## Results
-### Main text material
-In this example, let's assume we use the plot of the 1x1x1 system above in the main text. The code to generate such figure can be included, even if the figure is not, to avoid unnecessary repetition and confusion. In that case, simply saving the final product with a clear name should be enough for the reader to understand and reproduce the results.
-The same could be done for tables.
+### Figure 1
+Implementation of a system with two herbivores, two plants, and two pollinator species.
 """
 
 # ╔═╡ f0f30840-5c78-41c3-99ec-f6f62587b557
@@ -138,14 +136,13 @@ begin
 		xaxis = "Time", yaxis = "Density",
 		##label = ["Herb. 1" "Herb. 2" "Poll. 1" "Poll. 2" "Plant 1" "Plant 2"],
 		lw = 2, legend = :bottomright)
-	savefig(joinpath(figures_dir, "fig1_maintext.png"))
+	savefig(joinpath(figs_dir, "fig1_main.png"))
 end
 
 # ╔═╡ 5c87b202-98d3-4922-a643-d5640bdd5979
 md"""
-### Suplementary material
-Suplementary material can be processed and displayed directly in the file.
-Say you want to create the plots of the dynamics of each single species.
+### Figure S1
+Implementation of a system of one herbivore, one pollinator, and one plant species, whose abundance is iniated as 0.
 """
 
 # ╔═╡ a101389e-adb1-42ef-80ad-d360a17a96a9
@@ -157,13 +154,7 @@ begin
 	
 	prob_interact_Pl0 = ODEProblem(interact!, N0_Pl0, tspan, par);
 	sol_interact_Pl0 = solve(prob_interact_Pl0);
-end
 
-# ╔═╡ b6730158-da2e-4dfe-9f7b-435c895cd748
-
-
-# ╔═╡ 993d4cf4-0a32-4088-b94d-b1c4c8a5b0c5
-begin
 	plot(sol_interact_Pl0,
 		xaxis = "Time", yaxis = "Density",
 		abel = ["Herbivore" "Pollinator" "Plant"],
@@ -281,9 +272,9 @@ version = "3.2.4"
 
 [[Cairo_jll]]
 deps = ["Artifacts", "Bzip2_jll", "Fontconfig_jll", "FreeType2_jll", "Glib_jll", "JLLWrappers", "LZO_jll", "Libdl", "Pixman_jll", "Pkg", "Xorg_libXext_jll", "Xorg_libXrender_jll", "Zlib_jll", "libpng_jll"]
-git-tree-sha1 = "f2202b55d816427cd385a9a4f3ffb226bee80f99"
+git-tree-sha1 = "4b859a208b2397a7a623a03449e4636bdb17bcf2"
 uuid = "83423d85-b0ee-5818-9007-b63ccbeb887a"
-version = "1.16.1+0"
+version = "1.16.1+1"
 
 [[ChainRulesCore]]
 deps = ["Compat", "LinearAlgebra", "SparseArrays"]
@@ -632,9 +623,9 @@ uuid = "9fa8497b-333b-5362-9e8d-4d0656e87820"
 
 [[GLFW_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Libglvnd_jll", "Pkg", "Xorg_libXcursor_jll", "Xorg_libXi_jll", "Xorg_libXinerama_jll", "Xorg_libXrandr_jll"]
-git-tree-sha1 = "dba1e8614e98949abfa60480b13653813d8f0157"
+git-tree-sha1 = "0c603255764a1fa0b61752d2bec14cfbd18f7fe8"
 uuid = "0656b61e-2033-5cc2-a64a-77c0f6c09b89"
-version = "3.3.5+0"
+version = "3.3.5+1"
 
 [[GR]]
 deps = ["Base64", "DelimitedFiles", "GR_jll", "HTTP", "JSON", "Libdl", "LinearAlgebra", "Pkg", "Printf", "Random", "Serialization", "Sockets", "Test", "UUIDs"]
@@ -662,9 +653,9 @@ version = "0.21.0+0"
 
 [[Glib_jll]]
 deps = ["Artifacts", "Gettext_jll", "JLLWrappers", "Libdl", "Libffi_jll", "Libiconv_jll", "Libmount_jll", "PCRE_jll", "Pkg", "Zlib_jll"]
-git-tree-sha1 = "7bf67e9a481712b3dbe9cb3dac852dc4b1162e02"
+git-tree-sha1 = "a32d672ac2c967f3deb8a81d828afc739c838a06"
 uuid = "7746bdde-850d-59dc-9ae8-88ece973131d"
-version = "2.68.3+0"
+version = "2.68.3+2"
 
 [[Graphite2_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg"]
@@ -685,9 +676,9 @@ version = "0.9.16"
 
 [[HarfBuzz_jll]]
 deps = ["Artifacts", "Cairo_jll", "Fontconfig_jll", "FreeType2_jll", "Glib_jll", "Graphite2_jll", "JLLWrappers", "Libdl", "Libffi_jll", "Pkg"]
-git-tree-sha1 = "8a954fed8ac097d5be04921d595f741115c1b2ad"
+git-tree-sha1 = "129acf094d168394e80ee1dc4bc06ec835e510a3"
 uuid = "2e76f6c2-a576-52d4-95c1-20adfe4de566"
-version = "2.8.1+0"
+version = "2.8.1+1"
 
 [[Highlights]]
 deps = ["DocStringExtensions", "InteractiveUtils", "REPL"]
@@ -863,9 +854,9 @@ uuid = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
 
 [[Libffi_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg"]
-git-tree-sha1 = "761a393aeccd6aa92ec3515e428c26bf99575b3b"
+git-tree-sha1 = "0b4a5d71f3e5200a7dff793393e09dfc2d874290"
 uuid = "e9f186c6-92d2-5b65-8a66-fee21dc1b490"
-version = "3.2.2+0"
+version = "3.2.2+1"
 
 [[Libgcrypt_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Libgpg_error_jll", "Pkg"]
@@ -1045,9 +1036,9 @@ version = "1.10.7"
 
 [[Ogg_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg"]
-git-tree-sha1 = "7937eda4681660b4d6aeeecc2f7e1c81c8ee4e2f"
+git-tree-sha1 = "887579a3eb005446d514ab7aeac5d1d027658b8f"
 uuid = "e7412a2a-1a6e-54c0-be00-318e2571c051"
-version = "1.3.5+0"
+version = "1.3.5+1"
 
 [[OpenBLAS_jll]]
 deps = ["Artifacts", "CompilerSupportLibraries_jll", "Libdl"]
@@ -1742,9 +1733,9 @@ version = "1.6.38+0"
 
 [[libvorbis_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Ogg_jll", "Pkg"]
-git-tree-sha1 = "c45f4e40e7aafe9d086379e5578947ec8b95a8fb"
+git-tree-sha1 = "b910cb81ef3fe6e78bf6acee440bda86fd6ae00c"
 uuid = "f27f6e37-5d2b-51aa-960f-b287f2bc3b7a"
-version = "1.3.7+0"
+version = "1.3.7+1"
 
 [[nghttp2_jll]]
 deps = ["Artifacts", "Libdl"]
@@ -1774,17 +1765,15 @@ version = "0.9.1+5"
 """
 
 # ╔═╡ Cell order:
-# ╟─307335ba-cf46-11eb-28b0-f199cf048ae6
+# ╠═307335ba-cf46-11eb-28b0-f199cf048ae6
 # ╠═7dec4d6d-ad7f-4a5a-a6b3-e81ecba1fbc6
 # ╟─c44e930c-3969-4db6-bab8-4f91ba640f7f
 # ╠═c2104b06-78a3-48a1-acf8-9b3e59c656d2
 # ╟─b874dc09-851e-4029-9f3d-a809a0221c35
 # ╠═f8488416-d027-4d14-814e-073b4862ef0e
-# ╟─511a8b7b-31f4-4397-9d63-4d30d67df46c
+# ╠═511a8b7b-31f4-4397-9d63-4d30d67df46c
 # ╠═f0f30840-5c78-41c3-99ec-f6f62587b557
-# ╟─5c87b202-98d3-4922-a643-d5640bdd5979
+# ╠═5c87b202-98d3-4922-a643-d5640bdd5979
 # ╠═a101389e-adb1-42ef-80ad-d360a17a96a9
-# ╠═b6730158-da2e-4dfe-9f7b-435c895cd748
-# ╠═993d4cf4-0a32-4088-b94d-b1c4c8a5b0c5
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
