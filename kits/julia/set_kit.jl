@@ -36,7 +36,7 @@ function set_kit(proj_name::String, proj_path::String)
             map(mkdir, map(x -> joinpath(joinpath(proj_name,"results"), x),
                            ["data", "scripts"]))
             map(mkdir, map(x -> joinpath(joinpath(proj_name,"results", "data"), x),
-                           ["raw", "processed", "metadata"]))
+                           ["raw", "process", "metadata"]))
             ### main folders of text
             map(mkdir, map(x -> joinpath(joinpath(proj_name,"text"), x),
                            ["figures","tables", "supplementary", "references"]))
@@ -179,8 +179,6 @@ function set_kit(proj_name::String, proj_path::String)
                 write(io, "\tscripts_dir = joinpath(\"results\", \"scripts\")")
                 write(io, "\n")
                 write(io, "\tsuppl_dir = joinpath(\"results\", \"supplementary\")")
-                write(io, "\n")
-                write(io, "\tprocess_dir = joinpath(\"results\", \"process\")")
                 write(io, "\n")
                 write(io, "\tfigs_dir = joinpath(\"text\", \"figures\")")
                 write(io, "\n")
