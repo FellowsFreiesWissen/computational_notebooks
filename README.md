@@ -1,5 +1,7 @@
 # Computational notebooks to increase productivity and reproducibility in (ecological) research
 
+[![DOI](https://zenodo.org/badge/289288542.svg)](https://zenodo.org/badge/latestdoi/289288542)
+
 ## A minimal setup to get you started
 This repository contains a starter-kit to use so called "computational notebooks" to structure your work.
 Computational notebooks are files that contain descriptive text, as well as code and its outputs, in a single, dynamic and visually appealing file (usuallly `.html`, but `.pdf` is also possible).
