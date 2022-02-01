@@ -51,7 +51,17 @@ The `set_kit` functions also create the `README.md` files describing the content
  
 In the [examples](https://github.com/FellowsFreiesWissen/computational_notebooks/tree/master/examples) folder, we provide examples of how the notebooks can be used.
 
-### Video tutorial
+### Video tutorials
+
+In the following tutorials, we show you how to use our kits to set up projects and how to build your research workflow around computational notebooks.
+
+#### R and Python projects
+
+https://drive.google.com/file/d/1YYbo6DnNpv7Fod-AP7HgCUV8a9v4jsAT/view?usp=sharing
+
+#### Julia projects 
+
+https://drive.google.com/file/d/1CpvTEh5xBiyQKMVx1g0_fzgSq7FYJ1UE/view?usp=sharing
 
 ## Where to go next
 This starter-kit is an attempt to have the simplest, yet effective, reproducible 
