@@ -63,7 +63,7 @@ https://drive.google.com/file/d/1YYbo6DnNpv7Fod-AP7HgCUV8a9v4jsAT/view?usp=shari
 
 #### Julia projects 
 
-https://drive.google.com/file/d/1CpvTEh5xBiyQKMVx1g0_fzgSq7FYJ1UE/view?usp=sharing
+https://drive.google.com/file/d/1CBjTGYIhNoMq77_b3sCTPR2kB9ZcgQPT/view?usp=sharing
 
 ## Where to go next
 This starter-kit is an attempt to have the simplest, yet effective, reproducible 
