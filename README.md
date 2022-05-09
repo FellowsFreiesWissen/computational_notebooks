@@ -1,4 +1,4 @@
-# Computational notebooks to increase productivity and reproducibility in (ecological) research
+# A simple kit to use computational notebooks for more openness, reproducibility, and productivity in research
 
 [![DOI](https://zenodo.org/badge/289288542.svg)](https://zenodo.org/badge/latestdoi/289288542)
 
@@ -63,7 +63,7 @@ https://drive.google.com/file/d/1YYbo6DnNpv7Fod-AP7HgCUV8a9v4jsAT/view?usp=shari
 
 #### Julia projects 
 
-https://drive.google.com/file/d/1CBjTGYIhNoMq77_b3sCTPR2kB9ZcgQPT/view?usp=sharing
+https://drive.google.com/file/d/1K-6BodiCHMWyAIlMNg50s6a7FBsmmkws/view?usp=sharing
 
 ## Where to go next
 This starter-kit is an attempt to have the simplest, yet effective, reproducible 
@@ -71,10 +71,10 @@ workflow for people unfamiliar with the computational practices involved in it.
 
 Once users are comfortable with this set up, they are encouraged to try more complex packages and/or practices, e.g.:
 
-- [workflowr](https://jdblischak.github.io/workflowr/)
-+ [template](https://github.com/Pakillo/template)
-- [rticles](https://github.com/rstudio/rticles)
-- Organizing your code as an R package: [Hanß & Baldauf tutorial](https://selinazitrone.github.io/YoMos2020/index.html) 
+- Writing manuscripts in RMarkdown as demonstrated by [Hartgerink](https://elifesciences.org/labs/cad57bcf/composing-reproducible-manuscripts-using-rmarkdown), [Hemberger](https://jhemberger.github.io/posts/posts/r-markdown-manuscripts/), [Rodriguez-Sanchez](https://github.com/Pakillo/template), and the [rticles package](https://github.com/rstudio/rticles)
+- Using workflows suggested by the [workflowr](https://workflowr.github.io/workflowr/index.html) and [drake](https://doi.org/10.21105/joss.00550) packages.
+- Organizing your code as an R package: [Hanß & Baldauf tutorial](https://selinazitrone.github.io/YoMos2020/index.html), [Boettiger](https://github.com/cboettig/template), and (Marwick)
+- Trying out [RStudio's Quarto](https://quarto.org/).
 
 # Acknowledgements
 
