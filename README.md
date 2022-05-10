@@ -1,6 +1,6 @@
 # A simple kit to use computational notebooks for more openness, reproducibility, and productivity in research
 
-[![DOI](https://zenodo.org/badge/289288542.svg)](https://zenodo.org/badge/latestdoi/289288542)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6531211.svg)](https://doi.org/10.5281/zenodo.6531211)
 
 ## A minimal setup to get you started
 This repository contains a starter-kit to use so called "computational notebooks" to structure your work.
@@ -11,7 +11,7 @@ Using this file to organize your work should facilitate:
 - reproducibility: by concentrating the computational work in a single, descriptive file, along with a fixed file structure, the notebook facilitates reproduction of the study in question. 
 - reporting:  the notebook can be an accompanying piece to share with co-authors during the development of the work, or to share with reviewers and readers, as supplementary material.
 
-In Figueiredo et al. (_in prep_), we report our reasoning for the kits in this repository and provide examples of implementation.
+In Figueiredo et al. ([preprint](https://zenodo.org/record/6531211)), we report our reasoning for the kits in this repository and provide examples of implementation.
 Below, you can find the basic instructions on how to use it, as well as a video tutorial.
 
 ### How to use it
