@@ -1,4 +1,4 @@
-#' Create a folder named 'proj_name' in 'proj_path', as well as create a Pluto notebook and an internal file structure inside 'proj_path/proj_name'.
+#' Create a folder named 'proj_name' in 'proj_path', as well as create an Rnotebook and an internal file structure inside 'proj_path/proj_name'.
 #'
 #' @param proj_name a string, the name the folder of the project. 
 #' @param proj_path a string, the path where the project folder should be created. 
