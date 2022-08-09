@@ -59,11 +59,11 @@ In the following tutorials, we show you how to use our kits to set up projects a
 
 #### R and Python projects
 
-https://drive.google.com/file/d/1YYbo6DnNpv7Fod-AP7HgCUV8a9v4jsAT/view?usp=sharing
+https://zenodo.org/record/6531211/files/rpythonproject_tutorial.mp4?download=1
 
 #### Julia projects 
 
-https://drive.google.com/file/d/1K-6BodiCHMWyAIlMNg50s6a7FBsmmkws/view?usp=sharing
+https://zenodo.org/record/6531211/files/juliaproject_tutorial.mp4?download=1
 
 ## Where to go next
 This starter-kit is an attempt to have the simplest, yet effective, reproducible 
