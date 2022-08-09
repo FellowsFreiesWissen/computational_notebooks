@@ -1,6 +1,6 @@
 # A simple kit to use computational notebooks for more openness, reproducibility, and productivity in research
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6531211.svg)](https://doi.org/10.5281/zenodo.6531211)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6977667.svg)](https://doi.org/10.5281/zenodo.6977667)
 
 ## A minimal setup to get you started
 This repository contains a starter-kit to use so called "computational notebooks" to structure your work.
@@ -19,7 +19,7 @@ Below, you can find the basic instructions on how to use it, as well as a video 
 Before starting, make sure you have installed [RStudio](https://www.rstudio.com/) (if you are using R or Python) or the [Pluto package](https://juliapackages.com/p/pluto) (if you are using Julia).
 
 In the [kits](https://github.com/FellowsFreiesWissen/computational_notebooks/tree/master/kits) 
-folder, you can find a `set_kit` function in both `R` and `Julia` languages -- `set_kit.R` can also be used to setup a Python project.
+folder, you can find a `set_kit` function in both `R` and `Julia` languages - `set_kit.R` can also be used to setup a Python project.
 
 To use the function, you first have to load it into your environment (run `source("path/where/you/saved/set_kit.R")` or `include("path/where/you/saved/set_kit.jl")`). When calling the function, you must provide two arguments: `proj_path` to specify where you want the project folder to be created, and `proj_name` to specify the name of the project folder inside `proj_path`. For `set_kit.R` you can also provide the `lang` argument, to choose between R and Python (defaults to `"r"`). Note that `proj_path` does not have to (arguably should not) be the same where `set_kit` is stored.
 
