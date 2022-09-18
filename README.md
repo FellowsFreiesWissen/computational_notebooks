@@ -11,7 +11,7 @@ Using this file to organize your work should facilitate:
 - reproducibility: by concentrating the computational work in a single, descriptive file, along with a fixed file structure, the notebook facilitates reproduction of the study in question. 
 - reporting:  the notebook can be an accompanying piece to share with co-authors during the development of the work, or to share with reviewers and readers, as supplementary material.
 
-In Figueiredo et al. ([preprint](https://zenodo.org/record/6531211)), we report our reasoning for the kits in this repository and provide examples of implementation.
+In Figueiredo et al. ([2022](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010356)), we report our reasoning for the kits in this repository and provide examples of implementation.
 Below, you can find the basic instructions on how to use it, as well as a video tutorial.
 
 ### How to use it
