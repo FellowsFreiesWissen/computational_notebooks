@@ -22,9 +22,6 @@ set_kit <- function(proj_name, proj_path, lang = "r"){
     ## Create project in path 
     dir.create(file.path(proj_path, proj_name), recursive = TRUE)
     
-    ## Set up working directory
-    setwd(file.path(proj_path, proj_name))
-    
     ## Create file structure
     ### first level
     ### main folders of a project
@@ -213,6 +210,9 @@ set_kit <- function(proj_name, proj_path, lang = "r"){
     cat("\n")
     cat("```")
     sink()
+    
+    #Then you can set wd here
+    setwd(file.path(proj_path, proj_name))
 
     print("Your project is ready to go")
   }
