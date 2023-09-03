@@ -18,6 +18,8 @@ Below, you can find the basic instructions on how to use it, as well as a video 
 
 Before starting, make sure you have installed [RStudio](https://www.rstudio.com/) (if you are using R or Python) or the [Pluto package](https://juliapackages.com/p/pluto) (if you are using Julia).
 
+**New:** We offer an alternative file structure. Check below which [branch](#file_struct) will work better for you.
+
 In the [kits](https://github.com/FellowsFreiesWissen/computational_notebooks/tree/master/kits) 
 folder, you can find a `set_kit` function in both `R` and `Julia` languages - `set_kit.R` can also be used to setup a Python project.
 
@@ -31,10 +33,10 @@ This will create:
 <img src="https://raw.githubusercontent.com/FellowsFreiesWissen/computational_notebooks/master/text/figures/workflow.png" alt="drawing" width="500"/>
 </p>
 
-+ a file structure for easy access of relevant files and less wordy code (through relative paths)
++ a file structure for easy access of relevant files and less wordy code (through relative paths). After popular request, we offer two versions of the `set_kit` function to generate two file structures, one in the `main` and one in the `file_struct2` branches.
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/FellowsFreiesWissen/computational_notebooks/master/text/figures/file_structure.png" alt="drawing" width="400"/>
+<img src="text/figures/file_structure_two_branches.png" alt="drawing" width="600" name="file_struct"/>
 </p>
 
 The `results` folder contains all files related to data processing: 
