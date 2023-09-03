@@ -1,1 +1,10 @@
-.text*
+text*
+*.zip
+*.odg
+*.pdf
+*.svg
+*.tif
+*.doc
+*.docx
+*.odt
+*.eps
