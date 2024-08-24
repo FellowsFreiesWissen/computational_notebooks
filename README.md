@@ -47,6 +47,8 @@ The `results` folder contains all files related to data processing:
 
 - `scripts`: all code used to process the data, and which, for some reason or another is not included in the notebook (e.g. code is too cumbersome or not of upmost relevancy for comprehension).
 
+- `tests`: unit tests for the code.
+
 The `text` folder contains the main text of the manuscript, folders containing the `figures` and `tables` (unformatted) to be included in it, as well as a folder with the `supplementary` material.
 
 The `submission` folder contains the files specific to journal submissions, e.g. cover letters, submitted versions.

@@ -31,7 +31,7 @@ function set_kit(proj_name::String, proj_path::String)
             mkdir(proj_name)
             ### main folders of a project
             map(mkdir, map(x -> joinpath(proj_name, x),
-                           ["results", "scripts", "text", "submission"]))
+                           ["results", "scripts", "tests", "text", "submission"]))
             ### main folders of results
             map(mkdir, map(x -> joinpath(joinpath(proj_name,"results"), x),
                            ["data", "figures","tables"]))
@@ -60,6 +60,7 @@ function set_kit(proj_name::String, proj_path::String)
                 write(io, "|   |-- figures\n")
                 write(io, "|   |-- tables\n")
                 write(io, "|-- scripts\n")
+                write(io, "|-- tests\n")
                 write(io, "|-- text\n")
                 write(io, "|   |-- README.txt\n")
                 write(io, "|   |-- main.doc\n")
