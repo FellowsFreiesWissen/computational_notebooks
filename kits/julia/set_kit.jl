@@ -34,7 +34,7 @@ function set_kit(proj_name::String, proj_path::String)
                            ["results","text", "submission"]))
             ### main folders of results
             map(mkdir, map(x -> joinpath(joinpath(proj_name,"results"), x),
-                           ["data", "scripts"]))
+                           ["data", "scripts", "tests"]))
             map(mkdir, map(x -> joinpath(joinpath(proj_name,"results", "data"), x),
                            ["raw", "processed", "metadata"]))
             ### main folders of text
@@ -58,6 +58,7 @@ function set_kit(proj_name::String, proj_path::String)
                 write(io, "|   |   |-- processed\n")
                 write(io, "|   |   |-- metadata\n")
                 write(io, "|   |-- scripts\n")
+                write(io, "|   |-- tests\n")
                 write(io, "|-- text\n")
                 write(io, "|   |-- README.txt\n")
                 write(io, "|   |-- main.doc\n")

@@ -1,8 +1,8 @@
 #' Create a folder named 'proj_name' in 'proj_path', as well as create an Rnotebook and an internal file structure inside 'proj_path/proj_name'.
 #'
-#' @param proj_name a string, the name the folder of the project. 
-#' @param proj_path a string, the path where the project folder should be created. 
-#' @param lang a string, the language \"r\" or \"python\", you want to create your notebook in.  
+#' @param proj_name a string, the name the folder of the project.
+#' @param proj_path a string, the path where the project folder should be created.
+#' @param lang a string, the language \"r\" or \"python\", you want to create your notebook in.
 #'  It defaults to "r".
 #' @details The file structure and notebooks are detailed here \url{https://github.com/FellowsFreiesWissen/computational_notebooks}.
 #' @example
@@ -19,38 +19,38 @@ set_kit <- function(proj_name, proj_path, lang = "r"){
   if(dir.exists(file.path(proj_path, proj_name))){
     print("There already is a project with this name in this path. Move it or change its name.")
   }else{
-    ## Create project in path 
+    ## Create project in path
     dir.create(file.path(proj_path, proj_name), recursive = TRUE)
-    
+
     ## Create file structure
     ### first level
     ### main folders of a project
     sapply(c(file.path(proj_path, proj_name, "results"),
-             file.path(proj_path, proj_name, "text"), 
-             file.path(proj_path, proj_name, "submission")), 
+             file.path(proj_path, proj_name, "text"),
+             file.path(proj_path, proj_name, "submission")),
            dir.create)
     ### main folders of results
-    sapply(file.path(paste(file.path(proj_path, proj_name, "results"), 
-                           c("data", "scripts"),
-                           sep = "/")), 
+    sapply(file.path(paste(file.path(proj_path, proj_name, "results"),
+                           c("data", "scripts", "tests"),
+                           sep = "/")),
            dir.create)
-    sapply(file.path(paste(file.path(proj_path, proj_name, "results", "data"), 
+    sapply(file.path(paste(file.path(proj_path, proj_name, "results", "data"),
                            c("raw", "processed", "metadata"),
-                           sep = "/")), 
+                           sep = "/")),
            dir.create)
     ### main folders of text
-    sapply(file.path(paste(file.path(proj_path, proj_name, "text"), 
+    sapply(file.path(paste(file.path(proj_path, proj_name, "text"),
                            c("figures","tables", "supplementary", "references"),
-                           sep = "/")), 
+                           sep = "/")),
            dir.create)
-    
+
     ## Create the README files
     ### main folder
-    sink(file.path(proj_path, proj_name, "README.txt")) 
+    sink(file.path(proj_path, proj_name, "README.txt"))
     cat("This folder contains the set up for a reproducible workflow as described by https://github.com/FellowsFreiesWissen/computational_notebooks.git\n")
     cat("\n")
     cat("The file structure is organized as such:\n")
-    cat("\n")  
+    cat("\n")
     cat("projet_name\n")
     cat("|-- README.txt\n")
     cat("|-- main.Rmd\n")
@@ -61,6 +61,7 @@ set_kit <- function(proj_name, proj_path, lang = "r"){
     cat("|   |   |-- processed\n")
     cat("|   |   |-- metadata\n")
     cat("|   |-- scripts\n")
+    cat("|   |-- tests\n")
     cat("|-- text\n")
     cat("|   |-- README.txt\n")
     cat("|   |-- main.doc\n")
@@ -76,7 +77,7 @@ set_kit <- function(proj_name, proj_path, lang = "r"){
     cat("|       |-- first\n")
     cat("|       |-- revisions\n")
     sink()
-    
+
     ### results folder
     sink(file.path(proj_path, proj_name, "results/README.txt"))
     cat("This folder contains all files of results or their processing, organized in the following subfolders:")
@@ -88,17 +89,17 @@ set_kit <- function(proj_name, proj_path, lang = "r"){
     cat("\n")
     cat("`scripts`: all code used to process the data, and which, for some reason or another is not included in the notebook because they too cumbersome or not of upmost relevancy for comprehension.")
     sink()
-    
+
     ### text folder
     sink(file.path(proj_path, proj_name, "text/README.txt"))
     cat("This folder contains the main text of the manuscript, folders containing the figures and tables (unformatted) to be included in it, as well as a folder with the supplementary material and one to store references.")
     sink()
-    
+
     ### submission folder
     sink(file.path(proj_path, proj_name, "submission/README.txt"))
     cat("This folder contains the files specific to journal submissions, e.g. cover letters, submitted versions.")
     sink()
-    
+
     ## Create the minimal notebook
     sink(file.path(proj_path, proj_name, paste0(proj_name,".Rmd")))
     cat("---")
@@ -210,7 +211,7 @@ set_kit <- function(proj_name, proj_path, lang = "r"){
     cat("\n")
     cat("```")
     sink()
-    
+
     #Then you can set wd here
     setwd(file.path(proj_path, proj_name))
 
